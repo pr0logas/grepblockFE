@@ -13,7 +13,7 @@ var ctableTransactions = $('#home-tableAllBlockchains').DataTable({
         [1, "desc"]
     ],
     ajax: {
-        url: process.resourcesPath + '/apidata/TransactionsData.json',
+        url: '/apidata/TransactionsData.json',
         dataSrc: function(json) {
             $.each(json, function(key, value) {
                 var styleCategory = ''
