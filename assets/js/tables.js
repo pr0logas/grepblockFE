@@ -1,6 +1,6 @@
 var ctableTransactions = $('#home-tableAllBlockchains').DataTable({
     bInfo: false,
-    autoWidth: false,
+    autoWidth: true,
     searching: true,
     ordering: true,
     responsive: true,
@@ -8,7 +8,7 @@ var ctableTransactions = $('#home-tableAllBlockchains').DataTable({
     processing: false,
     bLengthChange: false,
     pageLength: 50,
-    bPaginate: true,
+    bPaginate: false,
     order: [
         [1, "desc"]
     ],
@@ -36,10 +36,10 @@ var ctableTransactions = $('#home-tableAllBlockchains').DataTable({
                 json[key]['time'] = '<span class="' + styleTime + '">' + new Date((value['time']) * 1000).toLocaleString('lt-LT', {
                     hour12: false
                 }) + '</span>';
-                json[key]['category'] = '<span class="' + styleCategory + '">' + value['category'] + '</span>';
-                json[key]['txid'] = '<span class="' + styleTxid + '">' + value['txid'] + '</span>';
-                json[key]['amount'] = '<span class="' + styleAmount + '">' + value['amount'] + '</span>';
-                json[key]['confirmations'] = '<span class="' + styleConf + '">' + value['confirmations'] + '</span>';
+                json[key]['category'] = value['category']
+                json[key]['txid'] = value['txid']
+                json[key]['amount'] = value['amount']
+                json[key]['confirmations'] = '<img src="/assets/coins-logo/bitcoin.png" alt="Bitcoin" width="24" height="24">' + value['confirmations']
                 json[key]['activity'] = '<span class="' + styleConf + '">' + value['activity'] + '</span>';
             });
             return json;
