@@ -47,8 +47,16 @@ var ctableTransactions = $('#homePageAssetList').DataTable({
             data: 'market_cap',
             width: '12%'
             },
+            {
+            data: 'total_volume',
+            width: '12%'
+            },
+            {
+            data: 'block',
+            width: '12%'
+            },
 	    {
-	    data: 'total_volume',
+	    data: 'nTx',
 	    width: '12%'	   
         },
     ]
