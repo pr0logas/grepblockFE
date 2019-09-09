@@ -64,4 +64,4 @@ var ctablePageAssetList = $('#homePageAssetList').DataTable({
 
 setInterval(function() {
     ctablePageAssetList.ajax.reload(null, false); // user paging is not reset on reload
-}, 30000);
+}, 29000);
