@@ -1,4 +1,4 @@
-var ctableTransactions = $('homePageAssetList').DataTable({
+var ctableTransactions = $('#homePageAssetList').DataTable({
     bInfo: false,
     autoWidth: true,
     searching: true,
@@ -18,6 +18,7 @@ var ctableTransactions = $('homePageAssetList').DataTable({
             $.each(json, function(key, value) {
       
                 json[key]['assetName'] = value['assetName'];
+		json[key]['assetType'] = value['assetType'];
             });
             return json;
         },
@@ -26,7 +27,10 @@ var ctableTransactions = $('homePageAssetList').DataTable({
         }
     },
     columns: [{
-            data: 'assetName',
+	    data: 'assetName',
+            width: '12%'
+	    },
+            data: 'assetType',
             width: '12%'
         },
     ]
