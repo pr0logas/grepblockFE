@@ -17,11 +17,14 @@ var ctablePageAssetList = $('#homePageAssetList').DataTable({
         dataSrc: function(json) {
             $.each(json, function(key, value) {
             
-
+            /* Process asset name, logo, ticker */
             var img = '<img src="/assets/coins-logo/'+value['assetName']+'.png" height="24" width="24">';
+            var ticker = value['assetTicker']
+
+            
 
       
-            json[key]['assetName'] = img + ' ' +value['assetName'];
+            json[key]['assetName'] = img + ' ' +value['assetName'] + ' (' + ticker + ')';
     		json[key]['assetType'] = value['assetType'];
     		json[key]['current_price'] = value['current_price'];
     		json[key]['market_cap'] = value['market_cap'];

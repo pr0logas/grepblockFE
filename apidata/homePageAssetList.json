@@ -3,6 +3,7 @@
  "assetName" : "Bitcoin" ,
  "assetType" : "coin" ,
  "block" : 33465 ,
+ "assetTicker" : "BTC" ,
  "current_price" : 10260.6 ,
  "market_cap" : "183745704950" ,
  "total_volume" : "19494924080" ,
