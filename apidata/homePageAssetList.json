@@ -2,10 +2,10 @@
 {
  "assetName" : "Bitcoin" ,
  "assetType" : "coin" ,
- "block" : 32592 ,
- "current_price" : 10516.62 ,
- "market_cap" : "188316743578" ,
- "total_volume" : "19860181817" ,
+ "block" : 32608 ,
+ "current_price" : 10411.11 ,
+ "market_cap" : "186618627498" ,
+ "total_volume" : "22739696788" ,
  "nTx" : 1 
 }
 ]
