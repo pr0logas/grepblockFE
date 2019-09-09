@@ -18,10 +18,10 @@ var ctablePageAssetList = $('#homePageAssetList').DataTable({
             $.each(json, function(key, value) {
             
 
-            var img = '<img src="/assets/coins-logo/'+value['assetName']+'.png">';
+            var img = '<img src="/assets/coins-logo/'+value['assetName']+'.png" height="24" width="24">';
 
       
-            json[key]['assetName'] = img + ' ' value['assetName'];
+            json[key]['assetName'] = img + ' ' +value['assetName'];
     		json[key]['assetType'] = value['assetType'];
     		json[key]['current_price'] = value['current_price'];
     		json[key]['market_cap'] = value['market_cap'];
