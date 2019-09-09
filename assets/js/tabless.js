@@ -19,6 +19,7 @@ var ctableTransactions = $('#homePageAssetList').DataTable({
       
                 json[key]['assetName'] = value['assetName'];
 		json[key]['assetType'] = value['assetType'];
+		json[key]['current_price'] = value['current_price'];
             });
             return json;
         },
@@ -30,8 +31,13 @@ var ctableTransactions = $('#homePageAssetList').DataTable({
 	    data: 'assetName',
             width: '12%'
 	    },
+	    {
             data: 'assetType',
             width: '12%'
+	    },
+	    {
+	    data: 'current_price',
+	    width: '12%'	   
         },
     ]
 });
