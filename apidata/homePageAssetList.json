@@ -4,8 +4,6 @@
  "assetType" : "coin" ,
  "block" : 32447 ,
  "current_price" : 10232.43 ,
- "market_cap" : NumberLong("183416360898") ,
- "total_volume" : NumberLong("18831526936") ,
  "nTx" : 1 
 }
 ]

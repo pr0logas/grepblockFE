@@ -1,4 +1,4 @@
-var ctableTransactions = $('#homePageAssetList').DataTable({
+var ctableTransactions = $('homePageAssetList').DataTable({
     bInfo: false,
     autoWidth: true,
     searching: true,
