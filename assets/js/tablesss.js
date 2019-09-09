@@ -22,6 +22,8 @@ var ctableTransactions = $('#homePageAssetList').DataTable({
 		json[key]['current_price'] = value['current_price'];
 		json[key]['market_cap'] = value['market_cap'];
 		json[key]['total_volume'] = value['total_volume'];
+                json[key]['block'] = value['block'];
+                json[key]['nTx'] = value['nTx'];
             });
             return json;
         },
