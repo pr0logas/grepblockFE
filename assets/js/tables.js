@@ -21,14 +21,19 @@ var ctablePageAssetList = $('#homePageAssetList').DataTable({
             var img = '<img src="/assets/coins-logo/'+value['assetName']+'.png" height="24" width="24">';
             var ticker = value['assetTicker']
 
-            
+            var styleAssetType = ''
+                if (value['assetType'] == 'coin')
+                    styleAssetType = 'badge badge-warning';
+
+                if (value['assetType'] == 'token')
+                    styleAssetType = 'badge badge-info';
 
       
             json[key]['assetName'] = img + ' ' +value['assetName'] + ' (' + ticker + ')';
-    		json[key]['assetType'] = value['assetType'];
-    		json[key]['current_price'] = value['current_price'];
-    		json[key]['market_cap'] = value['market_cap'];
-    		json[key]['total_volume'] = value['total_volume'];
+    		json[key]['assetType'] = '<span class="' + styleAssetType + '">' + value['assetType'] + '</span>';
+    		json[key]['current_price'] = '$' + value['current_price'];
+    		json[key]['market_cap'] = '$' + value['market_cap'];
+    		json[key]['total_volume'] = '$' + value['total_volume'];
             json[key]['block'] = value['block'];
             json[key]['nTx'] = value['nTx'];
             });
