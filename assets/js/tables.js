@@ -31,9 +31,9 @@ var ctablePageAssetList = $('#homePageAssetList').DataTable({
       
             json[key]['assetName'] = img + ' ' +value['assetName'] + ' (' + ticker + ')';
     		json[key]['assetType'] = '<span class="' + styleAssetType + '">' + value['assetType'] + '</span>';
-    		json[key]['current_price'] = '$' + value['current_price'];
-    		json[key]['market_cap'] = '$' + value['market_cap'];
-    		json[key]['total_volume'] = '$' + value['total_volume'];
+    		json[key]['current_price'] = '$' + value['current_price'].toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    		json[key]['market_cap'] = '$' + parseFloat(value['market_cap']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    		json[key]['total_volume'] = '$' + parseFloat(value['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
             json[key]['block'] = value['block'];
             json[key]['nTx'] = value['nTx'];
             });
