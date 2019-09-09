@@ -1,4 +1,4 @@
-var ctableTransactions = $('#homePageAssetList').DataTable({
+var ctablePageAssetList = $('#homePageAssetList').DataTable({
     bInfo: false,
     autoWidth: true,
     searching: true,
@@ -17,13 +17,13 @@ var ctableTransactions = $('#homePageAssetList').DataTable({
         dataSrc: function(json) {
             $.each(json, function(key, value) {
       
-                json[key]['assetName'] = value['assetName'];
-		json[key]['assetType'] = value['assetType'];
-		json[key]['current_price'] = value['current_price'];
-		json[key]['market_cap'] = value['market_cap'];
-		json[key]['total_volume'] = value['total_volume'];
-                json[key]['block'] = value['block'];
-                json[key]['nTx'] = value['nTx'];
+            json[key]['assetName'] = value['assetName'];
+    		json[key]['assetType'] = value['assetType'];
+    		json[key]['current_price'] = value['current_price'];
+    		json[key]['market_cap'] = value['market_cap'];
+    		json[key]['total_volume'] = value['total_volume'];
+            json[key]['block'] = value['block'];
+            json[key]['nTx'] = value['nTx'];
             });
             return json;
         },
@@ -61,3 +61,7 @@ var ctableTransactions = $('#homePageAssetList').DataTable({
         },
     ]
 });
+
+setInterval(function() {
+    ctablePageAssetList.ajax.reload(null, false); // user paging is not reset on reload
+}, 30000);
