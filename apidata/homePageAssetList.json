@@ -1,20 +1,53 @@
 [
 {
- "assetName" : "Bitcoin" ,,
- "assetType" : "coin" ,,
- "assetTicker" : "BTC" ,,
- "block" : 36370 ,,
- "current_price" : 10265.87 ,,
- "market_cap" : "184034131826" ,,
- "total_volume" : "20418060622" ,,
- "nTx" : "1",,
- "assetName" : "Pivx" ,,
- "assetType" : "coin" ,,
- "assetTicker" : "PIVX" ,,
- "block" : 33800 ,,
- "current_price" : 0.316038 ,,
- "market_cap" : 19284932 ,,
- "total_volume" : 922858 ,,
+"assetName" : "Dash" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "DASH" 
+,
+ "block" : 86693 
+,
+ "current_price" : 82.22 
+,
+ "market_cap" : 743149720 
+,
+ "total_volume" : 308417605 
+,
+ "nTx" : "1"
+ },
+{
+"assetName" : "Polis" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "POLIS" 
+,
+ "block" : 89549 
+,
+ "current_price" : 0.693074 
+,
+ "market_cap" : 0 
+,
+ "total_volume" : 6426.97 
+,
+ "nTx" : "1"
+ },
+{
+"assetName" : "Adeptio" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "ADE" 
+,
+ "block" : 637120 
+,
+ "current_price" : 0.00070705 
+,
+ "market_cap" : 0 
+,
+ "total_volume" : 4.84 
+,
  "nTx" : "1"
 }
 ]
