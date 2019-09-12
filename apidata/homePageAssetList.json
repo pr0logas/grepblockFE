@@ -6,15 +6,15 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 86693 
+ "block" : 218386 
 ,
- "current_price" : 82.22 
+ "current_price" : 82.24 
 ,
- "market_cap" : 743149720 
+ "market_cap" : 743250730 
 ,
- "total_volume" : 308417605 
+ "total_volume" : 286462467 
 ,
- "nTx" : "1"
+ "nTx" : "6"
  },
 {
 "assetName" : "Polis" 
@@ -23,15 +23,15 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 89549 
+ "block" : 258867 
 ,
- "current_price" : 0.693074 
+ "current_price" : 0.638032 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 6426.97 
+ "total_volume" : 7233.21 
 ,
- "nTx" : "1"
+ "nTx" : "2"
  },
 {
 "assetName" : "Adeptio" 
@@ -40,14 +40,31 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 637120 
+ "block" : 638089 
 ,
- "current_price" : 0.00070705 
+ "current_price" : 0.00061114 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 4.84 
+ "total_volume" : 1.36 
 ,
- "nTx" : "1"
+ "nTx" : "2"
+ },
+{
+"assetName" : "Pivx" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "PIVX" 
+,
+ "block" : 403761 
+,
+ "current_price" : 0.276473 
+,
+ "market_cap" : 16876433 
+,
+ "total_volume" : 708105 
+,
+ "nTx" : "2"
 }
 ]
