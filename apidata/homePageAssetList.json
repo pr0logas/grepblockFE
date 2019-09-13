@@ -23,13 +23,13 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 258867 
+ "block" : 424721 
 ,
- "current_price" : 0.638032 
+ "current_price" : 0.619296 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 7233.21 
+ "total_volume" : 9584.06 
 ,
  "nTx" : "2"
  },
@@ -40,13 +40,13 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 638089 
+ "block" : 639568 
 ,
- "current_price" : 0.00061114 
+ "current_price" : 0.00061793 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 1.36 
+ "total_volume" : 3.15 
 ,
  "nTx" : "2"
  },
@@ -57,14 +57,31 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 403761 
+ "block" : 529766 
 ,
- "current_price" : 0.276473 
+ "current_price" : 0.285498 
 ,
- "market_cap" : 16876433 
+ "market_cap" : 17420099 
 ,
- "total_volume" : 708105 
+ "total_volume" : 468567 
 ,
  "nTx" : "2"
+ },
+{
+"assetName" : "Ontology" 
+,
+ "assetType" : "CoinPlatform" 
+,
+ "assetTicker" : "ONT" 
+,
+ "block" : 1321 
+,
+ "current_price" : 0.74978 
+,
+ "market_cap" : 487917618 
+,
+ "total_volume" : 81267136 
+,
+ "nTx" : "-1"
 }
 ]
