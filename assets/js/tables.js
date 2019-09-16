@@ -25,9 +25,11 @@ var ctablePageAssetList = $('#homePageAssetList').DataTable({
                 if (value['assetType'] == 'coin')
                     styleAssetType = 'badge badge-warning';
 
-                if (value['assetType'] == 'CoinPlatform')
+                if (value['assetType'] == 'platform')
                     styleAssetType = 'badge badge-primary';
 
+                if (value['assetType'] == 'token')
+                    styleAssetType = 'badge badge-danger';
       
             json[key]['assetName'] = img + ' ' +value['assetName'] + ' (' + ticker + ')';
     		json[key]['assetType'] = '<span class="' + styleAssetType + '">' + value['assetType'] + '</span>';

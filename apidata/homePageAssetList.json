@@ -6,15 +6,15 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 218386 
+ "block" : 483100 
 ,
- "current_price" : 82.24 
+ "current_price" : 88.27 
 ,
- "market_cap" : 743250730 
+ "market_cap" : 798674691 
 ,
- "total_volume" : 286462467 
+ "total_volume" : 300988571 
 ,
- "nTx" : "6"
+ "nTx" : "2"
  },
 {
 "assetName" : "Polis" 
@@ -23,15 +23,15 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 424721 
+ "block" : 436497 
 ,
- "current_price" : 0.619296 
+ "current_price" : 0.592557 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 9584.06 
+ "total_volume" : 5795.66 
 ,
- "nTx" : "2"
+ "nTx" : "5"
  },
 {
 "assetName" : "Adeptio" 
@@ -40,13 +40,13 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 639568 
+ "block" : 643778 
 ,
- "current_price" : 0.00061793 
+ "current_price" : 0.00040602 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 3.15 
+ "total_volume" : 0.725093 
 ,
  "nTx" : "2"
  },
@@ -57,13 +57,13 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 529766 
+ "block" : 744638 
 ,
- "current_price" : 0.285498 
+ "current_price" : 0.269492 
 ,
- "market_cap" : 17420099 
+ "market_cap" : 16457577 
 ,
- "total_volume" : 468567 
+ "total_volume" : 327009 
 ,
  "nTx" : "2"
  },
@@ -74,14 +74,48 @@
 ,
  "assetTicker" : "ONT" 
 ,
- "block" : 1321 
+ "block" : 356396 
 ,
- "current_price" : 0.74978 
+ "current_price" : 0.757053 
 ,
- "market_cap" : 487917618 
+ "market_cap" : 492308012 
 ,
- "total_volume" : 81267136 
+ "total_volume" : 70835696 
 ,
- "nTx" : "-1"
+ "nTx" : "34"
+ },
+{
+"assetName" : "Bitcoin" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "BTC" 
+,
+ "block" : 74987 
+,
+ "current_price" : 10306.17 
+,
+ "market_cap" : "184816220179" 
+,
+ "total_volume" : "16179335048" 
+,
+ "nTx" : "2"
+ },
+{
+"assetName" : "Gincoin" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "GIN" 
+,
+ "block" : 654 
+,
+ "current_price" : 0.01705733 
+,
+ "market_cap" : 120597 
+,
+ "total_volume" : 12527.33 
+,
+ "nTx" : "1"
 }
 ]
