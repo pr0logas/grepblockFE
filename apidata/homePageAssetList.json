@@ -6,15 +6,15 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 496881 
+ "block" : 497981 
 ,
- "current_price" : 89.07 
+ "current_price" : 89.35 
 ,
- "market_cap" : 804711598 
+ "market_cap" : 808030675 
 ,
- "total_volume" : 300052359 
+ "total_volume" : 263830016 
 ,
- "nTx" : "4"
+ "nTx" : "1"
  },
 {
 "assetName" : "Polis" 
@@ -23,15 +23,15 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 436580 
+ "block" : 436595 
 ,
- "current_price" : 0.607058 
+ "current_price" : 0.593123 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 6557.26 
+ "total_volume" : 4733.41 
 ,
- "nTx" : "6"
+ "nTx" : "4"
  },
 {
 "assetName" : "Adeptio" 
@@ -40,7 +40,7 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 643965 
+ "block" : 643975 
 ,
  "current_price" : 0.00040602 
 ,
@@ -57,15 +57,15 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 754221 
+ "block" : 754989 
 ,
- "current_price" : 0.268053 
+ "current_price" : 0.269122 
 ,
- "market_cap" : 16362035 
+ "market_cap" : 16438300 
 ,
- "total_volume" : 208869 
+ "total_volume" : 210469 
 ,
- "nTx" : "3"
+ "nTx" : "4"
  },
 {
 "assetName" : "Ontology" 
@@ -91,7 +91,7 @@
 ,
  "assetTicker" : "BTC" 
 ,
- "block" : 76321 
+ "block" : 76404 
 ,
  "current_price" : 10306.17 
 ,
@@ -108,7 +108,7 @@
 ,
  "assetTicker" : "GIN" 
 ,
- "block" : 46991 
+ "block" : 50416 
 ,
  "current_price" : 0.01700441 
 ,
@@ -116,6 +116,6 @@
 ,
  "total_volume" : 12526.3 
 ,
- "nTx" : "2"
+ "nTx" : "1"
 }
 ]
