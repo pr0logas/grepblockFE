@@ -1,4 +1,4 @@
-var ctablePageAssetList = $('#homePageAssetList').DataTable({
+var homePageAssetList = {
     bInfo: false,
     autoWidth: true,
     searching: true,
@@ -32,10 +32,10 @@ var ctablePageAssetList = $('#homePageAssetList').DataTable({
                     styleAssetType = 'badge badge-danger';
       
             json[key]['assetName'] = img + ' ' +value['assetName'] + ' (' + ticker + ')';
-    		json[key]['assetType'] = '<span class="' + styleAssetType + '">' + value['assetType'] + '</span>';
-    		json[key]['current_price'] = '$' + value['current_price'];
-    		json[key]['market_cap'] = '$' + parseFloat(value['market_cap']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-    		json[key]['total_volume'] = '$' + parseFloat(value['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+            json[key]['assetType'] = '<span class="' + styleAssetType + '">' + value['assetType'] + '</span>';
+            json[key]['current_price'] = '$' + value['current_price'];
+            json[key]['market_cap'] = '$' + parseFloat(value['market_cap']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+            json[key]['total_volume'] = '$' + parseFloat(value['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
             json[key]['block'] = value['block'];
             json[key]['nTx'] = value['nTx'];
             });
@@ -46,13 +46,13 @@ var ctablePageAssetList = $('#homePageAssetList').DataTable({
         }
     },
     columns: [{
-	    data: 'assetName',
+        data: 'assetName',
             width: '12%'
-	    },
-	    {
+        },
+        {
             data: 'assetType',
             width: '12%'
-	    },
+        },
             {
             data: 'current_price',
             width: '12%'
@@ -69,13 +69,30 @@ var ctablePageAssetList = $('#homePageAssetList').DataTable({
             data: 'block',
             width: '12%'
             },
-	    {
-	    data: 'nTx',
-	    width: '12%'	   
+        {
+        data: 'nTx',
+        width: '12%'       
         },
     ]
-});
+};
 
-setInterval(function() {
-    ctablePageAssetList.ajax.reload(null, false); // user paging is not reset on reload
-}, 29000);
+var ctablePageAssetList = $('#homePageAssetList').DataTable(homePageAssetList);
+
+$('body').on( "update_page", function() {
+
+    if($('#homePageAssetList').hasClass('dataTable')) {
+
+        ctablePageAssetList.ajax.reload(null, false);
+
+        return;
+
+    } else {
+
+        var create_table = $('#homePageAssetList').DataTable(homePageAssetList);
+
+        setInterval(function() {
+            create_table.ajax.reload(null, false); // user paging is not reset on reload
+        }, 29000);
+
+    }
+});
