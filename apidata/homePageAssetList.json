@@ -6,15 +6,15 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 565022 
+ "block" : 582015 
 ,
- "current_price" : 91.39 
+ "current_price" : 91.24 
 ,
- "market_cap" : 826445815 
+ "market_cap" : 825400266 
 ,
- "total_volume" : 331292671 
+ "total_volume" : 351084251 
 ,
- "nTx" : "2"
+ "nTx" : "4"
  },
 {
 "assetName" : "Polis" 
@@ -23,13 +23,13 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 437029 
+ "block" : 437182 
 ,
- "current_price" : 0.589565 
+ "current_price" : 0.608152 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 5060.76 
+ "total_volume" : 3579.16 
 ,
  "nTx" : "2"
  },
@@ -40,13 +40,13 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 644886 
+ "block" : 645195 
 ,
- "current_price" : 0.00030633 
+ "current_price" : 0.00030631 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 6.19 
+ "total_volume" : 6.25 
 ,
  "nTx" : "2"
  },
@@ -57,13 +57,13 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 802704 
+ "block" : 815042 
 ,
- "current_price" : 0.270724 
+ "current_price" : 0.275235 
 ,
- "market_cap" : 16537639 
+ "market_cap" : 16825580 
 ,
- "total_volume" : 5065340 
+ "total_volume" : 5227501 
 ,
  "nTx" : "2"
  },
@@ -91,7 +91,7 @@
 ,
  "assetTicker" : "BTC" 
 ,
- "block" : 81156 
+ "block" : 82630 
 ,
  "current_price" : 10306.17 
 ,
@@ -99,7 +99,7 @@
 ,
  "total_volume" : "16179335048" 
 ,
- "nTx" : "1"
+ "nTx" : "4"
  },
 {
 "assetName" : "Gincoin" 
@@ -108,14 +108,31 @@
 ,
  "assetTicker" : "GIN" 
 ,
- "block" : 210007 
+ "block" : 242018 
 ,
- "current_price" : 0.01669672 
+ "current_price" : 0.01654186 
 ,
- "market_cap" : 118152 
+ "market_cap" : 117082 
 ,
- "total_volume" : 12541.01 
+ "total_volume" : 12367.89 
 ,
- "nTx" : "2"
+ "nTx" : "29"
+ },
+{
+"assetName" : "Snowgem" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "XSG" 
+,
+ "block" : 30627 
+,
+ "current_price" : 0.02591222 
+,
+ "market_cap" : 466823 
+,
+ "total_volume" : 98773 
+,
+ "nTx" : "3"
 }
 ]
