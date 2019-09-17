@@ -28,7 +28,7 @@
     function create_page(el_id) {
       id("pages").appendChild(div({
         id: el_id,
-        class: 'row',
+        class: '',
         style: 'display: none;'
       }));
     }
@@ -61,6 +61,20 @@
 
     function update_page(hash=undefined) {
 
+      var PAGE = hash===undefined ? url().replace('#','') : hash.replace('#','');
+      var PAGE_ITEM = 'page-'+PAGE;
+
+       $.get('/pages/' + (PAGE ? PAGE : 'index') + '.html',function(response){ 
+
+          if(response===undefined) return
+
+          var PAGE = hash===undefined ? url().replace('#','') : hash.replace('#','');
+          PAGE_ITEM = 'page-'+PAGE;
+
+          $('#'+PAGE_ITEM).html(response); 
+
+          $('body').trigger("update_page");
+       });
     }
 
     menu_create();
