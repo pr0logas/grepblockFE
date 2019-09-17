@@ -31,6 +31,69 @@
 
   gtag('config', 'G-TM6FH6S9T6');
 </script>
+<script src="assets/js/nemo_head.js" author="nemo"></script>
+
+  <script author="nemo">
+    var menu = [
+      {
+        li_class: 'dropdown success active',
+        id: 'link-',
+        icon: getIcon('globe', {class: "icon icon-globe icon-white"}),
+        href: '#',
+        onclick: 'show_page(this);',
+        title: 'ALL',
+        class: 'active'
+      },
+      {
+        li_class: 'dropdown warning',
+        id: 'link-coins',
+        icon: getIcon('star', {class: "icon icon-star icon-white"}),
+        href: '#coins',
+        onclick: 'show_page(this);',
+        title: 'Coins',
+      },
+      {
+        li_class: 'dropdown primary',
+        id: 'link-platforms',
+        icon: getIcon('asterisk', {class: "icon icon-asterisk icon-white"}),
+        href: '#platforms',
+        onclick: 'show_page(this);',
+        title: 'Platforms',
+      },
+      {
+        li_class: 'dropdown danger',
+        id: 'link-tokens',
+        icon: getIcon('bookmark', {class: "icon icon-bookmark icon-white"}),
+        href: '#tokens',
+        onclick: 'show_page(this);',
+        title: 'Tokens/Dapps',
+      },
+      {
+        li_class: 'dropdown info',
+        id: 'link-masternodes',
+        icon: getIcon('hdd', {class: "icon icon-hdd icon-white"}),
+        href: '#masternodes',
+        onclick: 'show_page(this);',
+        title: 'Masternodes',
+      },
+      {
+        li_class: 'dropdown success',
+        id: 'link-api',
+        icon: getIcon('retweet', {class: "icon icon-retweet icon-white"}),
+        href: '#api',
+        onclick: 'show_page(this);',
+        title: 'API',
+      },
+      {
+        li_class: 'inverse',
+        id: 'link-submit-form',
+        icon: getIcon('hand-right', {class: "icon icon-hand-right icon-white"}),
+        href: 'https://docs.google.com/forms/d/17Z0GrMiJzBPyyfL6m0ZlPOh-sOduJKYVZ2Lh018c4rA',
+        target: '_blank',
+        title: 'Submit form',
+      },
+    ]
+  </script>
 </head>
 
 <body>
@@ -50,29 +113,7 @@
           <!-- top menu -->
           <div>
             <nav>
-              <ul class="nav topnav">
-                <li class="dropdown success active">
-                  <a href="index.html"><i class="icon-globe icon-white"></i> ALL</a>
-                </li>
-                <li class="dropdown warning">
-                  <a href="index.html"><i class="icon-star icon-white"></i> Coins</a>
-                </li>
-                <li class="dropdown primary">
-                  <a href="#"><i class="icon-asterisk icon-white"></i> Platforms</a>
-                </li>
-                <li class="dropdown danger">
-                  <a href="#"><i class="icon-bookmark icon-white"></i> Tokens/Dapps</a>
-                </li>
-                <li class="dropdown info">
-                  <a href="#"><i class="icon-hdd icon-white"></i> Masternodes</a>
-                </li>
-                <li class="dropdown success">
-                  <a href="#"><i class="icon-retweet icon-white"></i> API</a>
-                </li>
-                <li class="inverse">
-                  <a href="https://docs.google.com/forms/d/17Z0GrMiJzBPyyfL6m0ZlPOh-sOduJKYVZ2Lh018c4rA"><i class="icon-hand-right icon-white"></i> Submit form</a>
-                </li>
-              </ul>
+              <ul id="menu" class="nav topnav"></ul>
             </nav>
           </div>
           <!-- end menu -->
@@ -95,25 +136,27 @@
         </div>
       </div>
 
+      <h1 id="page-title" class="h2"></h1>
 
-  <table id="homePageAssetList" class="table table-sm">
-  <thead>
-    <tr>
-      <th class="text-center">Name</th>
-      <th class="text-center">Type</th>      
-      <th class="text-center">Price</th>
-      <th class="text-center">MarketCap</th>
-      <th class="text-center">Volume</th>
-      <th class="text-center">Block</th>
-      <th class="text-center">Transactions</th>
-  </thead>
-  <tbody class="text-center">
-    
-  </tbody>
-</table>
-</tr>
-</thead>
-</table>
+      <div id="pages">
+        <div id="page-">
+          <table id="homePageAssetList" class="table table-sm">
+          <thead>
+            <tr>
+              <th class="text-center">Name</th>
+              <th class="text-center">Type</th>      
+              <th class="text-center">Price</th>
+              <th class="text-center">MarketCap</th>
+              <th class="text-center">Volume</th>
+              <th class="text-center">Block</th>
+              <th class="text-center">Transactions</th>
+          </thead>
+          <tbody class="text-center">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
 </div>
 
 
@@ -299,6 +342,20 @@
 
   </footer>
 
+  <div style="display: none;" author="nemo">
+
+    <div id="menu-li">
+        <li class="{li_class}">
+          <a id="{id}" class="nav-link {class}" href="{href}" onclick="{onclick}" target="{target}">
+            {icon}
+            {title}
+          </a>
+        </li>
+    </div>
+
+  </div>
+
+  <script src="assets/js/nemo_foot.js" author="nemo"></script>
   <script src="assets/js/jquery-1.8.2.min.js"></script>
   <script src="assets/js/jquery.easing.1.3.js"></script>
   <script src="assets/js/google-code-prettify/prettify.js"></script>
@@ -318,7 +375,6 @@
 
   <!-- Template Custom JavaScript File -->
   <script src="assets/js/custom.js"></script>
-
 </body>
 
 </html>

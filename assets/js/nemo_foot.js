@@ -1,0 +1,77 @@
+
+    function menu_create() {
+      for (var key in menu) {
+          var item_id = menu[key].id.replace('link-','page-');
+
+          cloneAndAppend(id("menu-li"), id("menu"), menu[key]);
+
+          create_page(item_id);
+
+          //cloneAndAppend(id('page-default'), id(item_id));
+      }
+    }
+
+    function menu_deactive() {
+      for (var key in menu){
+        removeClass(id(menu[key].id), 'active');
+        removeClass(id(menu[key].id).parentNode, 'active');
+      }
+    }
+
+    function current_page() {
+      var page = url().replace('#','');
+      if(!id('link-'+page))
+        page = '';
+      return page;
+    }
+
+    function create_page(el_id) {
+      id("pages").appendChild(div({
+        id: el_id,
+        class: 'row',
+        style: 'display: none;'
+      }));
+    }
+
+    function page_hide() {
+      hideChilds(id("pages"));
+    }
+
+    function page_title(title) {
+      replaceText(id("page-title"), title);
+    }
+
+    function show_page(el) {
+      if(!el) return
+
+      menu_deactive();
+
+      el.className += ' active';
+      el.parentNode.className += ' active';
+
+      page_title(text(el,true));
+
+      page_hide();
+
+      show(id(el.id.replace('link-','page-')));
+
+      if(typeof update_page!=="undefined")
+        update_page(el.hash);
+    }
+
+    function update_page(hash=undefined) {
+
+    }
+
+    menu_create();
+
+    PAGE = current_page();
+    PAGE_LINK = 'link-'+PAGE;
+
+    show_page(id('link-'+PAGE));
+
+    update_page();
+
+    for (var key in menu) {
+        update_page(menu[key].href);
+    }
