@@ -18,6 +18,16 @@
       }
     }
 
+    function pages_create() {
+      for (var key in pages) {
+          var item_id = pages[key].id.replace('link-','page-');
+
+          cloneAndAppend(id("pages-li"), id("hide"), pages[key]);
+
+          create_page(item_id);
+      }
+    }
+
     function current_page() {
       var page = url().replace('#','');
       if(!id('link-'+page))
@@ -78,6 +88,8 @@
     }
 
     menu_create();
+
+    pages_create();
 
     PAGE = current_page();
     PAGE_LINK = 'link-'+PAGE;
