@@ -30,8 +30,11 @@ var homePageAssetList = {
 
                 if (value['assetType'] == 'token')
                     styleAssetType = 'badge badge-danger';
-      
-            json[key]['assetName'] = img + ' ' +value['assetName'] + ' (' + ticker + ')';
+
+            var coin_name = value['assetName'] + ' (' + ticker + ')';
+            var coin_link = '<a href="?coin='+value['assetTicker']+'#coin" class="link-coin">'+coin_name+'</a>';
+
+            json[key]['assetName'] = img + ' ' +coin_link;
             json[key]['assetType'] = '<span class="' + styleAssetType + '">' + value['assetType'] + '</span>';
             json[key]['current_price'] = '$' + value['current_price'];
             json[key]['market_cap'] = '$' + parseFloat(value['market_cap']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
