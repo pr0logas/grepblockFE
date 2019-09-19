@@ -6,15 +6,15 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 582186 
+ "block" : 715537 
 ,
- "current_price" : 91.21 
+ "current_price" : 92.26 
 ,
- "market_cap" : 825014662 
+ "market_cap" : 833982569 
 ,
- "total_volume" : 351868099 
+ "total_volume" : 400338670 
 ,
- "nTx" : "3"
+ "nTx" : "6"
  },
 {
 "assetName" : "Polis" 
@@ -23,15 +23,15 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 437182 
+ "block" : 438450 
 ,
- "current_price" : 0.607747 
+ "current_price" : 0.569416 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 3482.94 
+ "total_volume" : 2970.64 
 ,
- "nTx" : "2"
+ "nTx" : "3"
  },
 {
 "assetName" : "Adeptio" 
@@ -40,15 +40,15 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 645198 
+ "block" : 647862 
 ,
- "current_price" : 0.00030631 
+ "current_price" : 0.00029633 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 6.25 
+ "total_volume" : 25.17 
 ,
- "nTx" : "3"
+ "nTx" : "2"
  },
 {
 "assetName" : "Pivx" 
@@ -57,13 +57,13 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 815168 
+ "block" : 912338 
 ,
- "current_price" : 0.270684 
+ "current_price" : 0.264008 
 ,
- "market_cap" : 16535417 
+ "market_cap" : 16147469 
 ,
- "total_volume" : 5147788 
+ "total_volume" : 6202545 
 ,
  "nTx" : "2"
  },
@@ -74,15 +74,15 @@
 ,
  "assetTicker" : "ONT" 
 ,
- "block" : 356396 
+ "block" : 414501 
 ,
- "current_price" : 0.757053 
+ "current_price" : 0.785153 
 ,
- "market_cap" : 492308012 
+ "market_cap" : 512626282 
 ,
- "total_volume" : 70835696 
+ "total_volume" : 112776844 
 ,
- "nTx" : "34"
+ "nTx" : "25"
  },
 {
 "assetName" : "Bitcoin" 
@@ -91,13 +91,13 @@
 ,
  "assetTicker" : "BTC" 
 ,
- "block" : 82641 
+ "block" : 88402 
 ,
- "current_price" : 10306.17 
+ "current_price" : 9877.07 
 ,
- "market_cap" : "184816220179" 
+ "market_cap" : "177311139410" 
 ,
- "total_volume" : "16179335048" 
+ "total_volume" : "21620682096" 
 ,
  "nTx" : "1"
  },
@@ -108,15 +108,15 @@
 ,
  "assetTicker" : "GIN" 
 ,
- "block" : 242322 
+ "block" : 390947 
 ,
- "current_price" : 0.01654186 
+ "current_price" : 0.0135754 
 ,
- "market_cap" : 117082 
+ "market_cap" : 96259 
 ,
- "total_volume" : 12367.89 
+ "total_volume" : 5686.02 
 ,
- "nTx" : "4"
+ "nTx" : "1"
  },
 {
 "assetName" : "Snowgem" 
@@ -125,14 +125,48 @@
 ,
  "assetTicker" : "XSG" 
 ,
- "block" : 30886 
+ "block" : 319235 
 ,
- "current_price" : 0.02591222 
+ "current_price" : 0.0269701 
 ,
- "market_cap" : 466823 
+ "market_cap" : 487309 
 ,
- "total_volume" : 98773 
+ "total_volume" : 160603 
 ,
- "nTx" : "3"
+ "nTx" : "4"
+ },
+{
+"assetName" : "Zcoin" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "XZC" 
+,
+ "block" : 198750 
+,
+ "current_price" : 5.32 
+,
+ "market_cap" : 44660926 
+,
+ "total_volume" : 11218877 
+,
+ "nTx" : "2"
+ },
+{
+"assetName" : "Syscoin" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "SYS" 
+,
+ "block" : 161060 
+,
+ "current_price" : 0.02642553 
+,
+ "market_cap" : 14912072 
+,
+ "total_volume" : 2178061 
+,
+ "nTx" : "1"
 }
 ]
