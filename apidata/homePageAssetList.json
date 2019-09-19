@@ -6,7 +6,7 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 759587 
+ "block" : 760685 
 ,
  "current_price" : 96.93 
 ,
@@ -14,7 +14,7 @@
 ,
  "total_volume" : 419501659 
 ,
- "nTx" : "2"
+ "nTx" : "4"
  },
 {
 "assetName" : "Polis" 
@@ -23,7 +23,7 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 438527 
+ "block" : 438529 
 ,
  "current_price" : 0.569957 
 ,
@@ -40,7 +40,7 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 648019 
+ "block" : 648022 
 ,
  "current_price" : 0.00029633 
 ,
@@ -57,7 +57,7 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 947824 
+ "block" : 948687 
 ,
  "current_price" : 0.265657 
 ,
@@ -65,7 +65,7 @@
 ,
  "total_volume" : 6279039 
 ,
- "nTx" : "3"
+ "nTx" : "7"
  },
 {
 "assetName" : "Ontology" 
@@ -74,7 +74,7 @@
 ,
  "assetTicker" : "ONT" 
 ,
- "block" : 436805 
+ "block" : 437384 
 ,
  "current_price" : 0.79998 
 ,
@@ -91,7 +91,7 @@
 ,
  "assetTicker" : "BTC" 
 ,
- "block" : 89062 
+ "block" : 89075 
 ,
  "current_price" : 9875.95 
 ,
@@ -99,7 +99,7 @@
 ,
  "total_volume" : "21411114125" 
 ,
- "nTx" : "1"
+ "nTx" : "2"
  },
 {
 "assetName" : "Gincoin" 
@@ -108,15 +108,15 @@
 ,
  "assetTicker" : "GIN" 
 ,
- "block" : 391025 
+ "block" : 391027 
 ,
- "current_price" : 0.01546591 
+ "current_price" : 0.01536787 
 ,
- "market_cap" : 107942 
+ "market_cap" : 108981 
 ,
- "total_volume" : 6519.71 
+ "total_volume" : 6492.13 
 ,
- "nTx" : "1"
+ "nTx" : "2"
  },
 {
 "assetName" : "Snowgem" 
@@ -125,7 +125,7 @@
 ,
  "assetTicker" : "XSG" 
 ,
- "block" : 369057 
+ "block" : 370281 
 ,
  "current_price" : 0.02647736 
 ,
@@ -133,7 +133,7 @@
 ,
  "total_volume" : 161687 
 ,
- "nTx" : "1"
+ "nTx" : "2"
  },
 {
 "assetName" : "Zcoin" 
@@ -142,7 +142,7 @@
 ,
  "assetTicker" : "XZC" 
 ,
- "block" : 198776 
+ "block" : 198777 
 ,
  "current_price" : 5.27 
 ,
@@ -150,7 +150,7 @@
 ,
  "total_volume" : 11355950 
 ,
- "nTx" : "3"
+ "nTx" : "2"
  },
 {
 "assetName" : "Syscoin" 
@@ -159,13 +159,13 @@
 ,
  "assetTicker" : "SYS" 
 ,
- "block" : 161220 
+ "block" : 161228 
 ,
- "current_price" : 0.02677363 
+ "current_price" : 0.02652918 
 ,
- "market_cap" : 15085905 
+ "market_cap" : 15079003 
 ,
- "total_volume" : 2132944 
+ "total_volume" : 2108831 
 ,
  "nTx" : "1"
 }
