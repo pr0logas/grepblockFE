@@ -6,7 +6,7 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 715537 
+ "block" : 717153 
 ,
  "current_price" : 92.26 
 ,
@@ -14,7 +14,7 @@
 ,
  "total_volume" : 400338670 
 ,
- "nTx" : "6"
+ "nTx" : "8"
  },
 {
 "assetName" : "Polis" 
@@ -23,7 +23,7 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 438450 
+ "block" : 438451 
 ,
  "current_price" : 0.569416 
 ,
@@ -31,7 +31,7 @@
 ,
  "total_volume" : 2970.64 
 ,
- "nTx" : "3"
+ "nTx" : "5"
  },
 {
 "assetName" : "Adeptio" 
@@ -40,7 +40,7 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 647862 
+ "block" : 647867 
 ,
  "current_price" : 0.00029633 
 ,
@@ -57,7 +57,7 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 912338 
+ "block" : 913690 
 ,
  "current_price" : 0.264008 
 ,
@@ -65,7 +65,7 @@
 ,
  "total_volume" : 6202545 
 ,
- "nTx" : "2"
+ "nTx" : "3"
  },
 {
 "assetName" : "Ontology" 
@@ -74,15 +74,15 @@
 ,
  "assetTicker" : "ONT" 
 ,
- "block" : 414501 
+ "block" : 415247 
 ,
- "current_price" : 0.785153 
+ "current_price" : 0.78219 
 ,
- "market_cap" : 512626282 
+ "market_cap" : 509235007 
 ,
- "total_volume" : 112776844 
+ "total_volume" : 112716991 
 ,
- "nTx" : "25"
+ "nTx" : "34"
  },
 {
 "assetName" : "Bitcoin" 
@@ -91,15 +91,15 @@
 ,
  "assetTicker" : "BTC" 
 ,
- "block" : 88402 
+ "block" : 88413 
 ,
- "current_price" : 9877.07 
+ "current_price" : 9859.75 
 ,
- "market_cap" : "177311139410" 
+ "market_cap" : "177026844851" 
 ,
- "total_volume" : "21620682096" 
+ "total_volume" : "22417438849" 
 ,
- "nTx" : "1"
+ "nTx" : "3"
  },
 {
 "assetName" : "Gincoin" 
@@ -125,15 +125,15 @@
 ,
  "assetTicker" : "XSG" 
 ,
- "block" : 319235 
+ "block" : 321119 
 ,
- "current_price" : 0.0269701 
+ "current_price" : 0.02691439 
 ,
- "market_cap" : 487309 
+ "market_cap" : 486309 
 ,
- "total_volume" : 160603 
+ "total_volume" : 160333 
 ,
- "nTx" : "4"
+ "nTx" : "3"
  },
 {
 "assetName" : "Zcoin" 
@@ -142,15 +142,15 @@
 ,
  "assetTicker" : "XZC" 
 ,
- "block" : 198750 
+ "block" : 198751 
 ,
- "current_price" : 5.32 
+ "current_price" : 5.29 
 ,
- "market_cap" : 44660926 
+ "market_cap" : 44470472 
 ,
- "total_volume" : 11218877 
+ "total_volume" : 11111732 
 ,
- "nTx" : "2"
+ "nTx" : "9"
  },
 {
 "assetName" : "Syscoin" 
@@ -159,7 +159,7 @@
 ,
  "assetTicker" : "SYS" 
 ,
- "block" : 161060 
+ "block" : 161064 
 ,
  "current_price" : 0.02642553 
 ,
@@ -167,6 +167,6 @@
 ,
  "total_volume" : 2178061 
 ,
- "nTx" : "1"
+ "nTx" : "2"
 }
 ]
