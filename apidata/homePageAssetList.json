@@ -6,15 +6,15 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 717153 
+ "block" : 759587 
 ,
- "current_price" : 92.26 
+ "current_price" : 96.93 
 ,
- "market_cap" : 833982569 
+ "market_cap" : 876633181 
 ,
- "total_volume" : 400338670 
+ "total_volume" : 419501659 
 ,
- "nTx" : "8"
+ "nTx" : "2"
  },
 {
 "assetName" : "Polis" 
@@ -23,15 +23,15 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 438451 
+ "block" : 438527 
 ,
- "current_price" : 0.569416 
+ "current_price" : 0.569957 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 2970.64 
+ "total_volume" : 3136.04 
 ,
- "nTx" : "5"
+ "nTx" : "2"
  },
 {
 "assetName" : "Adeptio" 
@@ -40,7 +40,7 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 647867 
+ "block" : 648019 
 ,
  "current_price" : 0.00029633 
 ,
@@ -57,13 +57,13 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 913690 
+ "block" : 947824 
 ,
- "current_price" : 0.264008 
+ "current_price" : 0.265657 
 ,
- "market_cap" : 16147469 
+ "market_cap" : 16232090 
 ,
- "total_volume" : 6202545 
+ "total_volume" : 6279039 
 ,
  "nTx" : "3"
  },
@@ -74,15 +74,15 @@
 ,
  "assetTicker" : "ONT" 
 ,
- "block" : 415247 
+ "block" : 436805 
 ,
- "current_price" : 0.78219 
+ "current_price" : 0.79998 
 ,
- "market_cap" : 509235007 
+ "market_cap" : 520352741 
 ,
- "total_volume" : 112716991 
+ "total_volume" : 115131461 
 ,
- "nTx" : "34"
+ "nTx" : "-1"
  },
 {
 "assetName" : "Bitcoin" 
@@ -91,15 +91,15 @@
 ,
  "assetTicker" : "BTC" 
 ,
- "block" : 88413 
+ "block" : 89062 
 ,
- "current_price" : 9859.75 
+ "current_price" : 9875.95 
 ,
- "market_cap" : "177026844851" 
+ "market_cap" : "177314020774" 
 ,
- "total_volume" : "22417438849" 
+ "total_volume" : "21411114125" 
 ,
- "nTx" : "3"
+ "nTx" : "1"
  },
 {
 "assetName" : "Gincoin" 
@@ -108,13 +108,13 @@
 ,
  "assetTicker" : "GIN" 
 ,
- "block" : 390947 
+ "block" : 391025 
 ,
- "current_price" : 0.0135754 
+ "current_price" : 0.01546591 
 ,
- "market_cap" : 96259 
+ "market_cap" : 107942 
 ,
- "total_volume" : 5686.02 
+ "total_volume" : 6519.71 
 ,
  "nTx" : "1"
  },
@@ -125,15 +125,15 @@
 ,
  "assetTicker" : "XSG" 
 ,
- "block" : 321119 
+ "block" : 369057 
 ,
- "current_price" : 0.02691439 
+ "current_price" : 0.02647736 
 ,
- "market_cap" : 486309 
+ "market_cap" : 478495 
 ,
- "total_volume" : 160333 
+ "total_volume" : 161687 
 ,
- "nTx" : "3"
+ "nTx" : "1"
  },
 {
 "assetName" : "Zcoin" 
@@ -142,15 +142,15 @@
 ,
  "assetTicker" : "XZC" 
 ,
- "block" : 198751 
+ "block" : 198776 
 ,
- "current_price" : 5.29 
+ "current_price" : 5.27 
 ,
- "market_cap" : 44470472 
+ "market_cap" : 44323352 
 ,
- "total_volume" : 11111732 
+ "total_volume" : 11355950 
 ,
- "nTx" : "9"
+ "nTx" : "3"
  },
 {
 "assetName" : "Syscoin" 
@@ -159,14 +159,14 @@
 ,
  "assetTicker" : "SYS" 
 ,
- "block" : 161064 
+ "block" : 161220 
 ,
- "current_price" : 0.02642553 
+ "current_price" : 0.02677363 
 ,
- "market_cap" : 14912072 
+ "market_cap" : 15085905 
 ,
- "total_volume" : 2178061 
+ "total_volume" : 2132944 
 ,
- "nTx" : "2"
+ "nTx" : "1"
 }
 ]
