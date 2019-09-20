@@ -46,6 +46,10 @@ var homePageAssetList = {
             var total_volume_formated = '$' + parseFloat(value['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
             total_volume_formated = total_volume_formated.substring(0, total_volume_formated.length-2);
 
+            // Format *price_change_percentage_24h* value to see in nice shape
+            var price_change_percentage_24h_formated = parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '%';
+	    
+
             json[key]['assetName'] = img + ' ' +coin_link;
             json[key]['assetType'] = '<span class="' + styleAssetType + '">' + value['assetType'] + '</span>';
             json[key]['current_price'] = '$' + value['current_price'];
@@ -54,6 +58,8 @@ var homePageAssetList = {
             json[key]['block'] = blocks_formated;
             json[key]['nTx'] = value['nTx'];
             json[key]['blockchainAge'] = parseFloat(value['blockchainAge'] / 2628002.88).toFixed(1) + ' mos'; // Converted seconds to months
+	    json[key]['price_change_percentage_24h'] = price_change_percentage_24h_formated;
+
             });
             return json;
         },
@@ -71,6 +77,10 @@ var homePageAssetList = {
         },
             {
             data: 'current_price',
+            width: '12%'
+            },
+            {
+            data: 'price_change_percentage_24h',
             width: '12%'
             },
             {

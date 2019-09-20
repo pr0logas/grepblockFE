@@ -6,17 +6,19 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 1101780 
+ "block" : 1107293 
 ,
- "current_price" : 97.55 
+ "current_price" : 97.5 
 ,
- "market_cap" : 882240435 
+ "market_cap" : 881994449 
 ,
- "total_volume" : 460459905 
+ "total_volume" : 451508583 
 ,
- "blockchainAge" : "178872081"
+ "blockchainAge" : "178873581"
 ,
- "nTx" : "28"
+ "price_change_percentage_24h" : 4.16419 
+,
+ "nTx" : "51"
  },
 {
 "assetName" : "Polis" 
@@ -25,15 +27,17 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 439148 
+ "block" : 439164 
 ,
- "current_price" : 0.626553 
+ "current_price" : 0.626581 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 7073.66 
+ "total_volume" : 7044.63 
 ,
- "blockchainAge" : "55112391"
+ "blockchainAge" : "55113891"
+,
+ "price_change_percentage_24h" : 10.29049 
 ,
  "nTx" : "2"
  },
@@ -44,7 +48,7 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 649315 
+ "block" : 649336 
 ,
  "current_price" : 0.00030433 
 ,
@@ -52,7 +56,9 @@
 ,
  "total_volume" : 1.53 
 ,
- "blockchainAge" : "41265660"
+ "blockchainAge" : "41267159"
+,
+ "price_change_percentage_24h" : -22.9075 
 ,
  "nTx" : "2"
  },
@@ -63,17 +69,19 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 1213880 
+ "block" : 1217882 
 ,
- "current_price" : 0.274282 
+ "current_price" : 0.273664 
 ,
- "market_cap" : 16753389 
+ "market_cap" : 16724649 
 ,
- "total_volume" : 5679488 
+ "total_volume" : 5652173 
 ,
- "blockchainAge" : "114848759"
+ "blockchainAge" : "114850258"
 ,
- "nTx" : "7"
+ "price_change_percentage_24h" : 3.80457 
+,
+ "nTx" : "2"
  },
 {
 "assetName" : "Ontology" 
@@ -82,17 +90,19 @@
 ,
  "assetTicker" : "ONT" 
 ,
- "block" : 600293 
+ "block" : 602952 
 ,
- "current_price" : 0.810176 
+ "current_price" : 0.81752 
 ,
- "market_cap" : 528437807 
+ "market_cap" : 532081940 
 ,
- "total_volume" : 109877949 
+ "total_volume" : 119224351 
 ,
- "blockchainAge" : "38587277"
+ "blockchainAge" : "38588776"
 ,
- "nTx" : "25"
+ "price_change_percentage_24h" : 4.02073 
+,
+ "nTx" : "-2"
  },
 {
 "assetName" : "Bitcoin" 
@@ -101,17 +111,19 @@
 ,
  "assetTicker" : "BTC" 
 ,
- "block" : 93514 
+ "block" : 93627 
 ,
- "current_price" : 10164.97 
+ "current_price" : 10145.75 
 ,
- "market_cap" : "182402165663" 
+ "market_cap" : "182085399800" 
 ,
- "total_volume" : "19498789338" 
+ "total_volume" : "20677420762" 
 ,
- "blockchainAge" : "41265663"
+ "blockchainAge" : "41267163"
 ,
- "nTx" : "3"
+ "price_change_percentage_24h" : 2.7854 
+,
+ "nTx" : "14"
  },
 {
 "assetName" : "Gincoin" 
@@ -120,15 +132,17 @@
 ,
  "assetTicker" : "GIN" 
 ,
- "block" : 391636 
+ "block" : 391663 
 ,
- "current_price" : 0.01673375 
+ "current_price" : 0.01692213 
 ,
- "market_cap" : 119924 
+ "market_cap" : 119312 
 ,
- "total_volume" : 6169.99 
+ "total_volume" : 6231 
 ,
- "blockchainAge" : "49589385"
+ "blockchainAge" : "49590885"
+,
+ "price_change_percentage_24h" : 23.70831 
 ,
  "nTx" : "1"
  },
@@ -139,17 +153,19 @@
 ,
  "assetTicker" : "XSG" 
 ,
- "block" : 770055 
+ "block" : 776802 
 ,
- "current_price" : 0.03113396 
+ "current_price" : 0.03044221 
 ,
- "market_cap" : 563444 
+ "market_cap" : 558329 
 ,
- "total_volume" : 187054 
+ "total_volume" : 176312 
 ,
- "blockchainAge" : "54941289"
+ "blockchainAge" : "54942789"
 ,
- "nTx" : "6"
+ "price_change_percentage_24h" : 15.48859 
+,
+ "nTx" : "2"
  },
 {
 "assetName" : "Zcoin" 
@@ -158,17 +174,19 @@
 ,
  "assetTicker" : "XZC" 
 ,
- "block" : 199014 
+ "block" : 199018 
 ,
- "current_price" : 5.36 
+ "current_price" : 5.38 
 ,
- "market_cap" : 45106358 
+ "market_cap" : 45278925 
 ,
- "total_volume" : 11774839 
+ "total_volume" : 11889260 
 ,
- "blockchainAge" : "93954958"
+ "blockchainAge" : "93956459"
 ,
- "nTx" : "1"
+ "price_change_percentage_24h" : 2.00506 
+,
+ "nTx" : "3"
  },
 {
 "assetName" : "Syscoin" 
@@ -177,15 +195,17 @@
 ,
  "assetTicker" : "SYS" 
 ,
- "block" : 162555 
+ "block" : 162574 
 ,
- "current_price" : 0.02694081 
+ "current_price" : 0.02690679 
 ,
- "market_cap" : 15200800 
+ "market_cap" : 15181615 
 ,
- "total_volume" : 1642501 
+ "total_volume" : 1639586 
 ,
- "blockchainAge" : "9298166"
+ "blockchainAge" : "9299667"
+,
+ "price_change_percentage_24h" : 2.83477 
 ,
  "nTx" : "1"
 }
