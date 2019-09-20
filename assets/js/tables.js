@@ -41,6 +41,7 @@ var homePageAssetList = {
             json[key]['total_volume'] = '$' + parseFloat(value['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
             json[key]['block'] = value['block'];
             json[key]['nTx'] = value['nTx'];
+            json[key]['blockchainAge'] = value['blockchainAge'];
             });
             return json;
         },
@@ -66,6 +67,10 @@ var homePageAssetList = {
             },
             {
             data: 'total_volume',
+            width: '12%'
+            },
+            {
+            data: 'blockchainAge',
             width: '12%'
             },
             {
