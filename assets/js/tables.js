@@ -33,15 +33,27 @@ var homePageAssetList = {
 
             var coin_name = value['assetName'] + ' (' + ticker + ')';
             var coin_link = '<a href="?coin='+value['assetTicker']+'#coin" class="link-coin">'+coin_name+'</a>';
+		
+	    // Format *block* value to see in nice shape
+	    var blocks_formated = parseFloat(value['block']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+	    blocks_formated = blocks_formated.substring(0, blocks_formated.length-2);
+
+	    // Format *market_cap* value to see in nice shape
+	    var market_cap_formated = '$' + parseFloat(value['market_cap']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+	    market_cap_formated = market_cap_formated.substring(0, market_cap_formated.length-2);
+		
+	    // Format *total_volume* value to see in nice shape
+            var total_volume_formated = '$' + parseFloat(value['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+            total_volume_formated = total_volume_formated.substring(0, total_volume_formated.length-2);
 
             json[key]['assetName'] = img + ' ' +coin_link;
             json[key]['assetType'] = '<span class="' + styleAssetType + '">' + value['assetType'] + '</span>';
             json[key]['current_price'] = '$' + value['current_price'];
-            json[key]['market_cap'] = '$' + parseFloat(value['market_cap']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-            json[key]['total_volume'] = '$' + parseFloat(value['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-            json[key]['block'] = value['block'];
+            json[key]['market_cap'] = market_cap_formated;
+            json[key]['total_volume'] = total_volume_formated;
+            json[key]['block'] = blocks_formated;
             json[key]['nTx'] = value['nTx'];
-            json[key]['blockchainAge'] = value['blockchainAge'];
+            json[key]['blockchainAge'] = parseFloat(value['blockchainAge'] / 2628002.88).toFixed(1) + ' mos'; // Converted seconds to months
             });
             return json;
         },
