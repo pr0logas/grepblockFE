@@ -1,7 +1,24 @@
     <!-- Info about asset
     ================================================== -->   
 
+    <script type="text/javascript" src="/charts/assets/highcharts.js"></script>
+    <script type="text/javascript" src="/charts/assets/charts-common.js"></script>
+    <script type="text/javascript" src="/charts/assets/charts.js"></script>
+    <script type="text/javascript" src="/charts/assets/exporting.js"></script>
 
+    <div id="guru" class="charts opaque-nav" data-explorer="https://www.blockchain.com" data-endpoint="https://api.blockchain.info/" data-lang="en" style="padding-bottom: 0px">
+
+      <div class="container" style="text-align:center;margin: 20px 0px 0px;padding:0px;max-width:none;">
+          <div data-unit="Difficulty" data-period="day" style="width:100%;position:relative;" id="graph_container"></div>
+          <div class="row" id="charterror" style="display:none;">
+              <div class="span4 offset4 alert alert-error text-center" style="margin:0 auto;float:none;">Error loading chart data</div>
+          </div>
+          <div class="row" id="chartloading">
+              <div class="span4 offset4" style="margin:0 auto;float:none;"><img src="/charts/assets/loading-large.gif?1568825864 <view-source:https://www.blockchain.com/charts/assets/loading-large.gif?1568825864>" alt="Loading..." height=50 width=50/></div>
+          </div>
+      </div>
+
+    </div>
 
     <!-- Docs nav
     ================================================== -->
