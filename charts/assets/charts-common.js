@@ -267,11 +267,11 @@ function addEventListeners() {
 }
 
 function resizeChart() {
-  var w = $(window).width();
+  var w = 570;
   var h = $(window).height() - $('.navbar').innerHeight() - $('.footer').innerHeight() - $('#chart_header').innerHeight() - 100;
   if (h < 550) h = 550;
 
-  chart.setSize(w, h, false);
+  chart.setSize(w, 350, false);
 }
 
 function refreshChart() {
