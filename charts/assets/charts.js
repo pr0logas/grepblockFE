@@ -44,5 +44,9 @@ $(document).ready(function() {
         }
     }
 
-    ajaxCall(computeURL(host, chartName, jsjson, 'json'), setData);
+    //var new_url = computeURL(host, chartName, jsjson, 'json');
+
+    var new_url = 'https://api.blockchain.info/charts/difficulty?cors=true&format=json&lang=en';
+
+    ajaxCall(new_url, setData);
 });
