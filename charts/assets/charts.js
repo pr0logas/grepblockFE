@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var host = $(document.body).data('endpoint') + 'charts/';
+    var host = $("#guru").data('endpoint') + 'charts/';
     var chartName = 'difficulty'//window.location.pathname.split('/').pop();
 
     addEventListeners();
