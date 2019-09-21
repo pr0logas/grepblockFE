@@ -46,7 +46,7 @@ $(document).ready(function() {
 
     //var new_url = computeURL(host, chartName, jsjson, 'json');
 
-    var new_url = 'https://api.blockchain.info/charts/difficulty?cors=true&format=json&lang=en';
+    var new_url = 'https://grepblock.com/apidata/difficulty.json';
 
     ajaxCall(new_url, setData);
 });
