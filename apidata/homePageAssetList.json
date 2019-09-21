@@ -6,19 +6,19 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 1141339 
+ "block" : 1141345 
 ,
- "current_price" : 93.91 
+ "current_price" : 93.95 
 ,
- "market_cap" : 850266986 
+ "market_cap" : 850124663 
 ,
- "total_volume" : 251468126 
+ "total_volume" : 268583353 
 ,
- "blockchainAge" : "178972041"
+ "blockchainAge" : "178973001"
 ,
- "price_change_percentage_24h" : -3.42956 
+ "price_change_percentage_24h" : -3.36983 
 ,
- "nTx" : "1"
+ "nTx" : "6"
  },
 {
 "assetName" : "Polis" 
@@ -27,7 +27,7 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 439935 
+ "block" : 439946 
 ,
  "current_price" : 0.624421 
 ,
@@ -35,7 +35,7 @@
 ,
  "total_volume" : 17295.66 
 ,
- "blockchainAge" : "55212351"
+ "blockchainAge" : "55213311"
 ,
  "price_change_percentage_24h" : -0.30505 
 ,
@@ -48,7 +48,7 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 89608 
+ "block" : 94736 
 ,
  "current_price" : 0.00050802 
 ,
@@ -56,7 +56,7 @@
 ,
  "total_volume" : 0.01522541 
 ,
- "blockchainAge" : "41365619"
+ "blockchainAge" : "41366579"
 ,
  "price_change_percentage_24h" : 68.67057 
 ,
@@ -69,19 +69,19 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 1515912 
+ "block" : 1519643 
 ,
- "current_price" : 0.26721 
+ "current_price" : 0.267041 
 ,
- "market_cap" : 16326063 
+ "market_cap" : 16324023 
 ,
- "total_volume" : 5360673 
+ "total_volume" : 5354418 
 ,
- "blockchainAge" : "114948719"
+ "blockchainAge" : "114949678"
 ,
- "price_change_percentage_24h" : -2.68985 
+ "price_change_percentage_24h" : -2.75551 
 ,
- "nTx" : "2"
+ "nTx" : "3"
  },
 {
 "assetName" : "Ontology" 
@@ -90,19 +90,19 @@
 ,
  "assetTicker" : "ONT" 
 ,
- "block" : 797893 
+ "block" : 800994 
 ,
- "current_price" : 0.814473 
+ "current_price" : 0.811968 
 ,
- "market_cap" : 530996793 
+ "market_cap" : 529225109 
 ,
- "total_volume" : 113463718 
+ "total_volume" : 112163511 
 ,
- "blockchainAge" : "38687237"
+ "blockchainAge" : "38688196"
 ,
- "price_change_percentage_24h" : -0.26811 
+ "price_change_percentage_24h" : -0.35647 
 ,
- "nTx" : "1"
+ "nTx" : "0"
  },
 {
 "assetName" : "Bitcoin" 
@@ -119,7 +119,7 @@
 ,
  "total_volume" : "17277303436" 
 ,
- "blockchainAge" : "337606063"
+ "blockchainAge" : "337607023"
 ,
  "price_change_percentage_24h" : -1.95326 
 ,
@@ -132,19 +132,19 @@
 ,
  "assetTicker" : "GIN" 
 ,
- "block" : 392445 
+ "block" : 392448 
 ,
- "current_price" : 0.01722466 
+ "current_price" : 0.0172364 
 ,
- "market_cap" : 122488 
+ "market_cap" : 122605 
 ,
- "total_volume" : 3936.04 
+ "total_volume" : 3871.4 
 ,
- "blockchainAge" : "49689345"
+ "blockchainAge" : "49690305"
 ,
- "price_change_percentage_24h" : 1.16202 
+ "price_change_percentage_24h" : 2.71386 
 ,
- "nTx" : "2"
+ "nTx" : "3"
  },
 {
 "assetName" : "Snowgem" 
@@ -153,19 +153,19 @@
 ,
  "assetTicker" : "XSG" 
 ,
- "block" : 910549 
+ "block" : 910568 
 ,
- "current_price" : 0.03425552 
+ "current_price" : 0.03485943 
 ,
- "market_cap" : 621070 
+ "market_cap" : 632038 
 ,
- "total_volume" : 96700 
+ "total_volume" : 99287 
 ,
- "blockchainAge" : "55041249"
+ "blockchainAge" : "55042209"
 ,
- "price_change_percentage_24h" : 10.73151 
+ "price_change_percentage_24h" : 13.33294 
 ,
- "nTx" : "2"
+ "nTx" : "1"
  },
 {
 "assetName" : "Zcoin" 
@@ -174,19 +174,19 @@
 ,
  "assetTicker" : "XZC" 
 ,
- "block" : 199332 
+ "block" : 199333 
 ,
- "current_price" : 5.7 
+ "current_price" : 5.72 
 ,
- "market_cap" : 48108752 
+ "market_cap" : 48093081 
 ,
- "total_volume" : 22097883 
+ "total_volume" : 22222547 
 ,
- "blockchainAge" : "94054918"
+ "blockchainAge" : "94055878"
 ,
- "price_change_percentage_24h" : 6.81839 
+ "price_change_percentage_24h" : 7.27408 
 ,
- "nTx" : "5"
+ "nTx" : "10"
  },
 {
 "assetName" : "Syscoin" 
@@ -195,17 +195,17 @@
 ,
  "assetTicker" : "SYS" 
 ,
- "block" : 164178 
+ "block" : 164193 
 ,
- "current_price" : 0.02633138 
+ "current_price" : 0.02628017 
 ,
- "market_cap" : 14858416 
+ "market_cap" : 14829528 
 ,
- "total_volume" : 5745701 
+ "total_volume" : 5747948 
 ,
- "blockchainAge" : "9398126"
+ "blockchainAge" : "9399086"
 ,
- "price_change_percentage_24h" : -1.60836 
+ "price_change_percentage_24h" : -2.6143 
 ,
  "nTx" : "1"
 }
