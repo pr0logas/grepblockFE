@@ -1,0 +1,45 @@
+[
+{
+ "assetName" : "Adeptio" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "ADE" 
+,
+ "mineable" : "yes" 
+,
+ "sourceCode" : "https://github.com/adeptio-project/adeptio/" 
+,
+ "blockTime" : "60" 
+,
+ "maxSupply" : "infinite" 
+,
+ "blockSize" : "1" 
+,
+ "walletPrefix" : "A" 
+,
+ "explorer" : "https://explorer.adeptio.cc" 
+,
+ "explorer2" : "https://chainz.cryptoid.info/ade/" 
+,
+ "explorer3" : "https://blocks.adeptio.cc" 
+,
+ "website" : "https://adeptio.cc" 
+,
+ "rpcPort" : "9078" 
+,
+ "networkPort" : "9075" 
+,
+ "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=4368475.0" 
+,
+ "telegram" : "https://t.me/adeptiocoin" 
+,
+ "reddit" : "https://www.reddit.com/r/Adeptio/" 
+,
+ "twitter" : "https://twitter.com/adeptioproject" 
+,
+ "chat" : "https://discordapp.com/invite/RBXjTBa" 
+,
+ "about" : "Adeptio is a fair cryptocurrency and enables instant payments to anyone, anywhere in the world. Coin uses peer-to-peer technology to operate with no central authority. Adeptio Core combines the best features of different coins in order to create an excellent digital payment asset. Also project preparing to connect P2P file manipulation, streaming product with ADE blockchain and call it storADE." 
+}
+]
