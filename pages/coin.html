@@ -376,11 +376,13 @@
 
   var coin = getUrlParamByName('coin');
 
+  var url = "/apidata/"+coin;
+
   replaceText(id('coin-title'), coin);
 
   $.ajax(
   {
-    url: "/apidata/"+coin+"/assetInfo.json", 
+    url: url+"/assetInfo.json", 
 
     success: function(json)
     {
@@ -398,7 +400,7 @@
 
       addEventListeners();
 
-      var difficulty_url = '/apidata/difficulty.json';
+      var difficulty_url = url+'/difficulty.json';
 
       ajaxCall(difficulty_url, setData);
   });
