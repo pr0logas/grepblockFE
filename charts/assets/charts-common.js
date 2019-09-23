@@ -205,7 +205,7 @@ function computeURL(host, chartName, jsjson, format, noCors) {
     }
 
     var url = host + encodeURIComponent(chartName);
-    var lang = $("#guru").data('lang');
+    var lang = 'en';
 
     if (!noCors) {
         url += '?cors=true';
