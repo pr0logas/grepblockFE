@@ -8,14 +8,14 @@
           <div class="bs-docs-sidenav affix">
           <aside>
             <div class="widget">
-              <img src="assets/coins-logo/Adeptio.png" class="alignleft" alt="" />
+              <img id="coin-logo" src="" class="alignleft" alt="" />
               <h5 id="coin-title"></h5>
             </div>
               <ul>
-                <li><a href="#">Website</a></li>
+                <li><a id="link-website" href="#" target="_blank">Website</a></li>
                 <li><a href="#">Explorer ( 1 2 3 )</a></li>
-                <li><a href="#">Announcement</a></li>
-                <li><a href="#">Source Code</a></li>
+                <li><a id="link-announcement" href="#" target="_blank">Announcement</a></li>
+                <li><a id="link-sourceCode" href="#" target="_blank">Source Code</a></li>
                 <li><a href="#">Chat ( 1 2 3 )</a></li>
                 <li><a href="#">Whitepaper</a></li>
               </ul>
@@ -393,6 +393,9 @@
 
       replaceText(id('coin-title'), title);
       replaceText(id('page-description'), json['about']);
+      $("#link-website").attr("href", json['website']);
+      $("#link-announcement").attr("href", json['bitcointalkThread']);
+      $("#link-sourceCode").attr("href", json['sourceCode']);
     }
   });
 
