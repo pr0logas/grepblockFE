@@ -286,7 +286,7 @@ function refreshChart() {
                 jThis.off('click');
                 jThis.click(function() {
                     chart.setTitle({text: $("#chart_title").text()});
-                    chart.setTitle(null, {text: "source: blockchain.info"});
+                    chart.setTitle(null, {text: "source: grepblock.com"});
 
                     chart.exportChartLocal({
                         type: type,
