@@ -34,20 +34,26 @@ var homePageAssetList = {
             var coin_name = value['assetName'] + ' (' + ticker + ')';
             var coin_link = '<a href="?coin='+value['assetTicker']+'#coin" class="link-coin">'+coin_name+'</a>';
 		
-	    // Format *block* value to see in nice shape
-	    var blocks_formated = parseFloat(value['block']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-	    blocks_formated = blocks_formated.substring(0, blocks_formated.length-2);
+    	    // Format *block* value to see in nice shape
+    	    var blocks_formated = parseFloat(value['block']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    	    blocks_formated = blocks_formated.substring(0, blocks_formated.length-2);
 
-	    // Format *market_cap* value to see in nice shape
-	    var market_cap_formated = '$' + parseFloat(value['market_cap']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-	    market_cap_formated = market_cap_formated.substring(0, market_cap_formated.length-2);
-		
-	    // Format *total_volume* value to see in nice shape
+    	    // Format *market_cap* value to see in nice shape
+    	    var market_cap_formated = '$' + parseFloat(value['market_cap']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    	    market_cap_formated = market_cap_formated.substring(0, market_cap_formated.length-2);
+    		
+    	    // Format *total_volume* value to see in nice shape
             var total_volume_formated = '$' + parseFloat(value['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
             total_volume_formated = total_volume_formated.substring(0, total_volume_formated.length-2);
 
-            // Format *price_change_percentage_24h* value to see in nice shape
-            var price_change_percentage_24h_formated = parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '%';
+            // Format *price_change_percentage_24h* value to see in nice shape.
+            var stylePrice_change_percentage_24h = ''
+                if (value['price_change_percentage_24h'] < 0)
+                    stylePrice_change_percentage_24h = 'alert alert-error';
+                else
+                    stylePrice_change_percentage_24h = 'alert alert-success';
+
+            var price_change_percentage_24h_formated = '<span class="' + stylePrice_change_percentage_24h + '">' + parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '%' + '</span>';
 	    
 
             json[key]['assetName'] = img + ' ' +coin_link;
@@ -58,7 +64,7 @@ var homePageAssetList = {
             json[key]['block'] = blocks_formated;
             json[key]['nTx'] = value['nTx'];
             json[key]['blockchainAge'] = parseFloat(value['blockchainAge'] / 2628002.88).toFixed(1) + ' mos'; // Converted seconds to months
-	    json[key]['price_change_percentage_24h'] = price_change_percentage_24h_formated;
+	        json[key]['price_change_percentage_24h'] = price_change_percentage_24h_formated;
 
             });
             return json;
