@@ -169,7 +169,7 @@ function ajaxCall(url, success, error) {
         error: errCb,
         statusCode: {
             404: function() {
-               // document.location = 'https://blockchain.info/404';
+                alert('Error 404');
             }
         }
     });
