@@ -56,6 +56,15 @@
           location.hash = url;
         return location.hash;
     }
+    function getUrlParamByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
     function trim(str) {
       var str = str.replace(/^\s\s*/, ''),
         ws = /\s/,
@@ -175,13 +184,4 @@
       removeChilds(el);
       var text = document.createTextNode(text);
       el.appendChild(text);
-    }
-    function getUrlParamByName(name, url) {
-      if (!url) url = window.location.href;
-      name = name.replace(/[\[\]]/g, '\\$&');
-      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-          results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
