@@ -254,7 +254,7 @@
 <script type="text/javascript">
   function highlightTimespan(timespan,id) {
     if (!timespan) {
-      if ($('#'+id).data('period') == 'minute') timespan = '60days';
+      if ($('#graph_'+id).data('period') == 'minute') timespan = '60days';
       else timespan = '1year'
     }
     
@@ -278,7 +278,7 @@
               ]);
           }
 
-          if ($('#'+id).data('period') == 'minute') {
+          if ($('#graph_'+id).data('period') == 'minute') {
               $('#periodminute').show();
           } else {
               $('#periodnormal').show();
@@ -335,10 +335,10 @@
 
       var difficulty_url = url_json+'/difficulty.json';
 
-      ajaxCall(difficulty_url, setData, undefined, 'graph_difficulty');
+      ajaxCall(difficulty_url, setData, undefined, 'difficulty');
 
       var transaction_url = url_json+'/assetTransactions.json';
 
-      ajaxCall(transaction_url, setData, undefined, 'graph_transaction');
+      ajaxCall(transaction_url, setData, undefined, 'transaction');
   });
 </script>
