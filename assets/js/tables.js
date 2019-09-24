@@ -32,7 +32,7 @@ var homePageAssetList = {
                     styleAssetType = 'badge badge-danger';
 
             var coin_name = value['assetName'] + ' (' + ticker + ')';
-            var coin_link = '<a href="?coin='+value['assetTicker']+'#coin" class="link-coin">'+coin_name+'</a>';
+            var coin_link = '<a href="?page=coin&coin='+value['assetTicker']+'" class="link-coin">'+coin_name+'</a>';
 		
     	    // Format *block* value to see in nice shape
     	    var blocks_formated = parseFloat(value['block']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
