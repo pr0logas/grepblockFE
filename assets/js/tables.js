@@ -132,5 +132,6 @@ $('body').on( "update_page", function() {
             create_table.ajax.reload(null, false); // user paging is not reset on reload
         }, 29000);
 
+        //create_table.column(1).search('platform').draw();
     }
 });
