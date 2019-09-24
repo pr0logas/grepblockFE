@@ -267,6 +267,7 @@
       try {
           var logScale = parseInt(qs('scale'));
           for (var i = 0; i < raw['values'].length; i++) {
+              raw['values'][i]['y'] = parseFloat(raw['values'][i]['y']);
               if (logScale == 1 && raw['values'][i]['y'] < 0.00001) {
                   raw['values'][i]['y'] = 0.00001;
               }
