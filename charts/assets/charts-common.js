@@ -206,7 +206,7 @@ function resizeChart() {
 }
 
 function refreshChart(id) {
-    jsjson['chart']['renderTo'] = id;
+    jsjson['chart']['renderTo'] = 'graph_'+id;
 
     chart = new Highcharts.Chart(jsjson);
 
@@ -239,11 +239,11 @@ function refreshChart(id) {
 
 function setup(data,id) {
     try {
-        var container = $('#'+id);
+        var container = $('#graph_'+id);
         var name = container.data('name');
         var unit = container.data('unit');
 
-        jsjson['chart']['renderTo'] = id;
+        jsjson['chart']['renderTo'] = 'graph_'+id;
 
         jsjson['series'][0]['data'] = data;
         jsjson['yAxis']['title']['text'] = unit;
