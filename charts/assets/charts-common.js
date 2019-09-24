@@ -207,6 +207,7 @@ function resizeChart() {
 
 function refreshChart(id) {
     jsjson['chart']['renderTo'] = id;
+
     chart = new Highcharts.Chart(jsjson);
 
     $(".chart-export").each(function() {
