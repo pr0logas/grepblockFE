@@ -41,5 +41,11 @@
  "chat" : "https://discordapp.com/invite/RBXjTBa" 
 ,
  "about" : "Adeptio is a fair cryptocurrency and enables instant payments to anyone, anywhere in the world. Coin uses peer-to-peer technology to operate with no central authority. Adeptio Core combines the best features of different coins in order to create an excellent digital payment asset. Also project preparing to connect P2P file manipulation, streaming product with ADE blockchain and call it storADE." 
+,
+ "algorithm" : "Hybrid" 
+,
+ "developerFee" : "yes" 
+,
+ "firstBlock" : "1527710105" 
 }
 ]
