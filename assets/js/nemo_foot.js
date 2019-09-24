@@ -29,7 +29,9 @@
     }
 
     function current_page() {
-      var page = url().replace('#','');
+      //var page = hash===undefined ? url().replace('#','') : hash.replace('#','');
+      //var page = url().replace('#','');
+      var page = getUrlParamByName('page');
       if(!id('link-'+page))
         page = '';
       return page;
@@ -54,6 +56,8 @@
     function show_page(el) {
       if(!el) return
 
+      window.history.pushState('page2', 'Title', '/index.html?page='+el.id.replace('link-','')+'&coin='+getUrlParamByName('coin')+'#'+url());
+
       menu_deactive();
 
       el.className += ' active';
@@ -71,14 +75,14 @@
 
     function update_page(hash=undefined) {
 
-      var PAGE = hash===undefined ? url().replace('#','') : hash.replace('#','');
+      var PAGE = current_page();
       var PAGE_ITEM = 'page-'+PAGE;
 
        $.get('/pages/' + (PAGE ? PAGE : 'index') + '.html',function(response){ 
 
           if(response===undefined) return
 
-          var PAGE = hash===undefined ? url().replace('#','') : hash.replace('#','');
+          var PAGE = current_page();
           PAGE_ITEM = 'page-'+PAGE;
 
           $('#'+PAGE_ITEM).html(response); 
