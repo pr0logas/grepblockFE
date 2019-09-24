@@ -153,11 +153,11 @@
           <div class="charts opaque-nav" style="padding-bottom: 0px">
 
             <div class="" style="text-align:center;margin: 20px 0px 0px;padding:0px;max-width:none;">
-                <div data-unit="Difficulty" data-period="day" style="width:100%;position:relative;" id="graph_container2"></div>
-                <div class="row" id="charterror2" style="display:none;">
+                <div data-unit="Transaction" data-period="day" style="width:100%;position:relative;" id="graph_transaction"></div>
+                <div class="row" id="charterror_transaction" style="display:none;">
                     <div class="span4 offset4 alert alert-error text-center" style="margin:0 auto;float:none;">Error loading chart data</div>
                 </div>
-                <div class="row" id="chartloading2">
+                <div class="row" id="chartloading_transaction">
                     <div class="span4 offset4" style="margin:0 auto;float:none;"><img src="/charts/assets/loading-large.gif" alt="Loading..." height=50 width=50/></div>
                 </div>
             </div>
@@ -177,11 +177,11 @@
           <div class="charts opaque-nav" style="padding-bottom: 0px">
 
             <div class="" style="text-align:center;margin: 20px 0px 0px;padding:0px;max-width:none;">
-                <div data-unit="Difficulty" data-period="day" style="width:100%;position:relative;" id="graph_container"></div>
-                <div class="row" id="charterror" style="display:none;">
+                <div data-unit="Difficulty" data-period="day" style="width:100%;position:relative;" id="graph_difficulty"></div>
+                <div class="row" id="charterror_difficulty" style="display:none;">
                     <div class="span4 offset4 alert alert-error text-center" style="margin:0 auto;float:none;">Error loading chart data</div>
                 </div>
-                <div class="row" id="chartloading">
+                <div class="row" id="chartloading_difficulty">
                     <div class="span4 offset4" style="margin:0 auto;float:none;"><img src="/charts/assets/loading-large.gif" alt="Loading..." height=50 width=50/></div>
                 </div>
             </div>
@@ -252,9 +252,9 @@
     </div> <!--row-->
 
 <script type="text/javascript">
-  function highlightTimespan(timespan) {
+  function highlightTimespan(timespan,id) {
     if (!timespan) {
-      if ($('#graph_container').data('period') == 'minute') timespan = '60days';
+      if ($('#'+id).data('period') == 'minute') timespan = '60days';
       else timespan = '1year'
     }
     
@@ -262,7 +262,7 @@
                            .find('span').removeClass('primary').addClass('white');
   }
 
-  function setData(raw) {
+  function setData(raw, id) {
       var data = [];
       try {
           var logScale = parseInt(qs('scale'));
@@ -277,18 +277,18 @@
               ]);
           }
 
-          if ($('#graph_container').data('period') == 'minute') {
+          if ($('#'+id).data('period') == 'minute') {
               $('#periodminute').show();
           } else {
               $('#periodnormal').show();
           }
 
           var timespan = qs('timespan');
-          highlightTimespan(timespan);
+          highlightTimespan(timespan,id);
 
-          setup(data);
+          setup(data,id);
       } catch (e) {
-          fail(e);
+          fail(e,id);
       }
   }
 
@@ -307,7 +307,6 @@
     success: function(json)
     {
       json = json[0];
-      console.log(json);
 
       var title = json['assetName'] + ' (' + json['assetTicker'] + ')';
 
@@ -335,6 +334,10 @@
 
       var difficulty_url = url_json+'/difficulty.json';
 
-      ajaxCall(difficulty_url, setData);
+      ajaxCall(difficulty_url, setData, undefined, 'graph_difficulty');
+
+      var transaction_url = url_json+'/assetTransactions.json';
+
+      ajaxCall(transaction_url, setData, undefined, 'graph_transaction');
   });
 </script>
