@@ -134,7 +134,7 @@ $('body').on( "update_page", function() {
 
         var type = getUrlParamByName('type');
 
-        if(type=='coin' || type=='platform')
+        if(type=='coin' || type=='platform' || type=='token')
             create_table.column(1).search(type).draw();
     }
 });
