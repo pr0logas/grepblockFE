@@ -151,21 +151,21 @@ function updateQueryString(key, value, url) {
     }
 }
 
-function fail(err) {
+function fail(err,id) {
     console.log(err);
     if (err.status != 404) {
-        $("#chartloading").hide();
-        $("#charterror").show();
+        $("#chartloading_"+id).hide();
+        $("#charterror_"+id).show();
     }
 }
 
-function ajaxCall(url, success, error) {
+function ajaxCall(url, success, error, id) {
     var errCb = (typeof error != 'undefined') ? error : fail;
     $.ajax({
         url: url,
         crossDomain: true,
         dataType: 'json',
-        success: success,
+        success: function(r){success(r,id)},
         error: errCb,
         statusCode: {
             404: function() {
@@ -205,7 +205,8 @@ function resizeChart() {
   chart.setSize(w, 350, false);
 }
 
-function refreshChart() {
+function refreshChart(id) {
+    jsjson['chart']['renderTo'] = id;
     chart = new Highcharts.Chart(jsjson);
 
     $(".chart-export").each(function() {
@@ -235,18 +236,20 @@ function refreshChart() {
     $(window).resize(resizeChart);
 }
 
-function setup(data) {
+function setup(data,id) {
     try {
-        var container = $('#graph_container');
+        var container = $('#'+id);
         var name = container.data('name');
         var unit = container.data('unit');
+
+        jsjson['chart']['renderTo'] = id;
 
         jsjson['series'][0]['data'] = data;
         jsjson['yAxis']['title']['text'] = unit;
         jsjson['series'][0]['name'] = unit;
 
-        $("#charterror").hide();
-        $("#chartloading").hide();
+        $("#charterror_"+id).hide();
+        $("#chartloading_"+id).hide();
         $("#chart_header").show();
 
         Highcharts.setOptions({
@@ -259,10 +262,10 @@ function setup(data) {
         Highcharts.getOptions().exporting.buttons.contextButton.menuItems.shift();
         // Remove separator
         Highcharts.getOptions().exporting.buttons.contextButton.menuItems.shift();
-        refreshChart();
+        refreshChart(id);
     } catch(e) {
         console.log(e);
-        $("#chartloading").hide();
-        $("#charterror").show();
+        $("#chartloading_"+id).hide();
+        $("#charterror_"+id).show();
     }
 }
