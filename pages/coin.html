@@ -131,11 +131,11 @@
           <div class="charts opaque-nav" style="padding-bottom: 0px">
 
             <div class="" style="text-align:center;margin: 20px 0px 0px;padding:0px;max-width:none;">
-                <div data-unit="Difficulty" data-period="day" style="width:100%;position:relative;" id="graph_container2"></div>
-                <div class="row" id="charterror2" style="display:none;">
+                <div data-unit="Blocks" data-period="day" style="width:100%;position:relative;" id="graph_blocks"></div>
+                <div class="row" id="charterror_blocks" style="display:none;">
                     <div class="span4 offset4 alert alert-error text-center" style="margin:0 auto;float:none;">Error loading chart data</div>
                 </div>
-                <div class="row" id="chartloading2">
+                <div class="row" id="chartloading_blocks">
                     <div class="span4 offset4" style="margin:0 auto;float:none;"><img src="/charts/assets/loading-large.gif" alt="Loading..." height=50 width=50/></div>
                 </div>
             </div>
@@ -344,6 +344,10 @@
       var supply_url = url_json+'/assetSupply.json';
 
       ajaxCall(supply_url, setData, undefined, 'supply');
+
+      var blocks_url = url_json+'/assetBlocks.json';
+
+      ajaxCall(blocks_url, setData, undefined, 'blocks');
 
   });
 </script>
