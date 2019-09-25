@@ -153,11 +153,11 @@
           <div class="charts opaque-nav" style="padding-bottom: 0px">
 
             <div class="" style="text-align:center;margin: 20px 0px 0px;padding:0px;max-width:none;">
-                <div data-unit="Transaction" data-period="day" style="width:100%;position:relative;" id="graph_transaction"></div>
-                <div class="row" id="charterror_transaction" style="display:none;">
+                <div data-unit="Transaction" data-period="day" style="width:100%;position:relative;" id="graph_transactions"></div>
+                <div class="row" id="charterror_transactions" style="display:none;">
                     <div class="span4 offset4 alert alert-error text-center" style="margin:0 auto;float:none;">Error loading chart data</div>
                 </div>
-                <div class="row" id="chartloading_transaction">
+                <div class="row" id="chartloading_transactions">
                     <div class="span4 offset4" style="margin:0 auto;float:none;"><img src="/charts/assets/loading-large.gif" alt="Loading..." height=50 width=50/></div>
                 </div>
             </div>
@@ -337,9 +337,9 @@
 
       ajaxCall(difficulty_url, setData, undefined, 'difficulty');
 
-      var transaction_url = url_json+'/assetTransactions.json';
+      var transactions_url = url_json+'/assetTransactions.json';
 
-      ajaxCall(transaction_url, setData, undefined, 'transaction');
+      ajaxCall(transactions_url, setData, undefined, 'transactions');
 
       var supply_url = url_json+'/assetSupply.json';
 
