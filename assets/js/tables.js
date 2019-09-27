@@ -50,9 +50,9 @@ var homePageAssetList = {
             var stylePrice_change_percentage_24h = ''
             
                 if (value['price_change_percentage_24h'] < 0)
-                    stylePrice_change_percentage_24h = 'alert alert-error' 
+                    stylePrice_change_percentage_24h = 'label label-important' 
                 else
-                    stylePrice_change_percentage_24h = 'alert alert-success';
+                    stylePrice_change_percentage_24h = 'label label-success';
 
             var price_change_percentage_24h_formated = '<span class="' + stylePrice_change_percentage_24h + '">' + 
             parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '%' + '</span>';
