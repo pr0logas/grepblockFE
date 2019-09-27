@@ -8,6 +8,8 @@
 ,
  "mineable" : "yes" 
 ,
+ "masternode" : "yes" 
+,
  "sourceCode" : "https://github.com/adeptio-project/adeptio/" 
 ,
  "blockTime" : "60" 

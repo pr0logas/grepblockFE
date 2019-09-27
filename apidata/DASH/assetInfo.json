@@ -1,0 +1,53 @@
+[
+{
+ "assetName" : "Dash" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "DASH" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "yes" 
+,
+ "sourceCode" : "https://github.com/dashpay/dash" 
+,
+ "blockTime" : "150" 
+,
+ "maxSupply" : "~18.9" 
+,
+ "blockSize" : "2" 
+,
+ "walletPrefix" : "X" 
+,
+ "explorer" : "https://explorer.dash.org/chain/Dash" 
+,
+ "explorer2" : "https://insight.dash.org/insight/" 
+,
+ "explorer3" : "" 
+,
+ "website" : "https://www.dash.org/" 
+,
+ "rpcPort" : "9998" 
+,
+ "networkPort" : "9999" 
+,
+ "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=421615.0" 
+,
+ "telegram" : "" 
+,
+ "reddit" : "https://www.reddit.com/r/dashpay/" 
+,
+ "twitter" : "https://twitter.com/Dashpay" 
+,
+ "chat" : "https://discord.gg/9z8zX5j" 
+,
+ "about" : "Dash (DASH) describes itself as digital cash that aims to offer financial freedom to everyone. Payments are fast, easy, secure, and with near-zero fees. Built to support real-life use cases, Dash aims to provide a fully-decentralized payments solution. Users can purchase goods at thousands of merchants and trade it at major exchanges and brokers around the globe." 
+,
+ "algorithm" : "X11" 
+,
+ "developerFee" : "yes" 
+,
+ "firstBlock" : "1390103681" 
+}
+]

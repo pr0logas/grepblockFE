@@ -1,0 +1,52 @@
+[
+{
+ "assetName" : "Syscoin" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "SYS" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "yes" 
+,
+ "sourceCode" : "" 
+,
+ "blockTime" : "60" 
+,
+ "maxSupply" : "?" 
+,
+ "blockSize" : "?" 
+,
+ "walletPrefix" : "?" 
+,
+ "explorer" : "" 
+,
+ "explorer2" : "" 
+,
+ "explorer3" : "" 
+,
+ "website" : "https://syscoin.org/" 
+,
+ "rpcPort" : "?" 
+,
+ "networkPort" : "?" 
+,
+ "bitcointalkThread" : "?" 
+,
+ "telegram" : "?" 
+,
+ "reddit" : "?" 
+,
+ "twitter" : "?" 
+,
+ "chat" : "?" 
+,
+,
+ "algorithm" : "?" 
+,
+ "developerFee" : "?" 
+,
+ "firstBlock" : "1559677606" 
+}
+]
