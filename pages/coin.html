@@ -33,9 +33,9 @@
                 <div id="coin-walletPrefix"><strong>Wallet Prefix:</strong> <span class="coin-param"></span></div>
                 <div id="coin-networkPort"><strong>Network Port:</strong> <span class="coin-param"></span></div>
                 <div id="coin-rpcPort"><strong>RPC Port:</strong> <span class="coin-param"></span></div>
-                <div id="coin-type"><strong>Developer Fee:</strong> <span class="coin-param"></span></div>
-                <div id="coin-type"><strong>First Block:</strong> <span class="coin-param"></span></div>
-                <div id="coin-type"><strong>Algorithm:</strong> <span class="coin-param"></span></div>
+                <div id="coin-developerFee"><strong>Developer Fee:</strong> <span class="coin-param"></span></div>
+                <div id="coin-firstBlock"><strong>First Block:</strong> <span class="coin-param"></span></div>
+                <div id="coin-algorithm"><strong>Algorithm:</strong> <span class="coin-param"></span></div>
               </div>
             </div>
           </aside>
@@ -43,7 +43,6 @@
         </div>
 
       <div class="span6">
-
 
         <!-- About Asset
         ================================================== -->
@@ -75,6 +74,7 @@
 
           </div>
         </section>
+
 
         <!-- Price
         ================================================== -->
@@ -326,6 +326,9 @@
       $("#coin-walletPrefix").find('.coin-param').text(json['walletPrefix']);
       $("#coin-networkPort").find('.coin-param').text(json['networkPort']);
       $("#coin-rpcPort").find('.coin-param').text(json['rpcPort']);
+      $("#coin-developerFee").find('.coin-param').text(json['rpcPort']);
+      $("#coin-firstBlock").find('.coin-param').text(json['rpcPort']);
+      $("#coin-algorithm").find('.coin-param').text(json['rpcPort']);
     }
   });
 
