@@ -77,7 +77,7 @@ var homePageAssetList = {
     },
     columns: [{
         data: 'assetName',
-            width: '12%'
+            width: '17%'
         },
         {
             data: 'assetType',
