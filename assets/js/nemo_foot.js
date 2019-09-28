@@ -60,8 +60,15 @@
 
       menu_deactive();
 
-      el.className += ' active';
-      el.parentNode.className += ' active';
+      var tmp = el;
+
+      var type = ['coin','platform','token'].indexOf(getUrlParamByName('type'));
+
+      if(type!==-1)
+        tmp = id('link-'+getUrlParamByName('type')+'s');
+
+      tmp.className += ' active';
+      tmp.parentNode.className += ' active';
 
       page_title(text(el,true));
 
