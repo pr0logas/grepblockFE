@@ -368,7 +368,7 @@
 </script>
 
 <script type="text/javascript">
-Highcharts.getJSON('/aapl-c.json', function (data) {
+    Highcharts.getJSON('/aapl-c.json', function (data) {
     // Create the chart
     Highcharts.stockChart('highcharts-graph', {
 
@@ -378,11 +378,11 @@ Highcharts.getJSON('/aapl-c.json', function (data) {
         },
 
         title: {
-            text: 'AAPL Stock Price'
+            text: ''
         },
 
         series: [{
-            name: 'AAPL',
+            name: '',
             data: data,
             tooltip: {
                 valueDecimals: 2
