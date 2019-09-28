@@ -64,7 +64,7 @@
 
       var type = ['coin','platform','token'].indexOf(getUrlParamByName('type'));
 
-      if(type!==-1)
+      if(type!==-1 && el.getAttribute("href")!=='#')
         tmp = id('link-'+getUrlParamByName('type')+'s');
 
       tmp.className += ' active';
