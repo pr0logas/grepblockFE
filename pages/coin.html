@@ -387,7 +387,20 @@ Highcharts.getJSON('/aapl-c.json', function (data) {
             tooltip: {
                 valueDecimals: 2
             }
-        }]
+        }],
+
+        credits: {
+          enabled: true,
+          href: 'https://www.highCharts.com?credits',
+          position: {
+            align:'right',
+            verticalAlign:'bottom',
+            x:-10,
+            y:-5
+          },
+          style:{"cursor": "pointer", "color": "#999999", "fontSize": "10px"},
+          text: 'HighCharts.com'
+        }
     });
 });
 </script>
