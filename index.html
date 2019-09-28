@@ -375,87 +375,12 @@
   <!-- Template Custom JavaScript File -->
   <script src="assets/js/custom.js"></script>
 
-    <script type="text/javascript" src="/charts/assets/highcharts.js"></script>
+    <script src="/charts/assets/highstock.js"></script>
+    <script src="/charts/assets/modules/data.js"></script>
+    <script src="/charts/assets/export-data.js"></script>
+
     <script type="text/javascript" src="/charts/assets/charts-common.js"></script>
     <script type="text/javascript" src="/charts/assets/exporting.js"></script>
-
-
-
-
-<script>
-    function getCookie(e){var n=" "+document.cookie,t=" "+e+"=",i=null,o=0,u=0;return n.length>0&&-1!=(o=n.indexOf(t))&&(o+=t.length,-1==(u=n.indexOf(";",o))&&(u=n.length),i=unescape(n.substring(o,u))),i}
-    var DEFAULT_CURRENCY = 'USD';
-    dataLayer = [{
-        'section': 'Cryptocurrency Details',
-        'subSection': 'Currencies',
-        'firstSessionDate': getCookie('gtm_session_first'),
-        'lastSessionDate': getCookie('gtm_session_last'),
-        'language': 'en',
-        'currency': getCookie('currency') || DEFAULT_CURRENCY,
-        'cryptocurrency': 'particl',
-        'siteTheme': getCookie('theme') || 'day',
-        'siteNav': 'v1'
-    }];
-</script>
-<script>
-    var LANG_CODE = 'en';
-    var STATIC_DOMAIN = 's2.coinmarketcap.com';
-    var CURRENCY_FLAGS = {'USD': 'us', 'AUD': 'au', 'CHF': 'ch', 'IDR': 'id', 'KRW': 'kr', 'CNY': 'cn', 'TRY': 'tr', 'ILS': 'il', 'GBP': 'gb', 'NZD': 'nz', 'CLP': 'cl', 'DKK': 'dk', 'CAD': 'ca', 'PKR': 'pk', 'MXN': 'mx', 'HUF': 'hu', 'PHP': 'ph', 'TWD': 'tw', 'NOK': 'no', 'RUB': 'ru', 'SEK': 'se', 'MYR': 'my', 'INR': 'in', 'THB': 'th', 'JPY': 'jp', 'CZK': 'cz', 'BRL': 'br', 'PLN': 'pl', 'EUR': 'eu', 'ZAR': 'za', 'SGD': 'sg', 'HKD': 'hk'};
-</script>
-<!--<script src="/base.00bbdff9.min.js"></script>-->
-<script>
-const PHRASES = {
-    contextButtonTitle: "Chart context menu",
-    downloadCSV: "Download CSV",
-    downloadJPEG: "Download JPEG image",
-    downloadPDF: "Download PDF document",
-    downloadPNG: "Download PNG image",
-    downloadSVG: "Download SVG vector image",
-    downloadXLS: "Download XLS",
-    drillUpText: "Back to {series.name}",
-    loading: "Loading...",
-    noData: "No data to display",
-    printChart: "Print chart",
-    resetZoom: "Reset zoom",
-    resetZoomTitle: "Reset zoom level 1:1",
-    viewData: "View data table",
-    '1d': "1d",
-    '7d': "7d",
-    '1m': "1m",
-    '3m': "3m",
-    '1y': "1y",
-    'ytd': "YTD",
-    'all': "ALL",
-    dateFormat: "%A, %b %d %Y, %H:%M:%S UTC",
-    months: {
-        full: {mar: 'March',feb: 'February',aug: 'August',sep: 'September',apr: 'April',jun: 'June',jul: 'July',jan: 'January',may: 'May',nov: 'November',dec: 'December',oct: 'October'},
-        short: {mar: 'Mar',feb: 'Feb',aug: 'Aug',sep: 'Sep',apr: 'Apr',jun: 'Jun',jul: 'Jul',jan: 'Jan',may: 'May',nov: 'Nov',dec: 'Dec',oct: 'Oct'}
-    },
-    weekdays: {
-        full: {wed: 'Wednesday',sun: 'Sunday',thu: 'Thursday',mon: 'Monday',fri: 'Friday',tue: 'Tuesday',sat: 'Saturday'},
-        short: {wed: 'Wed',sun: 'Sun',thu: 'Thu',mon: 'Mon',fri: 'Fri',tue: 'Tue',sat: 'Sat'}
-    },
-    emptyTable: "No data available in table",
-    zeroRecords: "No matching records found",
-    sortAscending: ": activate to sort column ascending",
-    sortDescending: ": activate to sort column descending",
-    'K': "K",
-    'M': "M",
-    'B': "B",
-    'T': "T",
-    chartTitle: "Particl Charts",
-    marketCap: "Market Cap",
-    priceUSD: "Price (USD)",
-    priceBTC: "Price (BTC)",
-    pricePlatform: "",
-    volume: "24h Vol",
-    linearScale: "Linear Scale",
-    logScale: "Log Scale"
-};
-//var polyglot = new Polyglot({phrases: PHRASES});
-</script>
-<!--<script src="/highcharts.c76bd9fb.js"></script>
-<script src="/detail.7b2ef0c0.min.js"></script>-->
 </body>
 
 </html>
