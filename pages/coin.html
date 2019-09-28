@@ -62,18 +62,12 @@
             <h3>MarketCap</h3>
           </div>
 
-          <!--<link href="/base.52de1091.min.css" rel='stylesheet'>-->
-
-          <div id="metadata" class="hidden" data-cryptocurrencyid="1826" data-name="Particl" data-slug="particl" data-symbol="PART" data-platformsymbol="" data-apidomain="" data-mobile="False" data-platform="False"></div>
-
-
-
           <div id="charts" class="tab-pane active">
             <div class="padding-top-1x">
               <div id="highcharts-loading" class="text-center">Loading data from server...<div><span class="loading"></span></div></div>
               <div id="highcharts-nodata" class="hidden text-center">No chart data found</div>
             </div>
-            <div id="highcharts-graph"></div>
+            <div id="highcharts-graph" style="height: 400px; min-width: 310px"></div>
             <br>
           </div>
 
@@ -371,4 +365,29 @@
       ajaxCall(blocks_url, setData, undefined, 'blocks');
 
   });
+</script>
+
+<script type="text/javascript">
+Highcharts.getJSON('/aapl-c.json', function (data) {
+    // Create the chart
+    Highcharts.stockChart('highcharts-graph', {
+
+
+        rangeSelector: {
+            selected: 1
+        },
+
+        title: {
+            text: 'AAPL Stock Price'
+        },
+
+        series: [{
+            name: 'AAPL',
+            data: data,
+            tooltip: {
+                valueDecimals: 2
+            }
+        }]
+    });
+});
 </script>
