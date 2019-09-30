@@ -337,112 +337,11 @@
 </script>
 
 <script type="text/javascript">
-    Highcharts.getJSON('/aapl-c.json', function (data) {
-    // Create the chart
-    Highcharts.stockChart('highcharts-graph-marketcap', {
 
+    stockChart('/aapl-c.json', 'highcharts-graph-marketcap');
 
-        rangeSelector: {
-            selected: 1
-        },
+    stockChart('/aapl-c.json', 'highcharts-graph-price');
 
-        title: {
-            text: ''
-        },
+    stockChart('/aapl-c.json', 'highcharts-graph-volume');
 
-        series: [{
-            name: 'MarketCap (USD)',
-            data: data,
-            tooltip: {
-                valueDecimals: 2
-            }
-        }],
-
-        credits: {
-          enabled: true,
-          href: 'https://www.highCharts.com?credits',
-          position: {
-            align:'right',
-            verticalAlign:'bottom',
-            x:-10,
-            y:-5
-          },
-          style:{"cursor": "pointer", "color": "#999999", "fontSize": "10px"},
-          text: 'HighCharts.com'
-        }
-    });
-});
-
-
-        Highcharts.getJSON('/aapl-c.json', function (data) {
-    // Create the chart
-    Highcharts.stockChart('highcharts-graph-price', {
-
-
-        rangeSelector: {
-            selected: 1
-        },
-
-        title: {
-            text: ''
-        },
-
-        series: [{
-            name: 'Price (USD)',
-            data: data,
-            tooltip: {
-                valueDecimals: 2
-            }
-        }],
-
-        credits: {
-          enabled: true,
-          href: 'https://www.highCharts.com?credits',
-          position: {
-            align:'right',
-            verticalAlign:'bottom',
-            x:-10,
-            y:-5
-          },
-          style:{"cursor": "pointer", "color": "#999999", "fontSize": "10px"},
-          text: 'HighCharts.com'
-        }
-    });
-});
-
-            Highcharts.getJSON('/aapl-c.json', function (data) {
-    // Create the chart
-    Highcharts.stockChart('highcharts-graph-volume', {
-
-
-        rangeSelector: {
-            selected: 1
-        },
-
-        title: {
-            text: ''
-        },
-
-        series: [{
-            name: 'Volume (USD)',
-            data: data,
-            tooltip: {
-                valueDecimals: 2
-            }
-        }],
-
-        credits: {
-          enabled: true,
-          href: 'https://www.highCharts.com?credits',
-          position: {
-            align:'right',
-            verticalAlign:'bottom',
-            x:-10,
-            y:-5
-          },
-          style:{"cursor": "pointer", "color": "#999999", "fontSize": "10px"},
-          text: 'HighCharts.com'
-        }
-    });
-});
 </script>
