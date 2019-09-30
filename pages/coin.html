@@ -170,7 +170,7 @@
         </section>
 
         <!-- Supply
-        ================================================== -->
+        ================================================== 
         <section id="assetSupply" class="doc">
           <div class="page-header">
             <h3>Supply (24h)</h3>
@@ -190,6 +190,7 @@
 
           </div>
         </section>
+        -->
 
         <!-- Network Peers
         ================================================== -->
@@ -224,7 +225,7 @@
           <li><a href="#assetBlocks"><i class="icon-chevron-right"></i> Blocks</a></li>
           <li><a href="#assetTransactions"><i class="icon-chevron-right"></i> Transactions</a></li>
           <li><a href="#assetDifficulty"><i class="icon-chevron-right"></i> Difficulty</a></li>
-          <li><a href="#assetSupply"><i class="icon-chevron-right"></i> Supply</a></li>
+          <!--<li><a href="#assetSupply"><i class="icon-chevron-right"></i> Supply</a></li>-->
           <li><a href="#assetNetworkPeers"><i class="icon-chevron-right"></i> Network Peers</a></li>
         </ul>
       </div>
@@ -325,9 +326,9 @@
 
       ajaxCall(transactions_url, setData, undefined, 'transactions');
 
-      var supply_url = url_json+'/assetSupply.json';
+      //var supply_url = url_json+'/assetSupply.json';
 
-      ajaxCall(supply_url, setData, undefined, 'supply');
+      //ajaxCall(supply_url, setData, undefined, 'supply');
 
       var blocks_url = url_json+'/assetBlocks.json';
 
