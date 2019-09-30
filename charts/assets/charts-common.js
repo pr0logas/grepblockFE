@@ -237,11 +237,11 @@ function resizeChart() {
   chart.setSize(w, 350, false);
 }
 
-function stockChart(json_url, id) {
+function stockChart(json_url, id, name) {
     Highcharts.getJSON(json_url, function (data) {
 
         graphJson['series'][0]['data'] = data;
-        graphJson['series'][0]['name'] = 'MarketCap (USD)';
+        graphJson['series'][0]['name'] = name;
 
         // Create the chart
         Highcharts.stockChart(id, graphJson);
