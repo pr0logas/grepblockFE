@@ -1,3 +1,35 @@
+var graphJson = {
+
+        rangeSelector: {
+            selected: 1
+        },
+
+        title: {
+            text: ''
+        },
+
+        series: [{
+            name: '',
+            data: {},
+            tooltip: {
+                valueDecimals: 2
+            }
+        }],
+
+        credits: {
+          enabled: true,
+          href: 'https://www.highCharts.com?credits',
+          position: {
+            align:'right',
+            verticalAlign:'bottom',
+            x:-10,
+            y:-5
+          },
+          style:{"cursor": "pointer", "color": "#999999", "fontSize": "10px"},
+          text: 'HighCharts.com'
+        }
+    };
+
 var jsjson = {
     chart: {
         renderTo: 'graph_container',
@@ -203,6 +235,17 @@ function resizeChart() {
   if (h < 550) h = 550;
 
   chart.setSize(w, 350, false);
+}
+
+function stockChart(json_url, id) {
+    Highcharts.getJSON(json_url, function (data) {
+
+        graphJson['series'][0]['data'] = data;
+        graphJson['series'][0]['name'] = 'MarketCap (USD)';
+
+        // Create the chart
+        Highcharts.stockChart(id, graphJson);
+    });
 }
 
 function refreshChart(id) {
