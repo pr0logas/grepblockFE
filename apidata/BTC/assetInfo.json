@@ -1,0 +1,53 @@
+[
+{
+ "assetName" : "Bitcoin" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "BTC" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "no" 
+,
+ "sourceCode" : "https://github.com/bitcoin" 
+,
+ "blockTime" : "600" 
+,
+ "maxSupply" : "~21000000" 
+,
+ "blockSize" : "1" 
+,
+ "walletPrefix" : "B,1,3,5" 
+,
+ "explorer" : "https://www.blockchain.com/explorer" 
+,
+ "explorer2" : "https://blockchain.coinmarketcap.com/chain/bitcoin" 
+,
+ "explorer3" : "https://live.blockcypher.com/btc" 
+,
+ "website" : "https://bitcoin.org/en" 
+,
+ "rpcPort" : "8332" 
+,
+ "networkPort" : "8333" 
+,
+ "bitcointalkThread" : "https://bitcointalk.org" 
+,
+ "telegram" : "" 
+,
+ "reddit" : "" 
+,
+ "twitter" : "" 
+,
+ "chat" : "*" 
+,
+ "about" : "Bitcoin (BTC) is a consensus network that enables a new payment system and a completely digital currency. Powered by its users, it is a peer to peer payment network that requires no central authority to operate. On October 31st, 2008, an individual or group of individuals operating under the pseudonym Satoshi Nakamoto published the Bitcoin Whitepaper and described it as: a purely peer-to-peer version of electronic cash, which would allow online payments to be sent directly from one party to another without going through a financial institution." 
+,
+ "algorithm" : "sha-256" 
+,
+ "developerFee" : "yes" 
+,
+ "firstBlock" : "1231469665" 
+}
+]
