@@ -23,13 +23,23 @@ var homePageAssetList = {
 
             var styleAssetType = ''
                 if (value['assetType'] == 'coin')
-                    styleAssetType = '#FFBF00';
+                    styleAssetType = 'black';
 
                 if (value['assetType'] == 'platform')
-                    styleAssetType = '#00BFFF';
+                    styleAssetType = 'black';
 
                 if (value['assetType'] == 'token')
-                    styleAssetType = '#FE2E2E';
+                    styleAssetType = 'black';
+	
+	        var iconAssetType = ''
+                if (value['assetType'] == 'coin')
+                    iconAssetType = '<img src="assets/img/icons/coin.png" alt="coin" style="width:16px;height:16px;">';
+
+                if (value['assetType'] == 'platform')
+                    iconAssetType = '<img src="assets/img/icons/platform.png" alt="coin" style="width:16px;height:16px;">';
+
+                if (value['assetType'] == 'token')
+                    iconAssetType = '<img src="assets/img/icons/token.png" alt="coin" style="width:16px;height:16px;">';
 
             var coin_name = value['assetName'] + ' (' + ticker + ')';
             var coin_link = '<a href="?page=coin&coin='+value['assetTicker']+'" class="link-coin">'+coin_name+'</a>';
@@ -59,7 +69,7 @@ var homePageAssetList = {
 	    
 
             json[key]['assetName'] = img + ' ' +coin_link;
-            json[key]['assetType'] = '<strong><font color="' + styleAssetType + '">' + value['assetType'] + '</font></strong>';
+            json[key]['assetType'] = iconAssetType + ' ' + '<font color="' + styleAssetType + '">' + value['assetType'] + '</font>';
             json[key]['current_price'] = '$' + value['current_price'];
             json[key]['market_cap'] = market_cap_formated;
             json[key]['total_volume'] = total_volume_formated;
