@@ -107,8 +107,8 @@
 
     show_page(id('link-'+PAGE));
 
-    update_page();
+    //update_page();
 
     for (var key in menu) {
-        update_page(menu[key].href);
+        //update_page(menu[key].href);
     }
