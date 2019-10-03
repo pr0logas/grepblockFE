@@ -1,7 +1,12 @@
 Searching...
-<div id="search-error" class="hidden">
+<div id="search-error" class="alert alert-error hidden">
   <span class="label label-info">FATAL</span><p class="text-error"></p>
 </div>
+
+<ul>
+  <li id="search-FoundData"><span class="name">FoundData</span><span class="value"></span></li>
+</ul>
+
 
 <script type="text/javascript">
   $.ajax(
@@ -18,7 +23,7 @@ Searching...
 
       $("#search-error").addClass("hidden");
 
-      $("#page-search").html(json['FoundData']);
+      $("#search-FoundData").find(".value").text(json['FoundData']);
     }
   });
 </script>
