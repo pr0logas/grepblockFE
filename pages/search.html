@@ -7,7 +7,12 @@ Searching...
 
     success: function(json)
     {
-      $("#page-search").html(json);
+      if(json['FATAL']) {
+        $("#page-search").html(json['FATAL']);
+        return
+      }
+
+      $("#page-search").html(json['FoundData']);
     }
   });
 </script>
