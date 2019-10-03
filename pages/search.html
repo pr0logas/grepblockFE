@@ -5,29 +5,29 @@ Searching...
 </div>
 
 <ul>
-  <li id="search-FoundData"><span class="name">FoundData</span><span class="value"></span></li>
-  <li id="search-ProcessingTook"><span class="name">ProcessingTook</span><span class="value"></span></li>
-  <li id="search-block"><span class="name">Block</span><span class="value"></span></li>
+  <li id="search-FoundData"><span class="name">FoundData: </span><span class="value"></span></li>
+  <li id="search-ProcessingTook"><span class="name">ProcessingTook: </span><span class="value"></span></li>
+  <li id="search-block"><span class="name">Block: </span><span class="value"></span></li>
 </ul>
 
 <script type="text/javascript">
-  $.ajax(
-  {
-    url: "/parsedb?query="+getUrlParamByName('query'),
-
-    success: function(json)
+    $.ajax(
     {
-      if(json['FATAL']) {
-        $("#search-error").find(".text-error").text(json['FATAL']);
-        $("#search-error").removeClass("hidden");
-        return
+      url: "/parsedb?query="+getUrlParamByName('query'),
+
+      success: function(json)
+      {
+        if(json['FATAL']) {
+          $("#search-error").find(".text-error").text(json['FATAL']);
+          $("#search-error").removeClass("hidden");
+          return
+        }
+
+        $("#search-error").addClass("hidden");
+
+        $("#search-FoundData").find(".value").text(json['FoundData']);
+        $("#search-ProcessingTook").find(".value").text(json['ProcessingTook']);
+        $("#search-block").find(".value").text(json['block']);
       }
-
-      $("#search-error").addClass("hidden");
-
-      $("#search-FoundData").find(".value").text(json['FoundData']);
-      $("#search-ProcessingTook").find(".value").text(json['ProcessingTook']);
-      $("#search-block").find(".value").text(json['block']);
-    }
-  });
+    });
 </script>
