@@ -7,7 +7,9 @@ Searching...
 <ul>
   <li id="search-FoundData"><span class="name">FoundData: </span><span class="value"></span></li>
   <li id="search-ProcessingTook"><span class="name">ProcessingTook: </span><span class="value"></span></li>
+
   <li id="search-block"><span class="name">Block: </span><span class="value"></span></li>
+  <li id="search-hash"><span class="name">Hash: </span><span class="value"></span></li>
 </ul>
 
 <script type="text/javascript">
@@ -28,6 +30,7 @@ Searching...
         $("#search-FoundData").find(".value").text(json['FoundData']);
         $("#search-ProcessingTook").find(".value").text(json['ProcessingTook']);
         $("#search-block").find(".value").text(json['block']);
+        $("#search-hash").find(".value").text(json['hash']);
       }
     });
 </script>
