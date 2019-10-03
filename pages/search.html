@@ -26,6 +26,7 @@ Searching...
       $("#search-error").addClass("hidden");
 
       $("#search-FoundData").find(".value").text(json['FoundData']);
+      $("#search-ProcessingTook").find(".value").text(json['ProcessingTook']);
       $("#search-block").find(".value").text(json['block']);
     }
   });
