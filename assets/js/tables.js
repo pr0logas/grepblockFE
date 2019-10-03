@@ -20,7 +20,8 @@ var homePageAssetList = {
             /* Process asset name, logo, ticker */
             var img = '<img src="/assets/coins-logo/'+value['assetName']+'.png" height="24" width="24">';
             var ticker = value['assetTicker']
-
+		
+	    // Set color on assetType
             var styleAssetType = ''
                 if (value['assetType'] == 'coin')
                     styleAssetType = 'black';
@@ -30,8 +31,9 @@ var homePageAssetList = {
 
                 if (value['assetType'] == 'token')
                     styleAssetType = 'black';
-	
-	        var iconAssetType = ''
+
+	    // Set icon image base on assetType
+	    var iconAssetType = ''
                 if (value['assetType'] == 'coin')
                     iconAssetType = '<img src="assets/img/icons/coin.png" alt="coin" style="width:16px;height:16px;">';
 
@@ -40,7 +42,8 @@ var homePageAssetList = {
 
                 if (value['assetType'] == 'token')
                     iconAssetType = '<img src="assets/img/icons/token.png" alt="coin" style="width:16px;height:16px;">';
-
+	    
+	    // Set asset Name and Ticker
             var coin_name = value['assetName'] + ' (' + ticker + ')';
             var coin_link = '<a href="?page=coin&coin='+value['assetTicker']+'" class="link-coin">'+coin_name+'</a>';
 		
@@ -56,6 +59,8 @@ var homePageAssetList = {
             var total_volume_formated = '$' + parseFloat(value['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
             total_volume_formated = total_volume_formated.substring(0, total_volume_formated.length-2);
 
+	    // Add + sign for Price change if value is greater than > 0
+
             // Format *price_change_percentage_24h* value to see in nice shape.
             var stylePrice_change_percentage_24h = ''
             
@@ -63,9 +68,19 @@ var homePageAssetList = {
                     stylePrice_change_percentage_24h = 'red' 
                 else
                     stylePrice_change_percentage_24h = 'green';
+	    // At first reformat the number after decimal, later one add + sign if needed, otherwise first formatting ignores seconds one
+            var price_change_percentage_24h_formated1 = parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 
-	    var price_change_percentage_24h_formated = '<font color="' + stylePrice_change_percentage_24h + '">' +  
-            parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '%' + '</font>';
+	    var reformated_price_change_percentage_24h = ''
+
+                if (price_change_percentage_24h_formated1 > 0)
+                    reformated_price_change_percentage_24h = '+' + price_change_percentage_24h_formated1
+                else
+                    reformated_price_change_percentage_24h = price_change_percentage_24h_formated1
+
+	    var price_change_percentage_24h_formated2 = '<font color="' + stylePrice_change_percentage_24h + '">' +  
+            reformated_price_change_percentage_24h + '%' + '</font>';
+
 	    
 
             json[key]['assetName'] = img + ' ' +coin_link;
@@ -76,7 +91,7 @@ var homePageAssetList = {
             json[key]['block'] = blocks_formated;
             json[key]['nTx'] = value['nTx'];
             json[key]['blockchainAge'] = parseFloat(value['blockchainAge'] / 2628002.88).toFixed(1) + ' mos'; // Converted seconds to months
-	        json[key]['price_change_percentage_24h'] = price_change_percentage_24h_formated;
+	    json[key]['price_change_percentage_24h'] = price_change_percentage_24h_formated2;
 
             });
             return json;
