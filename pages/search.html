@@ -1,4 +1,7 @@
 Searching...
+<div id="search-error" class="hidden">
+  <span class="label label-info">FATAL</span><p class="text-error"></p>
+</div>
 
 <script type="text/javascript">
   $.ajax(
@@ -8,9 +11,12 @@ Searching...
     success: function(json)
     {
       if(json['FATAL']) {
-        $("#page-search").html(json['FATAL']);
+        $("#search-error").find(".text-error").text(json['FATAL']);
+        $("#search-error").removeClass("hidden");
         return
       }
+
+      $("#search-error").addClass("hidden");
 
       $("#page-search").html(json['FoundData']);
     }
