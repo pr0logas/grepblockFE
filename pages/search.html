@@ -1,1 +1,13 @@
 Searching...
+
+<script type="text/javascript">
+  $.ajax(
+  {
+    url: "/parsedb?query="+getUrlParamByName('query'),
+
+    success: function(json)
+    {
+      $("#page-search").html(json);
+    }
+  });
+</script>
