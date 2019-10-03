@@ -6,7 +6,7 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 28602 
+ "block" : 224942 
 ,
  "current_price" : 67.28 
 ,
@@ -14,11 +14,11 @@
 ,
  "total_volume" : 229208720 
 ,
- "blockchainAge" : "179998701"
+ "blockchainAge" : "179912181"
 ,
  "price_change_percentage_24h" : -3.04022 
 ,
- "nTx" : "9"
+ "nTx" : "1"
  },
 {
 "assetName" : "Polis" 
@@ -35,7 +35,7 @@
 ,
  "total_volume" : 4377.04 
 ,
- "blockchainAge" : "56239012"
+ "blockchainAge" : "56152492"
 ,
  "price_change_percentage_24h" : -3.18905 
 ,
@@ -48,17 +48,17 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 218817 
+ "block" : 263641 
 ,
- "current_price" : 0.00024696 
+ "current_price" : 0.00024743 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 40.26 
+ "total_volume" : 2.62 
 ,
- "blockchainAge" : "42392280"
+ "blockchainAge" : "42305761"
 ,
- "price_change_percentage_24h" : -25.0188 
+ "price_change_percentage_24h" : -25.94449 
 ,
  "nTx" : "1"
  },
@@ -77,7 +77,7 @@
 ,
  "total_volume" : 377229 
 ,
- "blockchainAge" : "115975380"
+ "blockchainAge" : "115888860"
 ,
  "price_change_percentage_24h" : -18.44579 
 ,
@@ -98,7 +98,7 @@
 ,
  "total_volume" : 70763955 
 ,
- "blockchainAge" : "39713899"
+ "blockchainAge" : "39627379"
 ,
  "price_change_percentage_24h" : -1.55343 
 ,
@@ -111,19 +111,19 @@
 ,
  "assetTicker" : "BTC" 
 ,
- "block" : 476548 
+ "block" : 263467 
 ,
- "current_price" : 8230.93 
+ "current_price" : 8257.72 
 ,
- "market_cap" : "147960036615" 
+ "market_cap" : "148322426039" 
 ,
- "total_volume" : "18023633561" 
+ "total_volume" : "18969722366" 
 ,
- "blockchainAge" : "338632726"
+ "blockchainAge" : "338546206"
 ,
- "price_change_percentage_24h" : -0.34612 
+ "price_change_percentage_24h" : -0.71955 
 ,
- "nTx" : "761"
+ "nTx" : "108"
  },
 {
 "assetName" : "Gincoin" 
@@ -140,7 +140,7 @@
 ,
  "total_volume" : 12567.16 
 ,
- "blockchainAge" : "50716009"
+ "blockchainAge" : "50629489"
 ,
  "price_change_percentage_24h" : -0.19229 
 ,
@@ -161,7 +161,7 @@
 ,
  "total_volume" : 111294 
 ,
- "blockchainAge" : "56067913"
+ "blockchainAge" : "55981394"
 ,
  "price_change_percentage_24h" : -4.13795 
 ,
@@ -182,7 +182,7 @@
 ,
  "total_volume" : 16804274 
 ,
- "blockchainAge" : "95081583"
+ "blockchainAge" : "94995064"
 ,
  "price_change_percentage_24h" : -1.93521 
 ,
@@ -203,7 +203,7 @@
 ,
  "total_volume" : 1634558 
 ,
- "blockchainAge" : "10424792"
+ "blockchainAge" : "10338272"
 ,
  "price_change_percentage_24h" : -8.3704 
 ,

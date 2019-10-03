@@ -23,13 +23,13 @@ var homePageAssetList = {
 
             var styleAssetType = ''
                 if (value['assetType'] == 'coin')
-                    styleAssetType = 'badge badge-warning';
+                    styleAssetType = '#FFBF00';
 
                 if (value['assetType'] == 'platform')
-                    styleAssetType = 'badge badge-primary';
+                    styleAssetType = '#00BFFF';
 
                 if (value['assetType'] == 'token')
-                    styleAssetType = 'badge badge-danger';
+                    styleAssetType = '#FE2E2E';
 
             var coin_name = value['assetName'] + ' (' + ticker + ')';
             var coin_link = '<a href="?page=coin&coin='+value['assetTicker']+'" class="link-coin">'+coin_name+'</a>';
@@ -50,16 +50,16 @@ var homePageAssetList = {
             var stylePrice_change_percentage_24h = ''
             
                 if (value['price_change_percentage_24h'] < 0)
-                    stylePrice_change_percentage_24h = 'label label-important' 
+                    stylePrice_change_percentage_24h = 'red' 
                 else
-                    stylePrice_change_percentage_24h = 'label label-success';
+                    stylePrice_change_percentage_24h = 'green';
 
-            var price_change_percentage_24h_formated = '<span class="' + stylePrice_change_percentage_24h + '">' + 
-            parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '%' + '</span>';
+	    var price_change_percentage_24h_formated = '<font color="' + stylePrice_change_percentage_24h + '">' +  
+            parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '%' + '</font>';
 	    
 
             json[key]['assetName'] = img + ' ' +coin_link;
-            json[key]['assetType'] = '<span class="' + styleAssetType + '">' + value['assetType'] + '</span>';
+            json[key]['assetType'] = '<strong><font color="' + styleAssetType + '">' + value['assetType'] + '</font></strong>';
             json[key]['current_price'] = '$' + value['current_price'];
             json[key]['market_cap'] = market_cap_formated;
             json[key]['total_volume'] = total_volume_formated;
