@@ -56,14 +56,21 @@
 
       <div class="span6">
 
-        <!-- About Asset
+        <!-- Price
         ================================================== -->
-        <section id="aboutAsset" class="doc">
-          <div class="page-header first">
-            <h3>About Asset</h3>
+        <section id="assetPrice" class="doc">
+          <div class="page-header">
+            <h3>Price (USD)</h3>
           </div>
-          <div id="page-description"></div>
-        </section>
+
+          <div id="charts" class="tab-pane active">
+            <div class="padding-top-1x">
+              <div id="highcharts-nodata" class="hidden text-center">No chart data found</div>
+            </div>
+            <div id="highcharts-graph-price" style="height: 400px; min-width: 310px"></div>
+            <br>
+          </div>
+
 
         <!-- MarketCap
         ================================================== -->
@@ -80,21 +87,6 @@
             <br>
           </div>
 
-
-        <!-- Price
-        ================================================== -->
-        <section id="assetPrice" class="doc">
-          <div class="page-header">
-            <h3>Price (USD)</h3>
-          </div>
-
-          <div id="charts" class="tab-pane active">
-            <div class="padding-top-1x">
-              <div id="highcharts-nodata" class="hidden text-center">No chart data found</div>
-            </div>
-            <div id="highcharts-graph-price" style="height: 400px; min-width: 310px"></div>
-            <br>
-          </div>
 
         <!-- Volume
         ================================================== -->
@@ -179,6 +171,16 @@
           </div>
         </section>
 
+        <!-- About Asset
+        ================================================== -->
+        <section id="aboutAsset" class="doc">
+          <div class="page-header first">
+            <h3>About Asset</h3>
+          </div>
+          <div id="page-description"></div>
+        </section>
+
+
         <!-- Supply
         ================================================== 
         <section id="assetSupply" class="doc">
@@ -229,12 +231,13 @@
 
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#assetMarketCap"><i class="icon-chevron-right"></i> MarketCap</a></li>
           <li><a href="#assetPrice"><i class="icon-chevron-right"></i> Price</a></li>
+          <li><a href="#assetMarketCap"><i class="icon-chevron-right"></i> MarketCap</a></li>
           <li><a href="#assetVolume"><i class="icon-chevron-right"></i> Volume</a></li>
           <li><a href="#assetBlocks"><i class="icon-chevron-right"></i> Blocks</a></li>
           <li><a href="#assetTransactions"><i class="icon-chevron-right"></i> Transactions</a></li>
           <li><a href="#assetDifficulty"><i class="icon-chevron-right"></i> Difficulty</a></li>
+	  <li><a href="#aboutAsset"><i class="icon-chevron-right"></i> About</a></li>
           <!--<li><a href="#assetSupply"><i class="icon-chevron-right"></i> Supply</a></li>
           <li><a href="#assetNetworkPeers"><i class="icon-chevron-right"></i> Network Peers</a></li>-->
         </ul>
