@@ -11,12 +11,12 @@
   <li id="search-size"><span class="name">Size (bytes): </span><span class="value"></span></li>
   <li id="search-version"><span class="name">Version: </span><span class="value"></span></li>
   <li id="search-merkleroot"><span class="name">Merkleroot: </span><span class="value"></span></li>
-  <li id="search-tx"><span class="name">Transactions: </span><span class="value"></span></li>
   <li id="search-time"><span class="name">Time (unix time): </span><span class="value"></span></li>
   <li id="search-bits"><span class="name">Bits: </span><span class="value"></span></li>
   <li id="search-difficulty"><span class="name">Difficulty: </span><span class="value"></span></li>
   <li id="search-chainwork"><span class="name">Chainwork: </span><span class="value"></span></li>
   <li id="search-previousblockhash"><span class="name">Previous block hash: </span><span class="value"></span></li>
+  <li id="search-tx"><span class="name">Transactions: </span><span class="value"></span></li>
 </ul>
 
 <script type="text/javascript">
@@ -42,12 +42,12 @@
         $("#search-size").find(".value").text(json['size']);
         $("#search-version").find(".value").text(json['version']);
         $("#search-merkleroot").find(".value").text(json['merkleroot']);
-        $("#search-tx").find(".value").text(json['tx']);
         $("#search-time").find(".value").text(json['time']);
         $("#search-bits").find(".value").text(json['bits']);
         $("#search-difficulty").find(".value").text(json['difficulty']);
         $("#search-chainwork").find(".value").text(json['chainwork']);
         $("#search-previousblockhash").find(".value").text(json['previousblockhash']);
+        $("#search-tx").find(".value").text(json['tx']);
       }
     });
 </script>
