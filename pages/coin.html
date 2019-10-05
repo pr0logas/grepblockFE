@@ -40,17 +40,15 @@
                 <div id="coin-algorithm"><strong>Algorithm:</strong> <span class="coin-param"></span></div>
               </div>
             </div>
-		<ul id="myTab" class="nav nav-tabs">
-              </ul>
-		<ul>
-                <li><a id="link-website" href="#" target="_blank"><span class="icon-bookmark"></span> Price: $0.00056</a></li>
-                <li><a href="#"><span class="icon-indent-left"></span> Change (24h): -1.55%</a></li>
-                <li><a id="link-announcement" href="#" target="_blank"><span class="icon-globe"></span> MarcetCap: $21,021</a></li>
-                <li><a id="link-sourceCode" href="#" target="_blank"><span class="icon-refresh"></span> Volume (24h): $2,021</a></li>
-                <li><a href="#"><span class="icon-time"></span> ChainAge: 16.1 mos</a></li>
-                <li><a href="#"><span class="icon-th"></span> Block: 645,932</a></li>
-		<li><a href="#"><span class="icon-list"></span> Txs: 3</a></li>
-              </ul>
+              <div>
+                <div id="coin-price"><span class="icon-bookmark"></span> <strong>Price:</strong> <span class="coin-param"></span></div>
+                <div id="coin-change_24"><span class="icon-indent-left"></span> <strong>Change (24h):</strong> <span class="coin-param"></span></div>
+                <div id="coin-marcetcap"><span class="icon-globe"></span> <strong>MarcetCap:</strong> <span class="coin-param"></span></div>
+                <div id="coin-volume_24"><span class="icon-refresh"></span> <strong>Volume (24h):</strong> <span class="coin-param"></span></div>
+                <div id="coin-chainage"><span class="icon-time"></span> <strong>ChainAge:</strong> <span class="coin-param"></span></div>
+                <div id="coin-block"><span class="icon-th"></span> <strong>Block:</strong> <span class="coin-param"></span></div>
+                <div id="coin-txs"><span class="icon-list"></span> <strong>Txs:</strong> <span class="coin-param"></span></div>
+              </div>
               <div>
           </aside>
         </div>
@@ -325,6 +323,25 @@
       $("#coin-masternode").find('.coin-param').text(json['masternode']);
     }
   });
+
+  $.ajax(
+  {
+    url: "/apidata/homePageAssetList.json", 
+
+    success: function(json)
+    {
+      json = json[0];
+
+      $("#coin-price").find('.coin-param').text(json['current_price']);
+      $("#coin-change_24").find('.coin-param').text(json['price_change_percentage_24h']);
+      $("#coin-marcetcap").find('.coin-param').text(json['market_cap']);
+      $("#coin-volume_24").find('.coin-param').text(json['total_volume']);
+      $("#coin-chainage").find('.coin-param').text(json['blockchainAge']);
+      $("#coin-block").find('.coin-param').text(json['block']);
+      $("#coin-txs").find('.coin-param').text(json['nTx']);
+    }
+  });
+
 
   $(document).ready(function() {
 
