@@ -2,7 +2,7 @@
   <span class="label label-info">FATAL</span><p class="text-error"></p>
 </div>
 
-<ul>
+<ul id="search-result" class="hidden">
   <li id="search-FoundData"><span class="name">FoundData: </span><span class="value"></span></li>
   <li id="search-ProcessingTook"><span class="name">ProcessingTook: </span><span class="value"></span></li>
   <li id="search-block"><span class="name">Block: </span><span class="value"></span></li>
@@ -20,6 +20,18 @@
 </ul>
 
 <script type="text/javascript">
+    function show_error(error) {
+      $("#search-error").find(".text-error").text(error);
+      if($("#search-error").hasClass("hidden"))
+        $("#search-error").removeClass("hidden");
+      if(!$("#search-result").hasClass("hidden"))
+        $("#search-result").addClass("hidden");
+    }
+
+    if(!getUrlParamByName('query')) {
+      show_error('No data');
+    } else
+
     $.ajax(
     {
       url: "/parsedb?query="+getUrlParamByName('query'),
@@ -27,12 +39,14 @@
       success: function(json)
       {
         if(json['FATAL']) {
-          $("#search-error").find(".text-error").text(json['FATAL']);
-          $("#search-error").removeClass("hidden");
+          show_error(json['FATAL']);
           return
         }
 
-        $("#search-error").addClass("hidden");
+        if(!$("#search-error").hasClass("hidden"))
+          $("#search-error").addClass("hidden");
+        if($("#search-result").hasClass("hidden"))
+          $("#search-result").removeClass("hidden");
 
         $("#search-FoundData").find(".value").text(json['FoundData']);
         $("#search-ProcessingTook").find(".value").text(json['ProcessingTook']);
@@ -48,6 +62,9 @@
         $("#search-chainwork").find(".value").text(json['chainwork']);
         $("#search-previousblockhash").find(".value").text(json['previousblockhash']);
         $("#search-tx").find(".value").text(json['tx']);
+      },
+      error: function(xhr, ajaxOptions, thrownError) {
+        show_error(thrownError);
       }
     });
 </script>
