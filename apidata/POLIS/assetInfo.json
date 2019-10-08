@@ -1,0 +1,53 @@
+[
+{
+ "assetName" : "Polis" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "POLIS" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "yes" 
+,
+ "sourceCode" : "https://github.com/polispay/polis" 
+,
+ "blockTime" : "120" 
+,
+ "maxSupply" : "25" 
+,
+ "blockSize" : "2" 
+,
+ "walletPrefix" : "P" 
+,
+ "explorer" : "https://explorer.polispay.org/" 
+,
+ "explorer2" : "" 
+,
+ "explorer3" : "" 
+,
+ "website" : "https://polispay.org" 
+,
+ "rpcPort" : "24127" 
+,
+ "networkPort" : "24126" 
+,
+ "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=2627897.0" 
+,
+ "telegram" : "https://t.me/PolisPayOfficial" 
+,
+ "reddit" : "https://www.reddit.com/user/Polispay" 
+,
+ "twitter" : "https://twitter.com/PolisBlockchain" 
+,
+ "chat" : "https://discordapp.com/invite/cAkeh8Y" 
+,
+ "about" : "Polis is a cryptocurrency for communities. People thrive when they can connect and trade freely. Polis uses advanced decentralized blockchain technology to solve major problems for our global community." 
+,
+ "algorithm" : "X11" 
+,
+ "developerFee" : "?" 
+,
+ "firstBlock" : "1513863372" 
+}
+]

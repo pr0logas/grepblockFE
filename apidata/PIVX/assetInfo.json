@@ -1,0 +1,53 @@
+[
+{
+ "assetName" : "Pivx" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "PIVX" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "yes" 
+,
+ "sourceCode" : "https://github.com/PIVX-Project/PIVX" 
+,
+ "blockTime" : "60" 
+,
+ "maxSupply" : "infinite" 
+,
+ "blockSize" : "2" 
+,
+ "walletPrefix" : "P" 
+,
+ "explorer" : "https://explorer.pivx.org/" 
+,
+ "explorer2" : "" 
+,
+ "explorer3" : "" 
+,
+ "website" : "https://pivx.org" 
+,
+ "rpcPort" : "51473" 
+,
+ "networkPort" : "51472" 
+,
+ "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=1262920" 
+,
+ "telegram" : "https://t.me/PIVXChat" 
+,
+ "reddit" : "https://www.reddit.com/r/pivx/" 
+,
+ "twitter" : "https://twitter.com/_pivx" 
+,
+ "chat" : "https://discordapp.com/invite/8ykrCWD" 
+,
+ "about" : "PIVX (PIVX), which stands for Private Instant Verified Transaction is an MIT licensed anonymity-based, community-governed fork of DASH. It is a Proof of Stake cryptocurrency with Zerocoin protocol implementation. PIVX has 2-tier currency: a regular coin for ordinary transactions, and an anonymous zPIV (which can be staked) for private transactions. Similar to Dash, PIVX supports quick and private transactions, along with masternodes. The decentralized network of masternodes facilitates treasury management and community governance." 
+,
+ "algorithm" : "Hybrid" 
+,
+ "developerFee" : "no" 
+,
+ "firstBlock" : "1454127007" 
+}
+]

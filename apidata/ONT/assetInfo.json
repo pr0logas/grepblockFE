@@ -1,0 +1,53 @@
+[
+{
+ "assetName" : "Ontology" 
+,
+ "assetType" : "platform" 
+,
+ "assetTicker" : "ONT" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "no" 
+,
+ "sourceCode" : "https://explorer.ont.io/" 
+,
+ "blockTime" : "8" 
+,
+ "maxSupply" : "?" 
+,
+ "blockSize" : "?" 
+,
+ "walletPrefix" : "?" 
+,
+ "explorer" : "?" 
+,
+ "explorer2" : "" 
+,
+ "explorer3" : "" 
+,
+ "website" : "https://ont.io" 
+,
+ "rpcPort" : "?" 
+,
+ "networkPort" : "?" 
+,
+ "bitcointalkThread" : "?" 
+,
+ "telegram" : "?" 
+,
+ "reddit" : "?" 
+,
+ "twitter" : "?" 
+,
+ "chat" : "?" 
+,
+ "about" : "Ontology (ONT) describes itself as a provider of high-performance public blockchains, which includes distributed ledger and smart contract systems. The Ontology blockchain framework reportedly supports public blockchain systems that can be customized for different applications. Ontology supports collaboration among chain networks with its various protocol groups. Ontology aims to constantly provide common modules on the underlying infrastructure for different kinds of distributed scenarios, such as those for the distributed digital identity framework and distributed data exchange protocol. Ontology intends to continue developing new common modules based on specific scenario requirements." 
+,
+ "algorithm" : "?" 
+,
+ "developerFee" : "?" 
+,
+ "firstBlock" : "1530388490" 
+}
+]

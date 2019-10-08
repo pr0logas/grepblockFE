@@ -1,0 +1,53 @@
+[
+{
+ "assetName" : "Zcoin" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "XZC" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "yes" 
+,
+ "sourceCode" : "?" 
+,
+ "blockTime" : "120" 
+,
+ "maxSupply" : "?" 
+,
+ "blockSize" : "?" 
+,
+ "walletPrefix" : "?" 
+,
+ "explorer" : "?" 
+,
+ "explorer2" : "" 
+,
+ "explorer3" : "" 
+,
+ "website" : "https://zcoin.io/" 
+,
+ "rpcPort" : "8888" 
+,
+ "networkPort" : "8168" 
+,
+ "bitcointalkThread" : "?" 
+,
+ "telegram" : "?" 
+,
+ "reddit" : "?" 
+,
+ "twitter" : "?" 
+,
+ "chat" : "?" 
+,
+ "about" : "Zcoin (XZC) is an open-source privacy-focused cryptocurrency token that launched in Sep 2016. To enable privacy, Zcoin uses zero-knowledge proofs via the Zerocoin protocol. Zerocoin is a cryptocurrency proposed by Johns Hopkins University professor Matthew D. Green and graduate students Ian Miers and Christina Garman as an extension to the Bitcoin protocol that would add cryptographic anonymity to Bitcoin transactions. With Zcoin’s Zerocoin feature, only the sender and receive would be able to ascertain the exchange of funds in a given transaction, as no transaction histories are linked to the actual coins. Zcoin operates a multi-node model where mining nodes verify blockchain transactions and Znodes store blockchain data." 
+,
+ "algorithm" : "?" 
+,
+ "developerFee" : "?" 
+,
+ "firstBlock" : "1475020813" 
+}
+]

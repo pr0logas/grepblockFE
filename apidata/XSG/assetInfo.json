@@ -1,0 +1,53 @@
+[
+{
+ "assetName" : "Snowgem" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "XSG" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "yes" 
+,
+ "sourceCode" : "?" 
+,
+ "blockTime" : "120" 
+,
+ "maxSupply" : "?" 
+,
+ "blockSize" : "?" 
+,
+ "walletPrefix" : "?" 
+,
+ "explorer" : "https://explorer.snowgem.org/" 
+,
+ "explorer2" : "" 
+,
+ "explorer3" : "" 
+,
+ "website" : "https://snowgem.org" 
+,
+ "rpcPort" : "16112" 
+,
+ "networkPort" : "16113" 
+,
+ "bitcointalkThread" : "?" 
+,
+ "telegram" : "?" 
+,
+ "reddit" : "?" 
+,
+ "twitter" : "?" 
+,
+ "chat" : "?" 
+,
+ "about" : "SnowGem (XSG) is the first Zhash-zkSNARKs project to offer Masternode ownership. Originally using the Equihash algorithm SnowGem switched to Zhash (144,5) to maintain a healthy GPU mining community. There will be similarities between SnowGem and other cryptocurrencies where we find that the existing solutions are sufficient, but there will also be differences in philosophy, direction, as well as execution where we believe we can improve upon these existing solutions." 
+,
+ "algorithm" : "?" 
+,
+ "developerFee" : "?" 
+,
+ "firstBlock" : 1514034481 
+}
+]

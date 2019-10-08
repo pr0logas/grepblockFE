@@ -1,0 +1,53 @@
+[
+{
+ "assetName" : "Ravencoin" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "RVN" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "no" 
+,
+ "sourceCode" : "https://github.com/RavenProject/Ravencoin" 
+,
+ "blockTime" : "60" 
+,
+ "maxSupply" : "21000000000" 
+,
+ "blockSize" : "1" 
+,
+ "walletPrefix" : "?" 
+,
+ "explorer" : "https://ravencoin.network" 
+,
+ "explorer2" : "" 
+,
+ "explorer3" : "" 
+,
+ "website" : "https://ravencoin.org" 
+,
+ "rpcPort" : "8766" 
+,
+ "networkPort" : "8767" 
+,
+ "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=3238497" 
+,
+ "telegram" : "https://t.me/RavencoinDev" 
+,
+ "reddit" : "?" 
+,
+ "twitter" : "?" 
+,
+ "chat" : "https://discordapp.com/invite/CqbfUZd" 
+,
+ "about" : "Ravencoin (RVN) is an open-source blockchain project that specializes in the creation and peer-to-peer transfer of assets. Ravencoin enables users to create and trade any real-world (e.g. commodities) or digital (e.g. virtual goods) assets on a network. The core developers launched Ravencoin on 3 Jan 2018. The project has some prominent backers: Bruce Fenton, Board Member of The Bitcoin Foundation, advises the team while Overstock has made a multi-million dollar investment into the project." 
+,
+ "algorithm" : "Hybrid" 
+,
+ "developerFee" : "?" 
+,
+ "firstBlock" : "1515015723" 
+}
+]
