@@ -376,10 +376,10 @@
 
 <script type="text/javascript">
 
-    stockChart(url_json+'/assetMarketCap.json', 'highcharts-graph-marketcap', 'MarketCap (USD)');
+    stockChart(url_json+'/assetMarketCap.json', 'highcharts-graph-marketcap', {'name':'MarketCap (USD)','valueDecimals':0});
 
-    stockChart(url_json+'/assetPrice.json', 'highcharts-graph-price', 'Price (USD)');
+    stockChart(url_json+'/assetPrice.json', 'highcharts-graph-price', {'name':'Price (USD)','valueDecimals':8});
 
-    stockChart(url_json+'/assetVolume.json', 'highcharts-graph-volume', 'Volume (USD)');
+    stockChart(url_json+'/assetVolume.json', 'highcharts-graph-volume', {'name':'Volume (USD)','valueDecimals':0});
 
 </script>
