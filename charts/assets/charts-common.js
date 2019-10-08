@@ -237,11 +237,13 @@ function resizeChart() {
   chart.setSize(w, 350, false);
 }
 
-function stockChart(json_url, id, name) {
+function stockChart(json_url, id, json) {
     Highcharts.getJSON(json_url, function (data) {
 
         graphJson['series'][0]['data'] = data;
-        graphJson['series'][0]['name'] = name;
+        graphJson['series'][0]['name'] = json['name'];
+
+        graphJson['series'][0]['tooltip']['valueDecimals'] = json['valueDecimals'];
 
         // Create the chart
         Highcharts.stockChart(id, graphJson);
