@@ -12,7 +12,7 @@ var graphJson = {
             name: '',
             data: {},
             tooltip: {
-                valueDecimals: 2
+                valueDecimals: 8
             }
         }],
 
