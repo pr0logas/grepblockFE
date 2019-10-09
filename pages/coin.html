@@ -337,10 +337,10 @@
           if(item['assetTicker'] !== coin)
             return true;
 
-          $("#coin-price").find('.coin-param').text(item['current_price']);
-          $("#coin-change_24").find('.coin-param').text(item['price_change_percentage_24h']);
-          $("#coin-marcetcap").find('.coin-param').text(item['market_cap']);
-          $("#coin-volume_24").find('.coin-param').text(item['total_volume']);
+          $("#coin-price").find('.coin-param').text('$'+item['current_price']);
+          $("#coin-change_24").find('.coin-param').text(item['price_change_percentage_24h']+'%');
+          $("#coin-marcetcap").find('.coin-param').text('$'+item['market_cap']);
+          $("#coin-volume_24").find('.coin-param').text('$'+item['total_volume']);
           $("#coin-chainage").find('.coin-param').text(item['blockchainAge']);
           $("#coin-block").find('.coin-param').text(item['block']);
           $("#coin-txs").find('.coin-param').text(item['nTx']);
