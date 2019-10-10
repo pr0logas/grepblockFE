@@ -70,6 +70,7 @@
             <div id="highcharts-graph-price" style="height: 400px; min-width: 310px"></div>
             <br>
           </div>
+        </section>
 
 
         <!-- MarketCap
@@ -86,7 +87,7 @@
             <div id="highcharts-graph-marketcap" style="height: 400px; min-width: 310px"></div>
             <br>
           </div>
-
+        </section>
 
         <!-- Volume
         ================================================== -->
@@ -102,6 +103,7 @@
             <div id="highcharts-graph-volume" style="height: 400px; min-width: 310px"></div>
             <br>
           </div>
+        </section>
 
         <!-- Blocks
         ================================================== -->
@@ -174,7 +176,7 @@
         <!-- About Asset
         ================================================== -->
         <section id="aboutAsset" class="doc">
-          <div class="page-header first">
+          <div class="page-header">
             <h3>About Asset</h3>
           </div>
           <div id="page-description"></div>
@@ -355,31 +357,76 @@
 
       addEventListeners();
 
-      var difficulty_url = url_json+'/assetDifficulty.json';
-
-      ajaxCall(difficulty_url, setData, undefined, 'difficulty');
-
-      var transactions_url = url_json+'/assetTransactions.json';
-
-      ajaxCall(transactions_url, setData, undefined, 'transactions');
-
       //var supply_url = url_json+'/assetSupply.json';
 
       //ajaxCall(supply_url, setData, undefined, 'supply');
-
-      var blocks_url = url_json+'/assetBlocks.json';
-
-      ajaxCall(blocks_url, setData, undefined, 'blocks');
 
   });
 </script>
 
 <script type="text/javascript">
 
-    stockChart(url_json+'/assetMarketCap.json', 'highcharts-graph-marketcap', {'name':'MarketCap (USD)','valueDecimals':0});
+$(document).ready(function() {
+  stockChart(url_json+'/assetPrice.json', 'highcharts-graph-price', {'name':'Price (USD)','valueDecimals':8});
 
-    stockChart(url_json+'/assetPrice.json', 'highcharts-graph-price', {'name':'Price (USD)','valueDecimals':8});
+  var scroll_pos = 0;
+  $(document).scroll(function() {
+    scroll_pos = $(this).scrollTop();
+    function scroll_el_start(el,n=1) {
+      return $(el).offset().top-$(el).height()*n;//-$(el).height()/2;
+    }
+    function scroll_el_end(el) {
+      return $(el).offset().top + $(el).height();
+    }
+    function scroll_el_no_start_showing(el) {
+      return scroll_pos < scroll_el_start(el);
+    }
+    function scroll_el_showing(el) {
+      return scroll_pos > scroll_el_start(el) && scroll_pos < scroll_el_end(el);
+    }
+    function scroll_el_passed(el) {
+      return scroll_pos > scroll_el_end(el);
+    }
+    /*if (scroll_el_no_start_showing('#assetVolume')) {
+      alert("Not start showing");
+    }
+    if (scroll_el_showing('#assetVolume')) {
+      alert("Showing");
+    }
+    if (scroll_el_passed('#assetVolume')) {
+      alert("Passed");
+    }*/
+    var marketcap_url = url_json+'/assetMarketCap.json';
+    
+    var volume_url = url_json+'/assetVolume.json';
 
-    stockChart(url_json+'/assetVolume.json', 'highcharts-graph-volume', {'name':'Volume (USD)','valueDecimals':0});
+    var blocks_url = url_json+'/assetBlocks.json';
+
+    var difficulty_url = url_json+'/assetDifficulty.json';
+
+    var transactions_url = url_json+'/assetTransactions.json';
+
+    if (scroll_el_showing('#assetMarketCap')) {
+      if(!$('#highcharts-graph-marketcap').data('highcharts-chart'))
+        stockChart(marketcap_url, 'highcharts-graph-marketcap', {'name':'MarketCap (USD)','valueDecimals':0});
+    }
+    if (scroll_el_showing('#assetVolume')) {
+      if(!$('#highcharts-graph-volume').data('highcharts-chart'))
+        stockChart(volume_url, 'highcharts-graph-volume', {'name':'Volume (USD)','valueDecimals':0});
+    }
+    if (scroll_el_showing('#assetBlocks'),1) {
+      if(!$('#graph_blocks').data('highcharts-chart'))
+        ajaxCall(blocks_url, setData, undefined, 'blocks');
+    }
+    if (scroll_el_showing('#assetTransactions'),1) {
+      if(!$('#graph_transactions').data('highcharts-chart'))
+        ajaxCall(transactions_url, setData, undefined, 'transactions');
+    }
+    if (scroll_el_showing('#assetDifficulty'),1) {
+      if(!$('#graph_difficulty').data('highcharts-chart'))
+        ajaxCall(difficulty_url, setData, undefined, 'difficulty');
+    }
+  });
+});
 
 </script>
