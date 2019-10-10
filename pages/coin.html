@@ -323,7 +323,8 @@
       $("#coin-networkPort").find('.coin-param').text(json['networkPort']);
       $("#coin-rpcPort").find('.coin-param').text(json['rpcPort']);
       $("#coin-developerFee").find('.coin-param').text(json['developerFee']);
-      $("#coin-firstBlock").find('.coin-param').text(json['firstBlock']);
+      var firstBlock = new Date(json['firstBlock']*1000);
+      $("#coin-firstBlock").find('.coin-param').text(firstBlock.toISOString());
       $("#coin-algorithm").find('.coin-param').text(json['algorithm']);
       $("#coin-masternode").find('.coin-param').text(json['masternode']);
     }
