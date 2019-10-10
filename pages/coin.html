@@ -340,11 +340,48 @@
             return true;
 
           $("#coin-price").find('.coin-param').text('$'+item['current_price']);
-          $("#coin-change_24").find('.coin-param').text(item['price_change_percentage_24h']+'%');
-          $("#coin-marcetcap").find('.coin-param').text('$'+item['market_cap']);
-          $("#coin-volume_24").find('.coin-param').text('$'+item['total_volume']);
-          $("#coin-chainage").find('.coin-param').text(item['blockchainAge']);
-          $("#coin-block").find('.coin-param').text(item['block']);
+
+      // Add + sign for Price change if value is greater than > 0
+
+            // Format *price_change_percentage_24h* value to see in nice shape.
+            var stylePrice_change_percentage_24h = ''
+            
+                if (item['price_change_percentage_24h'] < 0)
+                    stylePrice_change_percentage_24h = 'red' 
+                else
+                    stylePrice_change_percentage_24h = 'green';
+      // At first reformat the number after decimal, later one add + sign if needed, otherwise first formatting ignores seconds one
+            var price_change_percentage_24h_formated1 = parseFloat(item['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+
+      var reformated_price_change_percentage_24h = ''
+
+                if (price_change_percentage_24h_formated1 > 0)
+                    reformated_price_change_percentage_24h = '+' + price_change_percentage_24h_formated1
+                else
+                    reformated_price_change_percentage_24h = price_change_percentage_24h_formated1
+
+      var price_change_percentage_24h_formated2 = '<font color="' + stylePrice_change_percentage_24h + '">' +  
+            reformated_price_change_percentage_24h + '%' + '</font>';
+          $("#coin-change_24").find('.coin-param').html(price_change_percentage_24h_formated2);
+
+          // Format *market_cap* value to see in nice shape
+          var market_cap_formated = '$' + parseFloat(item['market_cap']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+          market_cap_formated = market_cap_formated.substring(0, market_cap_formated.length-2);
+          $("#coin-marcetcap").find('.coin-param').text(market_cap_formated);
+
+          // Format *total_volume* value to see in nice shape
+            var total_volume_formated = '$' + parseFloat(item['total_volume']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+            total_volume_formated = total_volume_formated.substring(0, total_volume_formated.length-2);
+          $("#coin-volume_24").find('.coin-param').text(total_volume_formated);
+
+          var blockchainAge = parseFloat(item['blockchainAge'] / 2628002.88).toFixed(1) + ' mos'; // Converted seconds to months
+          $("#coin-chainage").find('.coin-param').text(blockchainAge);
+
+          // Format *block* value to see in nice shape
+          var blocks_formated = parseFloat(item['block']).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+          blocks_formated = blocks_formated.substring(0, blocks_formated.length-2);
+          $("#coin-block").find('.coin-param').text(blocks_formated);
+
           $("#coin-txs").find('.coin-param').text(item['nTx']);
 
           return false;
