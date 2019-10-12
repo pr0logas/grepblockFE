@@ -18,11 +18,11 @@
 ,
  "blockSize" : "1" 
 ,
- "walletPrefix" : "?" 
+ "walletPrefix" : "R" 
 ,
  "explorer" : "https://ravencoin.network" 
 ,
- "explorer2" : "" 
+ "explorer2" : "https://explorer.ravencoin.world" 
 ,
  "explorer3" : "" 
 ,
@@ -36,9 +36,9 @@
 ,
  "telegram" : "https://t.me/RavencoinDev" 
 ,
- "reddit" : "?" 
+ "reddit" : "https://www.reddit.com/r/Ravencoin/" 
 ,
- "twitter" : "?" 
+ "twitter" : "https://twitter.com/ravencoin" 
 ,
  "chat" : "https://discordapp.com/invite/CqbfUZd" 
 ,
@@ -46,7 +46,9 @@
 ,
  "algorithm" : "Hybrid" 
 ,
- "developerFee" : "?" 
+ "developerFee" : "no" 
+,
+ "whitepaper" : "https://ravencoin.org/whitepaper/" 
 ,
  "firstBlock" : "1515015723" 
 }
