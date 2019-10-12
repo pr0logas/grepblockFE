@@ -10,21 +10,21 @@
 ,
  "masternode" : "yes" 
 ,
- "sourceCode" : "?" 
+ "sourceCode" : "https://github.com/zcoinofficial/zcoin/" 
 ,
- "blockTime" : "120" 
+ "blockTime" : "300" 
 ,
- "maxSupply" : "?" 
+ "maxSupply" : "21400000" 
 ,
- "blockSize" : "?" 
+ "blockSize" : "2" 
 ,
- "walletPrefix" : "?" 
+ "walletPrefix" : "a" 
 ,
- "explorer" : "?" 
+ "explorer" : "https://explorer.zcoin.io/" 
 ,
- "explorer2" : "" 
+ "explorer2" : "https://chainz.cryptoid.info/xzc/" 
 ,
- "explorer3" : "" 
+ "explorer3" : "https://insight.zcoin.io/" 
 ,
  "website" : "https://zcoin.io/" 
 ,
@@ -32,21 +32,23 @@
 ,
  "networkPort" : "8168" 
 ,
- "bitcointalkThread" : "?" 
+ "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=1638450" 
 ,
- "telegram" : "?" 
+ "telegram" : "https://telegram.me/zcoinproject" 
 ,
- "reddit" : "?" 
+ "reddit" : "https://www.reddit.com/r/zcoin/" 
 ,
- "twitter" : "?" 
+ "twitter" : "https://twitter.com/zcoinofficial" 
 ,
- "chat" : "?" 
+ "chat" : "https://discordapp.com/invite/4FjnQ2q" 
 ,
  "about" : "Zcoin (XZC) is an open-source privacy-focused cryptocurrency token that launched in Sep 2016. To enable privacy, Zcoin uses zero-knowledge proofs via the Zerocoin protocol. Zerocoin is a cryptocurrency proposed by Johns Hopkins University professor Matthew D. Green and graduate students Ian Miers and Christina Garman as an extension to the Bitcoin protocol that would add cryptographic anonymity to Bitcoin transactions. With Zcoin’s Zerocoin feature, only the sender and receive would be able to ascertain the exchange of funds in a given transaction, as no transaction histories are linked to the actual coins. Zcoin operates a multi-node model where mining nodes verify blockchain transactions and Znodes store blockchain data." 
 ,
- "algorithm" : "?" 
+ "algorithm" : "MTP" 
 ,
- "developerFee" : "?" 
+ "developerFee" : "no" 
+,
+ "whitepaper" : "https://zcoin.io/wp-content/uploads/2016/11/zerocoinwhitepaper.pdf" 
 ,
  "firstBlock" : "1475020813" 
 }

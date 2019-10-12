@@ -10,43 +10,45 @@
 ,
  "masternode" : "yes" 
 ,
- "sourceCode" : "" 
+ "sourceCode" : "https://github.com/syscoin/syscoin" 
 ,
  "blockTime" : "60" 
 ,
- "maxSupply" : "?" 
+ "maxSupply" : "888000000" 
 ,
- "blockSize" : "?" 
+ "blockSize" : "10" 
 ,
- "walletPrefix" : "?" 
+ "walletPrefix" : "s" 
 ,
- "explorer" : "" 
+ "explorer" : "https://chainz.cryptoid.info/sys/" 
 ,
- "explorer2" : "" 
+ "explorer2" : "http://explorer.blockchainfoundry.co/" 
 ,
  "explorer3" : "" 
 ,
  "website" : "https://syscoin.org/" 
 ,
- "rpcPort" : "?" 
+ "rpcPort" : "8370" 
 ,
- "networkPort" : "?" 
+ "networkPort" : "8369" 
 ,
- "bitcointalkThread" : "?" 
+ "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=1466445.0" 
 ,
- "telegram" : "?" 
+ "telegram" : "https://t.me/Syscoin_Official" 
 ,
- "reddit" : "?" 
+ "reddit" : "https://www.reddit.com/r/SysCoin/" 
 ,
- "twitter" : "?" 
+ "twitter" : "https://twitter.com/syscoin" 
 ,
- "chat" : "?" 
+ "chat" : "https://discord.gg/RkK2AXD" 
 ,
  "about" : "Syscoin (SYS) envisages itself to be a scalable blockchain for enterprise, a development platform, and an asset platform offering high throughput, low fees, security, ease of token creation, and cross-chain asset interoperability. It aims to help developers create and implement decentralized applications, as well as facilitate the development of custom decentralized marketplaces." 
 ,
- "algorithm" : "?" 
+ "algorithm" : "hybrid" 
 ,
- "developerFee" : "?" 
+ "developerFee" : "no" 
+,
+ "whitepaper" : "https://syscoin.org/whitepaper" 
 ,
  "firstBlock" : "1559677606" 
 }
