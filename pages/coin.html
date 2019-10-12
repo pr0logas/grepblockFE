@@ -335,7 +335,7 @@
       $("#coin-mineable").find('.coin-param').text(json['mineable']);
       $("#coin-blockTime").find('.coin-param').text(json['blockTime'] + ' s');
       $("#coin-blockSize").find('.coin-param').text(json['blockSize'] + ' MB');
-      $("#coin-maxSupply").find('.coin-param').text(json['maxSupply']);
+      $("#coin-maxSupply").find('.coin-param').text(' ~ ' + json['maxSupply']);
       $("#coin-walletPrefix").find('.coin-param').text(json['walletPrefix']);
       $("#coin-networkPort").find('.coin-param').text(json['networkPort']);
       $("#coin-rpcPort").find('.coin-param').text(json['rpcPort']);
