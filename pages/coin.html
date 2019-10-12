@@ -17,13 +17,18 @@
               </h5>
               <ul class="arrow">
                 <li><a id="link-website" href="#" target="_blank"><span class="icon-globe"></span> Website</a></li>
-                <li><a id="link-explorer" href="#"><span class="icon-search"></span> Explorer</a>
-                <a id="link-explorer2" href="#"><span class="icon-search"></span> Explorer 2</a>
+                <li><a id="link-explorer" href="#" target="_blank"><span class="icon-search"></span> Explorer</a>
+                <a id="link-explorer2" href="#" target="_blank"> 2 </a>
+                <a id="link-explorer3" href="#" target="_blank"> 3 <a>
                 </li>
                 <li><a id="link-announcement" href="#" target="_blank"><span class="icon-flag"></span> Announcement</a></li>
                 <li><a id="link-sourceCode" href="#" target="_blank"><span class="icon-inbox"></span> Source Code</a></li>
-                <li><a href="#"><span class="icon-comment"></span> Chat ( 1 2 3 )</a></li>
-                <li><a href="#"><span class="icon-list-alt"></span> Whitepaper</a></li>
+                <li><a id="link-chat" href="#" target="_blank"><span class="icon-comment"></span> Chat </a>
+                <a id="link-chat2" href="#" target="_blank"> 2 </a>
+                <a id="link-chat3" href="#" target="_blank"> 3 </a>
+                <a id="link-chat3" href="#" target="_blank"> 4 </a>
+                </li>
+                <li><a id="link-whitepaper" href="#" target="_blank"><span class="icon-list-alt"></span> Whitepaper</a></li>
               </ul>
               <ul id="myTab" class="nav nav-tabs">
               </ul>
@@ -36,6 +41,7 @@
                 <div id="coin-block"><span class="icon-th"></span> <strong>Block:</strong> <span class="coin-param"></span></div>
                 <div id="coin-txs"><span class="icon-list"></span> <strong>Txs:</strong> <span class="coin-param"></span></div>
               </div>
+              <br>
               <div>
                 <div id="coin-type"><strong>Asset Type:</strong> <span class="label label-warning"><span class="coin-param"></span></span></div>
                 <div id="coin-mineable"><strong>Mineable:</strong> <span class="label label-success"><span class="coin-param"></span></span></div>
@@ -315,8 +321,15 @@
       $("#link-website").attr("href", json['website']);
       $("#link-explorer").attr("href", json['explorer']);
       $("#link-explorer2").attr("href", json['explorer2']);
+      $("#link-explorer3").attr("href", json['explorer3']);      
       $("#link-announcement").attr("href", json['bitcointalkThread']);
       $("#link-sourceCode").attr("href", json['sourceCode']);
+      $("#link-chat").attr("href", json['discord']);
+      $("#link-chat2").attr("href", json['twitter']);
+      $("#link-chat3").attr("href", json['telegram']);
+      $("#link-chat3").attr("href", json['reddit']);
+      $("#link-chat4").attr("href", json['chatother']);
+      $("#link-whitepaper").attr("href", json['whitepaper']);
 
       $("#coin-type").find('.coin-param').text(json['assetType']);
       $("#coin-mineable").find('.coin-param').text(json['mineable']);
