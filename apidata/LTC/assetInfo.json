@@ -1,0 +1,55 @@
+[
+{
+ "assetName" : "Litecoin" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "LTC" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "no" 
+,
+ "sourceCode" : "https://github.com/litecoin-project/litecoin" 
+,
+ "blockTime" : "150" 
+,
+ "maxSupply" : "84000000" 
+,
+ "blockSize" : "1" 
+,
+ "walletPrefix" : "M" 
+,
+ "explorer" : "https://blockchair.com/litecoin" 
+,
+ "explorer2" : "https://chainz.cryptoid.info/ltc/" 
+,
+ "explorer3" : "http://explorer.litecoin.net/chain/Litecoin" 
+,
+ "website" : "https://litecoin.org/" 
+,
+ "rpcPort" : "9332" 
+,
+ "networkPort" : "9333" 
+,
+ "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=47417.0" 
+,
+ "telegram" : "https://telegram.me/litecoin" 
+,
+ "reddit" : "https://www.reddit.com/r/litecoin/" 
+,
+ "twitter" : "https://twitter.com/litecoin" 
+,
+ "chat" : "https://discord.gg/AFkPpC2" 
+,
+ "about" : "Litecoin is a peer-to-peer cryptocurrency created by Charlie Lee. It was created based on the Bitcoin protocol but differs in terms of the hashing algorithm used. Litecoin uses the memory intensive Scrypt proof of work mining algorithm. Scrypt allows consumer-grade hardware such as GPU/ASIC to mine those coins." 
+,
+ "algorithm" : "Scrypt" 
+,
+ "developerFee" : "no" 
+,
+ "whitepaper" : "https://www.youtube.com/watch?v=Le5ByHtssnc" 
+,
+ "firstBlock" : "1318055359" 
+}
+]
