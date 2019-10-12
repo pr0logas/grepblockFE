@@ -17,7 +17,9 @@
               </h5>
               <ul class="arrow">
                 <li><a id="link-website" href="#" target="_blank"><span class="icon-globe"></span> Website</a></li>
-                <li><a href="#"><span class="icon-search"></span> Explorer ( 1 2 3 )</a></li>
+                <li><a id="link-explorer" href="#"><span class="icon-search"></span> Explorer</a>
+                <a id="link-explorer2" href="#"><span class="icon-search"></span> Explorer 2</a>
+                </li>
                 <li><a id="link-announcement" href="#" target="_blank"><span class="icon-flag"></span> Announcement</a></li>
                 <li><a id="link-sourceCode" href="#" target="_blank"><span class="icon-inbox"></span> Source Code</a></li>
                 <li><a href="#"><span class="icon-comment"></span> Chat ( 1 2 3 )</a></li>
@@ -239,7 +241,7 @@
           <li><a href="#assetBlocks"><i class="icon-chevron-right"></i> Blocks</a></li>
           <li><a href="#assetTransactions"><i class="icon-chevron-right"></i> Transactions</a></li>
           <li><a href="#assetDifficulty"><i class="icon-chevron-right"></i> Difficulty</a></li>
-	  <li><a href="#aboutAsset"><i class="icon-chevron-right"></i> About</a></li>
+	        <li><a href="#aboutAsset"><i class="icon-chevron-right"></i> About</a></li>
           <!--<li><a href="#assetSupply"><i class="icon-chevron-right"></i> Supply</a></li>
           <li><a href="#assetNetworkPeers"><i class="icon-chevron-right"></i> Network Peers</a></li>-->
         </ul>
@@ -311,6 +313,8 @@
       replaceText(id('coin-title'), title);
       replaceText(id('page-description'), json['about']);
       $("#link-website").attr("href", json['website']);
+      $("#link-explorer").attr("href", json['explorer']);
+      $("#link-explorer2").attr("href", json['explorer2']);
       $("#link-announcement").attr("href", json['bitcointalkThread']);
       $("#link-sourceCode").attr("href", json['sourceCode']);
 
