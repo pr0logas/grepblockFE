@@ -48,8 +48,8 @@
                 <div id="coin-masternode"><strong>Masternode:</strong> <span class="label label-success"><span class="coin-param"></span></span></div>
                 <div id="coin-firstBlock"><strong>First Block:</strong> <span class="coin-param"></span></div>
                 <div id="coin-algorithm"><strong>Algorithm:</strong> <span class="coin-param"></span></div>
-                <div id="coin-blockTime"><strong>Block Time (s):</strong> <span class="coin-param"></span></div>
-                <div id="coin-blockSize"><strong>Block Size (MB):</strong> <span class="coin-param"></span></div>
+                <div id="coin-blockTime"><strong>Block Time:</strong> <span class="coin-param"></span></div>
+                <div id="coin-blockSize"><strong>Block Size:</strong> <span class="coin-param"></span></div>
                 <div id="coin-maxSupply"><strong>Max Supply:</strong> <span class="coin-param"></span></div>
                 <div id="coin-walletPrefix"><strong>Wallet Prefix:</strong> <span class="coin-param"></span></div>
                 <div id="coin-networkPort"><strong>Network Port:</strong> <span class="coin-param"></span></div>
@@ -333,8 +333,8 @@
 
       $("#coin-type").find('.coin-param').text(json['assetType']);
       $("#coin-mineable").find('.coin-param').text(json['mineable']);
-      $("#coin-blockTime").find('.coin-param').text(json['blockTime']);
-      $("#coin-blockSize").find('.coin-param').text(json['blockSize']);
+      $("#coin-blockTime").find('.coin-param').text(json['blockTime'] + ' s');
+      $("#coin-blockSize").find('.coin-param').text(json['blockSize'] + ' MB');
       $("#coin-maxSupply").find('.coin-param').text(json['maxSupply']);
       $("#coin-walletPrefix").find('.coin-param').text(json['walletPrefix']);
       $("#coin-networkPort").find('.coin-param').text(json['networkPort']);
@@ -368,8 +368,9 @@
                     stylePrice_change_percentage_24h = 'red' 
                 else
                     stylePrice_change_percentage_24h = 'green';
-      // At first reformat the number after decimal, later one add + sign if needed, otherwise first formatting ignores seconds one
-            var price_change_percentage_24h_formated1 = parseFloat(item['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+
+      // At first reformat the number after decimal, later one add + sign if needed, otherwise first formatting ignores second one
+      var price_change_percentage_24h_formated1 = parseFloat(item['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 
       var reformated_price_change_percentage_24h = ''
 
