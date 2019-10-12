@@ -48,6 +48,8 @@
 ,
  "developerFee" : "yes" 
 ,
+ "whitepaper" : "https://adeptio.cc/adeptio_whitepaper_latest.pdf" 
+,
  "firstBlock" : "1527710105" 
 }
 ]
