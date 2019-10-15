@@ -42,19 +42,27 @@
                 <div id="coin-txs"><span class="icon-list"></span> <strong>Last blk txs:</strong> <span class="coin-param"></span></div>
               </div>
               <br>
-              <div>
-                <div id="coin-type"><strong>Asset Type:</strong> <span class="label label-warning"><span class="coin-param"></span></span></div>
-                <div id="coin-mineable"><strong>Mineable:</strong> <span class="label label-success"><span class="coin-param"></span></span></div>
-                <div id="coin-masternode"><strong>Masternode:</strong> <span class="label label-success"><span class="coin-param"></span></span></div>
-                <div id="coin-firstBlock"><strong>First Block:</strong> <span class="coin-param"></span></div>
-                <div id="coin-algorithm"><strong>Algorithm:</strong> <span class="coin-param"></span></div>
-                <div id="coin-blockTime"><strong>Block Time:</strong> <span class="coin-param"></span></div>
-                <div id="coin-blockSize"><strong>Block Size:</strong> <span class="coin-param"></span></div>
-                <div id="coin-maxSupply"><strong>Max Supply:</strong> <span class="coin-param"></span></div>
-                <div id="coin-walletPrefix"><strong>Wallet Prefix:</strong> <span class="coin-param"></span></div>
-                <div id="coin-networkPort"><strong>Network Port:</strong> <span class="coin-param"></span></div>
-                <div id="coin-rpcPort"><strong>RPC Port:</strong> <span class="coin-param"></span></div>
-                <div id="coin-developerFee"><strong>Developer Fee:</strong> <span class="coin-param"></span></div>
+              <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#recent" data-toggle="tab">Latest</a></li>
+                <li><a href="#popular" data-toggle="tab">Popular</a></li>
+              </ul>
+              <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="recent">
+                  <div id="coin-type"><strong>Asset Type:</strong> <span class="label label-warning"><span class="coin-param"></span></span></div>
+                  <div id="coin-mineable"><strong>Mineable:</strong> <span class="label label-success"><span class="coin-param"></span></span></div>
+                  <div id="coin-masternode"><strong>Masternode:</strong> <span class="label label-success"><span class="coin-param"></span></span></div>
+                  <div id="coin-firstBlock"><strong>First Block:</strong> <span class="coin-param"></span></div>
+                  <div id="coin-algorithm"><strong>Algorithm:</strong> <span class="coin-param"></span></div>
+                  <div id="coin-blockTime"><strong>Block Time:</strong> <span class="coin-param"></span></div>
+                </div>
+                <div class="tab-pane fade" id="popular">
+                  <div id="coin-blockSize"><strong>Block Size:</strong> <span class="coin-param"></span></div>
+                  <div id="coin-maxSupply"><strong>Max Supply:</strong> <span class="coin-param"></span></div>
+                  <div id="coin-walletPrefix"><strong>Wallet Prefix:</strong> <span class="coin-param"></span></div>
+                  <div id="coin-networkPort"><strong>Network Port:</strong> <span class="coin-param"></span></div>
+                  <div id="coin-rpcPort"><strong>RPC Port:</strong> <span class="coin-param"></span></div>
+                  <div id="coin-developerFee"><strong>Developer Fee:</strong> <span class="coin-param"></span></div>
+                </div>
               </div>
             </div>
               <div>
