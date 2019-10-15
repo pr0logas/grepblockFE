@@ -472,11 +472,11 @@ $(document).ready(function() {
       if(!$('#highcharts-graph-volume').data('highcharts-chart'))
         stockChart(volume_url, 'highcharts-graph-volume', {'name':'Volume (USD)','valueDecimals':0});
     }
-    if (scroll_el_showing('#assetBlocks'),1) {
+    if (scroll_el_showing('#assetBlocks')) {
       if(!$('#graph_blocks').data('highcharts-chart'))
         ajaxCall(blocks_url, setData, undefined, 'blocks');
     }
-    if (scroll_el_showing('#assetTransactions'),1) {
+    if (scroll_el_showing('#assetTransactions')) {
       if(!$('#graph_transactions').data('highcharts-chart'))
         ajaxCall(transactions_url, setData, undefined, 'transactions');
     }
