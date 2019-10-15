@@ -10,7 +10,7 @@ var homePageAssetList = {
     pageLength: 50,
     bPaginate: false,
     order: [
-        [1, "desc"]
+        [8, "desc"]
     ],
     ajax: {
         url: '/apidata/homePageAssetList.json',
