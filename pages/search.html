@@ -38,6 +38,11 @@
 
       success: function(json)
       {
+        if(!json) {
+          show_error('Not found');
+          return
+        }
+
         if(json['FATAL']) {
           show_error(json['FATAL']);
           return
