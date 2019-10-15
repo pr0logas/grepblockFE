@@ -240,6 +240,9 @@ function resizeChart() {
 function stockChart(json_url, id, json) {
     Highcharts.getJSON(json_url, function (data) {
 
+        if(data.hasOwnProperty('values'))
+            data = data['values'];
+
         graphJson['series'][0]['data'] = data;
         graphJson['series'][0]['name'] = json['name'];
 
