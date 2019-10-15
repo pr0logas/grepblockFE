@@ -27,7 +27,8 @@ var graphJson = {
           },
           style:{"cursor": "pointer", "color": "#999999", "fontSize": "10px"},
           text: 'HighCharts.com'
-        }
+        },
+        colors: ['#000000']
     };
 
 var jsjson = {
@@ -261,6 +262,8 @@ function stockChart(json_url, id, json) {
         graphJson['series'][0]['name'] = json['name'];
 
         graphJson['series'][0]['tooltip']['valueDecimals'] = json['valueDecimals'];
+
+        graphJson['colors'] = json['colors'];
 
         // Create the chart
         Highcharts.stockChart(id, graphJson);
