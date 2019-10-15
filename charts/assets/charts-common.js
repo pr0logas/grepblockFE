@@ -240,8 +240,22 @@ function resizeChart() {
 function stockChart(json_url, id, json) {
     Highcharts.getJSON(json_url, function (data) {
 
-        if(data.hasOwnProperty('values'))
-            data = data['values'];
+        if(data.hasOwnProperty('values')) {
+          var raw = [];
+          var logScale = parseInt(qs('scale'));
+          for (var i = 0; i < data['values'].length; i++) {
+              data['values'][i]['y'] = parseFloat(data['values'][i]['y']);
+              if (logScale == 1 && data['values'][i]['y'] < 0.00001) {
+                  data['values'][i]['y'] = 0.00001;
+              }
+
+              raw.push([
+                  data['values'][i]['x'] * 1000,
+                  data['values'][i]['y']
+              ]);
+          }
+          data = raw;
+        }
 
         graphJson['series'][0]['data'] = data;
         graphJson['series'][0]['name'] = json['name'];
