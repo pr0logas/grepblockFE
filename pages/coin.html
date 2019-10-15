@@ -429,7 +429,7 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
-  stockChart(url_json+'/assetPrice.json', 'highcharts-graph-price', {'name':'Price (USD)','valueDecimals':8});
+  stockChart(url_json+'/assetPrice.json', 'highcharts-graph-price', {'name':'Price (USD)','valueDecimals':8,'colors':['#009cea']});
 
   var scroll_pos = 0;
   $(document).scroll(function() {
@@ -470,23 +470,23 @@ $(document).ready(function() {
 
     if (scroll_el_showing('#assetMarketCap')) {
       if(!$('#highcharts-graph-marketcap').data('highcharts-chart'))
-        stockChart(marketcap_url, 'highcharts-graph-marketcap', {'name':'MarketCap (USD)','valueDecimals':0});
+        stockChart(marketcap_url, 'highcharts-graph-marketcap', {'name':'MarketCap (USD)','valueDecimals':0,'colors':['blue']});
     }
     if (scroll_el_showing('#assetVolume')) {
       if(!$('#highcharts-graph-volume').data('highcharts-chart'))
-        stockChart(volume_url, 'highcharts-graph-volume', {'name':'Volume (USD)','valueDecimals':0});
+        stockChart(volume_url, 'highcharts-graph-volume', {'name':'Volume (USD)','valueDecimals':0,'colors':['#000000']});
     }
     if (scroll_el_showing('#assetBlocks')) {
       if(!$('#highcharts-graph-blocks').data('highcharts-chart'))
-        stockChart(blocks_url, 'highcharts-graph-blocks', {'name':'Blocks','valueDecimals':0});
+        stockChart(blocks_url, 'highcharts-graph-blocks', {'name':'Blocks','valueDecimals':0,'colors':['#ffbb00']});
     }
     if (scroll_el_showing('#assetTransactions')) {
       if(!$('#highcharts-graph-transactions').data('highcharts-chart'))
-        stockChart(transactions_url, 'highcharts-graph-transactions', {'name':'Transactions','valueDecimals':0});
+        stockChart(transactions_url, 'highcharts-graph-transactions', {'name':'Transactions','valueDecimals':0,'colors':['#a903b3']});
     }
     if (scroll_el_showing('#assetDifficulty')) {
       if(!$('#highcharts-graph-difficulty').data('highcharts-chart'))
-        stockChart(difficulty_url, 'highcharts-graph-difficulty', {'name':'Difficulty','valueDecimals':0});
+        stockChart(difficulty_url, 'highcharts-graph-difficulty', {'name':'Difficulty','valueDecimals':0,'colors':['red']});
     }
   });
 });
