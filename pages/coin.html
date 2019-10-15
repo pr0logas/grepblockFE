@@ -335,7 +335,11 @@
       $("#coin-mineable").find('.coin-param').text(json['mineable']);
       $("#coin-blockTime").find('.coin-param').text(json['blockTime'] + ' s');
       $("#coin-blockSize").find('.coin-param').text(json['blockSize'] + ' MB');
-      $("#coin-maxSupply").find('.coin-param').text(' ~ ' + json['maxSupply']);
+
+      // Format *maxSupply* value to see in nice shape
+        var maxSupply_formated = ' ~ ' + parseFloat(json['maxSupply'].replace(/\D/g,'')).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$& ');
+        maxSupply_formated = maxSupply_formated.substring(0, maxSupply_formated.length-2);
+      $("#coin-maxSupply").find('.coin-param').text(maxSupply_formated);
       $("#coin-walletPrefix").find('.coin-param').text(json['walletPrefix']);
       $("#coin-networkPort").find('.coin-param').text(json['networkPort']);
       $("#coin-rpcPort").find('.coin-param').text(json['rpcPort']);
