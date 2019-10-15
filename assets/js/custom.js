@@ -135,7 +135,7 @@ $('body').on( "update_page", function() {
 
   $('.bs-docs-sidenav').affix({
     offset: {
-      top: function () { return $window.width() <= 980 ? 290 : 210 }
+      top: function () { return $window.width() <= 980 ? 0 : 100 }
     , bottom: 270
     }
   });
