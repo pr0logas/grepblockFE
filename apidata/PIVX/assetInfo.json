@@ -22,9 +22,9 @@
 ,
  "explorer" : "https://explorer.pivx.org/" 
 ,
- "explorer2" : "" 
+ "explorer2" : "https://mainnet-explorer.pivx.org/" 
 ,
- "explorer3" : "" 
+ "explorer3" : "https://chainz.cryptoid.info/pivx/" 
 ,
  "website" : "https://pivx.org" 
 ,
@@ -47,6 +47,8 @@
  "algorithm" : "Hybrid" 
 ,
  "developerFee" : "no" 
+,
+ "whitepaper" : "https://pivx.org/wp-content/uploads/2017/03/PIVX-purple-paper-Technincal-Notes.pdf" 
 ,
  "firstBlock" : "1454127007" 
 }

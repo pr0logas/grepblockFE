@@ -14,7 +14,7 @@
 ,
  "blockTime" : "600" 
 ,
- "maxSupply" : "~21000000" 
+ "maxSupply" : "21000000" 
 ,
  "blockSize" : "1" 
 ,
@@ -34,19 +34,21 @@
 ,
  "bitcointalkThread" : "https://bitcointalk.org" 
 ,
- "telegram" : "" 
+ "telegram" : "https://telegram.org/" 
 ,
- "reddit" : "" 
+ "reddit" : "https://www.reddit.com/r/Bitcoin/" 
 ,
- "twitter" : "" 
+ "twitter" : "https://twitter.com/Bitcoin" 
 ,
- "chat" : "*" 
+ "chat" : "https://discordapp.com/" 
 ,
  "about" : "Bitcoin (BTC) is a consensus network that enables a new payment system and a completely digital currency. Powered by its users, it is a peer to peer payment network that requires no central authority to operate. On October 31st, 2008, an individual or group of individuals operating under the pseudonym Satoshi Nakamoto published the Bitcoin Whitepaper and described it as: a purely peer-to-peer version of electronic cash, which would allow online payments to be sent directly from one party to another without going through a financial institution." 
 ,
  "algorithm" : "sha-256" 
 ,
- "developerFee" : "yes" 
+ "developerFee" : "no" 
+,
+ "whitepaper" : "https://thebitcoinwhitepaper.com/" 
 ,
  "firstBlock" : "1231469665" 
 }

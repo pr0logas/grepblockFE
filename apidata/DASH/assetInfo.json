@@ -14,7 +14,7 @@
 ,
  "blockTime" : "150" 
 ,
- "maxSupply" : "~18.9" 
+ "maxSupply" : "18900000" 
 ,
  "blockSize" : "2" 
 ,
@@ -24,7 +24,7 @@
 ,
  "explorer2" : "https://insight.dash.org/insight/" 
 ,
- "explorer3" : "" 
+ "explorer3" : "https://live.blockcypher.com/dash/" 
 ,
  "website" : "https://www.dash.org/" 
 ,
@@ -34,7 +34,7 @@
 ,
  "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=421615.0" 
 ,
- "telegram" : "" 
+ "telegram" : "https://t.me/dash_chat" 
 ,
  "reddit" : "https://www.reddit.com/r/dashpay/" 
 ,
@@ -47,6 +47,8 @@
  "algorithm" : "X11" 
 ,
  "developerFee" : "yes" 
+,
+ "whitepaper" : "https://github.com/dashpay/dash/wiki/Whitepaper" 
 ,
  "firstBlock" : "1390103681" 
 }
