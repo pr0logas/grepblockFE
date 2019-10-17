@@ -24,6 +24,22 @@
 </div>
 
 <script type="text/javascript">
+    var search_trans = {
+      'block': 'BlOcK',
+      'tx': 'Some TX',
+      'height': 'HeiGht',
+      'difficulty': 'DifficultY',
+    };
+
+    function result_line(key, value) 
+    {
+      var name = key;
+      if(name in search_trans)
+        name = search_trans[name];
+
+      return '<b>' + name + '</b>: ' + value + '<br>';
+    }
+
     function show_error(error) {
       $("#search-error").find(".text-error").text(error);
       if($("#search-error").hasClass("hidden"))
@@ -38,8 +54,8 @@
 
     $.ajax(
     {
-      //url: "/parsedb.json",
-      url: "/parsedb?query="+getUrlParamByName('query'),
+      url: "/parsedb.json",
+      //url: "/parsedb?query="+getUrlParamByName('query'),
 
       success: function(json)
       {
@@ -75,27 +91,13 @@
 
           $.each(blockchain, function(key, value)
           {
-             description.append(key + ': ' + value + '<br>');
+             description.append(result_line(key, value));
 
             if (i === count) { // this will be executed at the end of the loop
                 div.appendTo('#search-tab');
             }i++;
           });
         });
-
-        /*$("#search-FoundData").find(".value").text(json['FoundData']);
-        $("#search-block").find(".value").text(json['block']);
-        $("#search-hash").find(".value").text(json['hash']);
-        $("#search-confirmations").find(".value").text(json['confirmations']);
-        $("#search-size").find(".value").text(json['size']);
-        $("#search-version").find(".value").text(json['version']);
-        $("#search-merkleroot").find(".value").text(json['merkleroot']);
-        $("#search-time").find(".value").text(json['time']);
-        $("#search-bits").find(".value").text(json['bits']);
-        $("#search-difficulty").find(".value").text(json['difficulty']);
-        $("#search-chainwork").find(".value").text(json['chainwork']);
-        $("#search-previousblockhash").find(".value").text(json['previousblockhash']);
-        $("#search-tx").find(".value").text(json['tx']);*/
       },
       error: function(xhr, ajaxOptions, thrownError) {
         show_error(thrownError);
