@@ -2,22 +2,26 @@
   <span class="label label-info">FATAL</span><p class="text-error"></p>
 </div>
 
-<ul id="search-result" class="hidden">
-  <li id="search-FoundData"><span class="name">FoundData: </span><span class="value"></span></li>
-  <li id="search-ProcessingTook"><span class="name">ProcessingTook: </span><span class="value"></span></li>
-  <li id="search-block"><span class="name">Block: </span><span class="value"></span></li>
-  <li id="search-hash"><span class="name">Hash: </span><span class="value"></span></li>
-  <li id="search-confirmations"><span class="name">Confirmations: </span><span class="value"></span></li>
-  <li id="search-size"><span class="name">Size (bytes): </span><span class="value"></span></li>
-  <li id="search-version"><span class="name">Version: </span><span class="value"></span></li>
-  <li id="search-merkleroot"><span class="name">Merkleroot: </span><span class="value"></span></li>
-  <li id="search-time"><span class="name">Time (unix time): </span><span class="value"></span></li>
-  <li id="search-bits"><span class="name">Bits: </span><span class="value"></span></li>
-  <li id="search-difficulty"><span class="name">Difficulty: </span><span class="value"></span></li>
-  <li id="search-chainwork"><span class="name">Chainwork: </span><span class="value"></span></li>
-  <li id="search-previousblockhash"><span class="name">Previous block hash: </span><span class="value"></span></li>
-  <li id="search-tx"><span class="name">Transactions: </span><span class="value"></span></li>
-</ul>
+<div id="search-result" class="hidden">
+  <div id="search-ProcessingTook"><span class="name">ProcessingTook: </span><span class="value"></span></div>
+
+  <div class="accordion botspacer40" id="search-tab">
+
+    <div id="copy-search-tab" class="accordion-group hidden">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" href=""></a>
+      </div>
+      <div id="" class="accordion-body collapse in">
+        <div class="accordion-inner">
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end question group 1 -->
+
+</div>
 
 <script type="text/javascript">
     function show_error(error) {
@@ -38,7 +42,7 @@
 
       success: function(json)
       {
-        if(!json) {
+        if(!json || !json['ProcessingTook']) {
           show_error('Not found');
           return
         }
@@ -53,8 +57,32 @@
         if($("#search-result").hasClass("hidden"))
           $("#search-result").removeClass("hidden");
 
-        $("#search-FoundData").find(".value").text(json['FoundData']);
         $("#search-ProcessingTook").find(".value").text(json['ProcessingTook']);
+
+        $.each(json['SearchData'], function(i, blockchain)
+        {
+          var i = 1;
+          var id = 'search-blockchain-'+i;
+          var div = $("#copy-search-tab").clone();
+          var count = blockchain.length;
+
+          div.attr("id","");
+          div.removeClass("hidden");
+          div.find('.accordion-toggle').attr("href", '#'+id).html(blockchain['FoundDataIn']);
+          div.find('.accordion-body').attr("id", id);
+          var description = div.find('.accordion-inner p');
+
+          $.each(blockchain, function(key, value)
+          {
+             description.append(key + ': ' + value);
+
+            if (i === count) { // this will be executed at the end of the loop
+                div.appendTo('#search-tab');
+            }i++;
+          });
+        });
+
+        /*$("#search-FoundData").find(".value").text(json['FoundData']);
         $("#search-block").find(".value").text(json['block']);
         $("#search-hash").find(".value").text(json['hash']);
         $("#search-confirmations").find(".value").text(json['confirmations']);
@@ -66,7 +94,7 @@
         $("#search-difficulty").find(".value").text(json['difficulty']);
         $("#search-chainwork").find(".value").text(json['chainwork']);
         $("#search-previousblockhash").find(".value").text(json['previousblockhash']);
-        $("#search-tx").find(".value").text(json['tx']);
+        $("#search-tx").find(".value").text(json['tx']);*/
       },
       error: function(xhr, ajaxOptions, thrownError) {
         show_error(thrownError);
