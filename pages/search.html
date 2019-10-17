@@ -25,19 +25,24 @@
 
 <script type="text/javascript">
     var search_trans = {
+      'adeptio': 'Buga buga Adeptuio buga buga',
+      
       'block': 'BlOcK',
       'tx': 'Some TX',
       'height': 'HeiGht',
       'difficulty': 'DifficultY',
     };
 
-    function result_line(key, value) 
-    {
+    function search_translate(key, def) {
       var name = key;
       if(name in search_trans)
         name = search_trans[name];
+      return name;
+    }
 
-      return '<b>' + name + '</b>: ' + value + '<br>';
+    function result_line(key, value) 
+    {
+      return '<b>' + search_translate(key) + '</b>: ' + value + '<br>';
     }
 
     function show_error(error) {
@@ -85,7 +90,7 @@
 
           div.attr("id","");
           div.removeClass("hidden");
-          div.find('.accordion-toggle').attr("href", '#'+id).html(blockchain['FoundDataIn']);
+          div.find('.accordion-toggle').attr("href", '#'+id).html(search_translate(blockchain['FoundDataIn']));
           div.find('.accordion-body').attr("id", id);
           var description = div.find('.accordion-inner p');
 
