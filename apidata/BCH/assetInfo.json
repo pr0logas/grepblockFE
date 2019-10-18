@@ -1,0 +1,55 @@
+[
+{
+ "assetName" : "BitcoinCash" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "BCH" 
+,
+ "mineable" : "yes" 
+,
+ "masternode" : "no" 
+,
+ "sourceCode" : "https://github.com/bitcoincashorg/bitcoincash.org" 
+,
+ "blockTime" : "600" 
+,
+ "maxSupply" : "21000000" 
+,
+ "blockSize" : "2" 
+,
+ "walletPrefix" : "q" 
+,
+ "explorer" : "https://blockchair.com/bitcoin-cash" 
+,
+ "explorer2" : "https://bch.tokenview.com/en" 
+,
+ "explorer3" : "https://blockdozer.com/" 
+,
+ "website" : "https://www.bitcoincash.org/" 
+,
+ "rpcPort" : "8332" 
+,
+ "networkPort" : "8333" 
+,
+ "bitcointalkThread" : "https://bitcointalk.org/index.php?topic=2040221.0" 
+,
+ "telegram" : "https://t.me/bitcoincashfork" 
+,
+ "reddit" : "https://www.reddit.com/r/Bitcoincash/" 
+,
+ "twitter" : "https://twitter.com/BITCOlNCASH" 
+,
+ "chat" : "https://discordapp.com/invite/TXeRxMF" 
+,
+ "about" : "Bitcoin Cash (BCH) is hard fork (a community-activated update to the protocol or code) of Bitcoin that took effect on August 1st, 2017 that increased the block size to 8MB, to help the scale the underlying technology of Bitcoin.Nov 16th 2018: BCH was hard forked again and split into Bitcoin SV and Bitcoin ABC. Bitcoin ABC became the dominant chain and took over the BCH ticker as it had more hashpower and majority of the nodes in the network." 
+,
+ "algorithm" : "sha-256" 
+,
+ "developerFee" : "no" 
+,
+ "whitepaper" : "https://www.bitcoincash.org/bitcoin.pdf" 
+,
+ "firstBlock" : "1231469665" 
+}
+]
