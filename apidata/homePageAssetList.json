@@ -6,19 +6,19 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 1156297 
+ "block" : 1156669 
 ,
- "current_price" : 68.48 
+ "current_price" : 67.79 
 ,
- "market_cap" : 623510420 
+ "market_cap" : 617078057 
 ,
- "total_volume" : 218018734 
+ "total_volume" : 197722461 
 ,
- "blockchainAge" : "181329933"
+ "blockchainAge" : "181389635"
 ,
- "price_change_percentage_24h" : -0.72788 
+ "price_change_percentage_24h" : -0.44584 
 ,
- "nTx" : "90"
+ "nTx" : "10"
  },
 {
 "assetName" : "Polis" 
@@ -27,17 +27,17 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 458664 
+ "block" : 459139 
 ,
- "current_price" : 0.622149 
+ "current_price" : 0.609765 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 5926.26 
+ "total_volume" : 3472.88 
 ,
- "blockchainAge" : "57570247"
+ "blockchainAge" : "57629951"
 ,
- "price_change_percentage_24h" : 5.60996 
+ "price_change_percentage_24h" : -0.60835 
 ,
  "nTx" : "2"
  },
@@ -48,17 +48,17 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 690422 
+ "block" : 691453 
 ,
- "current_price" : 0.00024761 
+ "current_price" : 0.00023871 
 ,
  "market_cap" : 0 
 ,
- "total_volume" : 0 
+ "total_volume" : 40.66 
 ,
- "blockchainAge" : "43723520"
+ "blockchainAge" : "43783222"
 ,
- "price_change_percentage_24h" : -0.64785 
+ "price_change_percentage_24h" : -0.05744 
 ,
  "nTx" : "2"
  },
@@ -69,17 +69,17 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 2037162 
+ "block" : 2038150 
 ,
- "current_price" : 0.230384 
+ "current_price" : 0.235956 
 ,
- "market_cap" : 14217773 
+ "market_cap" : 14478295 
 ,
- "total_volume" : 243636 
+ "total_volume" : 307107 
 ,
- "blockchainAge" : "117306622"
+ "blockchainAge" : "117366323"
 ,
- "price_change_percentage_24h" : -1.04143 
+ "price_change_percentage_24h" : 1.77806 
 ,
  "nTx" : "2"
  },
@@ -92,15 +92,15 @@
 ,
  "block" : 1624373 
 ,
- "current_price" : 0.587647 
+ "current_price" : 0.58713 
 ,
- "market_cap" : 383905835 
+ "market_cap" : 382937581 
 ,
- "total_volume" : 83115726 
+ "total_volume" : 77748627 
 ,
- "blockchainAge" : "41045143"
+ "blockchainAge" : "41104843"
 ,
- "price_change_percentage_24h" : -2.13837 
+ "price_change_percentage_24h" : 0.3255 
 ,
  "nTx" : "2"
  },
@@ -111,19 +111,19 @@
 ,
  "assetTicker" : "BTC" 
 ,
- "block" : 599984 
+ "block" : 600080 
 ,
- "current_price" : 7952.28 
+ "current_price" : 8003.8 
 ,
- "market_cap" : "142992035416" 
+ "market_cap" : "144010005943" 
 ,
- "total_volume" : "18904275639" 
+ "total_volume" : "16888331543" 
 ,
- "blockchainAge" : "339963973"
+ "blockchainAge" : "340023671"
 ,
- "price_change_percentage_24h" : -1.21787 
+ "price_change_percentage_24h" : 0.56693 
 ,
- "nTx" : "1109"
+ "nTx" : "1904"
  },
 {
 "assetName" : "Snowgem" 
@@ -132,17 +132,17 @@
 ,
  "assetTicker" : "XSG" 
 ,
- "block" : 949544 
+ "block" : 950532 
 ,
- "current_price" : 0.0202693 
+ "current_price" : 0.0207685 
 ,
- "market_cap" : 383145 
+ "market_cap" : 393158 
 ,
- "total_volume" : 107215 
+ "total_volume" : 102291 
 ,
- "blockchainAge" : "57399162"
+ "blockchainAge" : "57458858"
 ,
- "price_change_percentage_24h" : -5.21748 
+ "price_change_percentage_24h" : 2.46544 
 ,
  "nTx" : "1"
  },
@@ -153,19 +153,19 @@
 ,
  "assetTicker" : "XZC" 
 ,
- "block" : 207254 
+ "block" : 207467 
 ,
- "current_price" : 4.82 
+ "current_price" : 5.04 
 ,
- "market_cap" : 41562461 
+ "market_cap" : 43456064 
 ,
- "total_volume" : 11129753 
+ "total_volume" : 14727589 
 ,
- "blockchainAge" : "96412833"
+ "blockchainAge" : "96472530"
 ,
- "price_change_percentage_24h" : -1.34551 
+ "price_change_percentage_24h" : 4.08237 
 ,
- "nTx" : "7"
+ "nTx" : "4"
  },
 {
 "assetName" : "Syscoin" 
@@ -174,17 +174,17 @@
 ,
  "assetTicker" : "SYS" 
 ,
- "block" : 202937 
+ "block" : 204070 
 ,
- "current_price" : 0.02355827 
+ "current_price" : 0.02529295 
 ,
- "market_cap" : 13358583 
+ "market_cap" : 14329788 
 ,
- "total_volume" : 1064223 
+ "total_volume" : 969858 
 ,
- "blockchainAge" : "11756044"
+ "blockchainAge" : "11815740"
 ,
- "price_change_percentage_24h" : -4.31186 
+ "price_change_percentage_24h" : 9.04235 
 ,
  "nTx" : "1"
  },
@@ -195,19 +195,19 @@
 ,
  "assetTicker" : "RVN" 
 ,
- "block" : 932269 
+ "block" : 933266 
 ,
- "current_price" : 0.03049438 
+ "current_price" : 0.03137725 
 ,
- "market_cap" : 142211070 
+ "market_cap" : 146292465 
 ,
- "total_volume" : 19823150 
+ "total_volume" : 13501020 
 ,
- "blockchainAge" : "56417931"
+ "blockchainAge" : "56477626"
 ,
- "price_change_percentage_24h" : -4.8869 
+ "price_change_percentage_24h" : 3.50175 
 ,
- "nTx" : "3"
+ "nTx" : "1"
  },
 {
 "assetName" : "Litecoin" 
@@ -216,18 +216,39 @@
 ,
  "assetTicker" : "LTC" 
 ,
- "block" : 1126553 
+ "block" : 1255952 
 ,
- "current_price" : 52.99 
+ "current_price" : 53.47 
 ,
- "market_cap" : "3364598551" 
+ "market_cap" : "3394205701" 
 ,
- "total_volume" : "2180635442" 
+ "total_volume" : "2157834405" 
 ,
- "blockchainAge" : "253378300"
+ "blockchainAge" : "253437993"
 ,
- "price_change_percentage_24h" : -2.75093 
+ "price_change_percentage_24h" : 0.08589 
 ,
- "nTx" : "8"
+ "nTx" : "138"
+ },
+{
+"assetName" : "BitcoinCash" 
+,
+ "assetType" : "coin" 
+,
+ "assetTicker" : "BCH" 
+,
+ "block" : 18006 
+,
+ "current_price" : 214.08 
+,
+ "market_cap" : "3864083268" 
+,
+ "total_volume" : 1398612868 
+,
+ "blockchainAge" : "340023691"
+,
+ "price_change_percentage_24h" : 0.395 
+,
+ "nTx" : "1"
 }
 ]
