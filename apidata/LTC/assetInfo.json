@@ -42,7 +42,7 @@
 ,
  "chat" : "https://discord.gg/AFkPpC2" 
 ,
- "about" : "Litecoin is a peer-to-peer cryptocurrency created by Charlie Lee. It was created based on the Bitcoin protocol but differs in terms of the hashing algorithm used. Litecoin uses the memory intensive Scrypt proof of work mining algorithm. Scrypt allows consumer-grade hardware such as GPU/ASIC to mine those coins." 
+ "about" : "Litecoin (LTC) is a peer-to-peer cryptocurrency created by Charlie Lee. It was created based on the Bitcoin protocol but differs in terms of the hashing algorithm used. Litecoin uses the memory intensive Scrypt proof of work mining algorithm. Scrypt allows consumer-grade hardware such as GPU/ASIC to mine those coins." 
 ,
  "algorithm" : "Scrypt" 
 ,
