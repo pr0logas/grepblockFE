@@ -109,9 +109,9 @@
 
         $("#search-ProcessingTook").find(".value").text(json['ProcessingTook']);
 
+        var i = 1;
         $.each(json['SearchData'], function(i, blockchain)
         {
-          var i = 1;
           var id = 'search-blockchain-'+i;
           var div = $("#copy-search-tab").clone();
           var count = Object.keys(blockchain).length;
