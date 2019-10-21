@@ -1,0 +1,7 @@
+{
+ "ProcessingTook": "2353 ms among 12 blockchains",
+ "SearchData" :
+ [
+{"FoundDataIn": "polis", "block" : 99, "hash" : "000001f8e092f1b78a849fc3ae40151c153af4c1fca7a74a2a2f3d964f7dd449", "confirmations" : 433086, "size" : 180, "height" : 99, "version" : 536870912, "versionHex" : "20000000", "merkleroot" : "f3146857e2c1a652ca7020c077855e5e840276b9ce04d8ba6d0099c19a67d3d6", "tx" : [ "f3146857e2c1a652ca7020c077855e5e840276b9ce04d8ba6d0099c19a67d3d6" ], "time" : 1513872158, "mediantime" : 1513872075, "bits" : "1e024de2", "difficulty" : 0.001695226102575988, "mint" : 10, "chainwork" : "000000000000000000000000000000000000000000000000000000000c7b2ac6", "flags" : "proof-of-work stake-modifier", "proofhash" : "000001f8e092f1b78a849fc3ae40151c153af4c1fca7a74a2a2f3d964f7dd449", "entropybit" : 1, "modifier" : "0000000e9e81b29d", "modifierchecksum" : "00000000", "previousblockhash" : "00000066e21c2e56bac94d1a21a87dcf54c994c91c5d4cb41c2493fb92a3a32d", "nextblockhash" : "000001c12d74ca8120d2751bb2846a5af44892045099750efe73a0cbb1eca860" }
+]
+}
