@@ -234,3 +234,8 @@ ul.filter li.active a:hover, a.zoom:hover, a.link_post:hover, .flex-control-nav 
 .nivo-directionNav a, .nivo-controlNav a.active, .nivo-controlNav a:hover{
 	background-color:#7cbb00;
 }
+
+::placeholder { 
+  color: black;
+  opacity: 1; 
+}
