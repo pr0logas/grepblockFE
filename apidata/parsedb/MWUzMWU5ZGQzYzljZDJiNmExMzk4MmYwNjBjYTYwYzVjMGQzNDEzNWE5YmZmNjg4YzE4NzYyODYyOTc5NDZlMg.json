@@ -1,7 +1,0 @@
-{
- "ProcessingTook": "2048 ms among 10 blockchains",
- "SearchData" :
- [
-{"FoundDataIn": "pivx", "block" : 687421, "hash" : "8cfbcb3fd6818027f5b58945b7b3f2a51103171a1d115929ea60b45f5d57539d", "confirmations" : 1302206, "size" : 430, "height" : 687421, "version" : 3, "merkleroot" : "dca9586d98b0362863433bcdfd5c8193bfc71078e32075d82e03a6117a71bcc6", "acc_checkpoint" : "0000000000000000000000000000000000000000000000000000000000000000", "tx" : [ "1e31e9dd3c9cd2b6a13982f060ca60c5c0d34135a9bff688c1876286297946e2", "d9b22bb48fc3d8690d878f63c46c9bc72c292c45f4abaef5730bb8d6890e3c98" ], "time" : 1497519553, "mediantime" : 1497519203, "bits" : "1b00c8e1", "difficulty" : 83517.77851239669, "chainwork" : "00000000000000000000000000000000000000000000000ff79487cd91876739", "previousblockhash" : "7740cabe676c8f0d733ff2b685429483f4a22a85cdbd1b4a4af55029d5e04e1b", "nextblockhash" : "a3ec3dbbb1d97b2bbe609b9de52e765b15f8082ff6593e4fffc856616eedb4a2", "modifier" : "000000034012f782", "modifierV2" : "0000000000000000000000000000000000000000000000000000000000000000", "moneysupply" : 53620608.00110838, "zPIVsupply" : { "1" : 0, "5" : 0, "10" : 0, "50" : 0, "100" : 0, "500" : 0, "1000" : 0, "5000" : 0, "total" : 0 }, "CoinStake" : { "BlockFromHash" : "f7975be7f70e8b3978ec7a37b3b834e5bcbfdc40951015fef3442085e70c46b0", "BlockFromHeight" : 678955, "hashProofOfStake" : "00005c5f24428d12c6251825f827615d4c10f7d63db52f5a2159b71f8bca61a2", "stakeModifierHeight" : "678991" } }
-]
-}

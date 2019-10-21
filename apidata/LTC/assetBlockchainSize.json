@@ -1,0 +1,22 @@
+{
+ "name" : "BlockChainSize"
+,
+ "unit" : "BlockChainSize"
+,
+ "period" : "day"
+,
+ "values" : 
+[
+{
+ "x" : 1318055359
+,
+ "y" : 0
+}
+,
+{
+ "x" : 1318474781
+,
+ "y" : 430
+}
+]
+}
