@@ -39,13 +39,13 @@
       'bitcoin-cash': '<img src="assets/coins-logo/BitcoinCash.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' BitcoinCash (BCH) ',
       
       'block': 'Block',
-      'moneysupply': 'MoneySupply',
-      'previousblockhash': 'PreviousBlockHash',
-      'nextblockhash': 'NextBlockHash',
+      'moneysupply': 'Money Supply',
+      'previousblockhash': 'Previous Block Hash',
+      'nextblockhash': 'Next Block Hash',
       'chainwork': 'Chainwork',
       'bits': 'Bits',
       'time': 'UnixTime',
-      'hash': 'BlockHash',
+      'hash': 'Block Hash',
       'confirmations': 'Confirmations',
       'strippedsize': 'StrippedSize (bytes)',
       'nTx': 'NumberOfTransactions',
@@ -61,16 +61,23 @@
       'difficulty': 'Difficulty',
     };
 
-    function search_translate(key, def) {
-      var name = key;
-      if(name in search_trans)
-        name = search_trans[name];
-      return name;
+    function result_value(key, value) 
+    {
+      switch(key) {
+        case 'hash':
+          return '<a href="buratinas">' + value + '</a>';
+          break;
+        case 'time':
+          return value + ' sec';
+          break;
+        default:
+          return value;
+      } 
     }
 
     function result_line(key, value) 
     {
-      return '<div class="row"><div class="span2"><b>' + search_translate(key) + '</b>: </div><div class="span9">' + value + '</div></div>';
+      return '<div class="row"><div class="span2"><b>' + search_translate(key) + '</b>: </div><div class="span9">' + result_value(key, value) + '</div></div>';
     }
 
     function show_error(error) {
@@ -86,6 +93,13 @@
         $("#search-error").addClass("hidden");
       if($("#search-result").hasClass("hidden"))
         $("#search-result").removeClass("hidden");
+    }
+
+    function search_translate(key, def) {
+      var name = key;
+      if(name in search_trans)
+        name = search_trans[name];
+      return name;
     }
 
     if(!getUrlParamByName('query')) {
