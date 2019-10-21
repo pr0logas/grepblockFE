@@ -78,13 +78,13 @@ header .navbar .navbar-inner nav li.blob  {
 
 /* accordion */
 .accordion-group {
-  border: 1px solid #7cbb00;
+  border: 1px solid #000000;
 }
 .accordion-inner {
   border-top: 1px solid #7cbb00;
 }
 .accordion-heading {
-  background-color: #7cbb00;
+  background-color: #000000;
 }
 
 /* flexslider */

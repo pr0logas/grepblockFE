@@ -788,7 +788,6 @@ ul.project-detal li label{
 
 
 
-
 /* accordion */
 .accordion .accordion-heading a.accordion-toggle {
   color:#fff;
@@ -810,7 +809,7 @@ ul.project-detal li label{
 .pagination ul > li > a:hover,
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  background-color: #fff;
+  background-color: #000000;
   color:#333;
 }
 
@@ -1782,3 +1781,4 @@ ul.portfolio-area li {
 	}
 
 }
+
