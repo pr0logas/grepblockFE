@@ -183,6 +183,26 @@
           </div>
         </section>
 
+        <!-- Blockchain Size
+        ================================================== -->
+        <section id="assetBlockchainSize" class="doc">
+          <div class="page-header">
+            <h3>Blockchain Size (24h)</h3>
+          </div>
+
+          <div class="charts opaque-nav" style="padding-bottom: 0px">
+
+           <div id="charts" class="tab-pane active">
+              <div class="padding-top-1x">
+                <div id="highcharts-nodata" class="hidden text-center">No chart data found</div>
+              </div>
+              <div id="highcharts-graph-blockchainsize" style="height: 400px; min-width: 310px"></div>
+              <br>
+          </div>
+
+          </div>
+        </section>
+
         <!-- About Asset
         ================================================== -->
         <section id="aboutAsset" class="doc">
@@ -249,6 +269,7 @@
           <li><a href="#assetBlocks"><i class="icon-chevron-right"></i> Blocks</a></li>
           <li><a href="#assetTransactions"><i class="icon-chevron-right"></i> Transactions</a></li>
           <li><a href="#assetDifficulty"><i class="icon-chevron-right"></i> Difficulty</a></li>
+	 <li><a href="#assetBlockchainSize"><i class="icon-chevron-right"></i> Blockchain Size</a></li>
 	        <li><a href="#aboutAsset"><i class="icon-chevron-right"></i> About</a></li>
           <!--<li><a href="#assetSupply"><i class="icon-chevron-right"></i> Supply</a></li>
           <li><a href="#assetNetworkPeers"><i class="icon-chevron-right"></i> Network Peers</a></li>-->
@@ -468,6 +489,8 @@ $(document).ready(function() {
 
     var transactions_url = url_json+'/assetTransactions.json';
 
+    var blockchainsize_url = url_json+'/assetBlockchainSize.json';
+
     if (scroll_el_showing('#assetMarketCap')) {
       if(!$('#highcharts-graph-marketcap').data('highcharts-chart'))
         stockChart(marketcap_url, 'highcharts-graph-marketcap', {'name':'MarketCap (USD)','valueDecimals':0,'colors':['#00BFFF']});
@@ -479,6 +502,10 @@ $(document).ready(function() {
     if (scroll_el_showing('#assetBlocks')) {
       if(!$('#highcharts-graph-blocks').data('highcharts-chart'))
         stockChart(blocks_url, 'highcharts-graph-blocks', {'name':'Blocks','valueDecimals':0,'colors':['#0080FF']});
+    }
+    if (scroll_el_showing('#assetBlockchainSize')) {
+      if(!$('#highcharts-graph-blockchainsize').data('highcharts-chart'))
+        stockChart(blockchainsize_url, 'highcharts-graph-blockchainsize', {'name':'BlockchainSize (bytes)','valueDecimals':0,'colors':['#086A87']});
     }
     if (scroll_el_showing('#assetTransactions')) {
       if(!$('#highcharts-graph-transactions').data('highcharts-chart'))
