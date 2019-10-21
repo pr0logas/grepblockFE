@@ -360,8 +360,13 @@
       $("#coin-blockSize").find('.coin-param').text(json['blockSize'] + ' MB');
 
       // Format *maxSupply* value to see in nice shape
-        var maxSupply_formated = ' ~ ' + parseFloat(json['maxSupply'].replace(/\D/g,'')).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$& ');
-        maxSupply_formated = maxSupply_formated.substring(0, maxSupply_formated.length-2);
+      var maxSupply_formated = parseFloat(json['maxSupply'].replace(/\D/g,''));
+        if(maxSupply_formated) {
+          maxSupply_formated = ' ~ ' + maxSupply_formated.toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$& ');
+          maxSupply_formated = maxSupply_formated.substring(0, maxSupply_formated.length-2);
+        }
+        else
+          maxSupply_formated = json['maxSupply'];
       $("#coin-maxSupply").find('.coin-param').text(maxSupply_formated);
       $("#coin-walletPrefix").find('.coin-param').text(json['walletPrefix']);
       $("#coin-networkPort").find('.coin-param').text(json['networkPort']);
