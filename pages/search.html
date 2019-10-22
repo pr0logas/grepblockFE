@@ -110,9 +110,11 @@
     {
       //url: "/parsedb.json",
       url: "/parsedb?query="+getUrlParamByName('query'),
-
+      dataType: "text", 
       success: function(json)
       {
+        json = FixJson(json);
+
         if(!json || !json['ProcessingTook']) {
           show_error('Not found');
           return
