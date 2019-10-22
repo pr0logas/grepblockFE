@@ -141,3 +141,12 @@ $('body').on( "update_page", function() {
   });
 
 });
+
+function FixJson(json) 
+{
+  json = json.replace(/NumberLong\("(.*)?"\)/g, "$1");
+
+  json = JSON.parse(json);
+
+  return json;
+}
