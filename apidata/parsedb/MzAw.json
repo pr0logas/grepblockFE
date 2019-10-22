@@ -1,5 +1,5 @@
 {
- "ProcessingTook": "1169 ms among 12 blockchains",
+ "ProcessingTook": "1206 ms among 12 blockchains",
  "SearchData" :
  [
 {"FoundDataIn": "zcoin", "block" : 300, "hash" : "48bca6c8d821383373f74d5e72ff408abc8b5fe59d2b25ab6aa333921aa48ee1", "confirmations" : 9291, "strippedsize" : 702, "size" : 702, "weight" : 702, "height" : 300, "version" : 65538, "versionHex" : "00010002", "merkleroot" : "4aa71e6070d5ffaa3d4d576a54e7a77df322dd8de9caf31380ff68db52e85827", "tx" : [ "ea0c1382948f66882b56264e61b133fc054b61399740542d55b6143654222b0e", "4c1d53567d5bf99d9f3cee54fdf5b8b96f578cfd4560337ddce734ed88adb269" ], "time" : 1475102602, "mediantime" : 1475101337, "bits" : "1c4c4c68", "difficulty" : 3.355193372552345, "chainwork" : "000000000000000000000000000000000000000000000000000002ff5c72d3e2", "previousblockhash" : "9f5dd9b40552dad0ce14570ca76ea21851e77e558eedb77e252451c95c9d830d", "nextblockhash" : "f8bc863f48c4cddeb17ebc89f4727679d248cabe287d18ad9d7f5e83f675b630" }
