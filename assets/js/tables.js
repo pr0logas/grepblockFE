@@ -86,7 +86,7 @@ var homePageAssetList = {
             json[key]['assetName'] = img + ' ' +coin_link;
             json[key]['assetType'] = iconAssetType + ' ' + '<font color="' + styleAssetType + '">' + value['assetType'] + '</font>';
             json[key]['current_price'] = '$' + value['current_price'];
-            json[key]['market_cap'] = market_cap_formated;
+            json[key]['market_cap'] = '<a href="/?page=coin&coin='+ticker+'#assetMarketCap">'+market_cap_formated+'</a>';
             json[key]['total_volume'] = total_volume_formated;
             json[key]['block'] = blocks_formated;
             json[key]['nTx'] = value['nTx'];
