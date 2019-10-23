@@ -48,9 +48,9 @@
               </ul>
               <div id="myTabContent" class="tab-content">
                 <div class="tab-pane fade in active" id="recent">
-                  <div id="coin-type"><strong>Asset Type:</strong> <span class="label label-warning"><span class="coin-param"></span></span></div>
-                  <div id="coin-mineable"><strong>Mineable:</strong> <span class="label label-success"><span class="coin-param"></span></span></div>
-                  <div id="coin-masternode"><strong>Masternode:</strong> <span class="label label-success"><span class="coin-param"></span></span></div>
+                  <div id="coin-type"><strong>Asset Type:</strong> <span class="coin-param"></span></div>
+                  <div id="coin-mineable"><strong>Mineable:</strong> <span class="coin-param"></span></div>
+                  <div id="coin-masternode"><strong>Masternode:</strong> <span class="coin-param"></span></div>
                   <div id="coin-firstBlock"><strong>First Block:</strong> <span class="label label-inverse"><span class="coin-param"></span></span></div>
                   <div id="coin-maxSupply"><strong>Max Supply:</strong> <span class="label label-inverse"><span class="coin-param"></span></span></div>
                 </div>
@@ -320,6 +320,48 @@
       }
   }
 
+  function format_value(key, value) {
+      switch(key) 
+      {
+        case 'type':
+          var color = 'info';
+
+          switch(value) 
+          {
+            case 'coin':
+              color = 'warning';
+              break;
+
+            case 'platform':
+              color = 'primary';
+              break;
+          }
+
+          return '<span class="label label-'+color+'">' + value + '</span>';
+          break;
+
+        case 'mineable':
+        case 'masternode':
+          var color = 'success';
+
+          switch(value) 
+          {
+            case 'yes':
+              color = 'success';
+              break;
+
+            case 'no':
+              color = 'warning';
+              break;
+          }
+
+          return '<span class="label label-'+color+'">' + value + '</span>';
+          break;
+
+        default:
+          return value;
+      } 
+  }
 
   var coin = getUrlParamByName('coin');
 
@@ -354,8 +396,8 @@
       $("#link-chat4").attr("href", json['chatother']);
       $("#link-whitepaper").attr("href", json['whitepaper']);
 
-      $("#coin-type").find('.coin-param').text(json['assetType']);
-      $("#coin-mineable").find('.coin-param').text(json['mineable']);
+      $("#coin-type").find('.coin-param').html(format_value('type', json['assetType']));
+      $("#coin-mineable").find('.coin-param').html(format_value('mineable', json['mineable']));
       $("#coin-blockTime").find('.coin-param').text(json['blockTime'] + ' s');
       $("#coin-blockSize").find('.coin-param').text(json['blockSize'] + ' MB');
 
@@ -375,7 +417,7 @@
       var firstBlock = new Date(json['firstBlock']*1000);
       $("#coin-firstBlock").find('.coin-param').text(firstBlock.toDateString());
       $("#coin-algorithm").find('.coin-param').text(json['algorithm']);
-      $("#coin-masternode").find('.coin-param').text(json['masternode']);
+      $("#coin-masternode").find('.coin-param').html(format_value('masternode', json['masternode']));
     }
   });
 
