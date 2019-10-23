@@ -86,12 +86,12 @@ var homePageAssetList = {
             json[key]['assetName'] = img + ' ' +coin_link;
             json[key]['assetType'] = iconAssetType + ' ' + '<font color="' + styleAssetType + '">' + value['assetType'] + '</font>';
             json[key]['current_price'] = '<a href="/?page=coin&coin='+ticker+'#assetPrice">'+'$' + value['current_price']+'</a>';
-            json[key]['market_cap'] = '<a href="/?page=coin&coin='+ticker+'#assetMarketCap">'+market_cap_formated+'</a>';
-            json[key]['total_volume'] = total_volume_formated;
-            json[key]['block'] = blocks_formated;
-            json[key]['nTx'] = value['nTx'];
+            json[key]['market_cap'] = '<a href="/?page=coin&coin='+ticker+'#assetMarketCap">'+ market_cap_formated+'</a>';
+            json[key]['total_volume'] = '<a href="/?page=coin&coin='+ticker+'#assetVolume">'+ total_volume_formated +'</a>';
+            json[key]['block'] = '<a href="/?page=coin&coin='+ticker+'#assetBlocks">'+ blocks_formated +'</a>';
+            json[key]['nTx'] = '<a href="/?page=coin&coin='+ticker+'#assetTransactions">'+ value['nTx']+'</a>';
             json[key]['blockchainAge'] = parseFloat(value['blockchainAge'] / 2628002.88).toFixed(1) + ' mos'; // Converted seconds to months
-	    json[key]['price_change_percentage_24h'] = price_change_percentage_24h_formated2;
+	        json[key]['price_change_percentage_24h'] = price_change_percentage_24h_formated2;
 
             });
             return json;
