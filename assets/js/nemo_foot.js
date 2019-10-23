@@ -56,7 +56,18 @@
     function show_page(el) {
       if(!el) return
 
-      window.history.pushState('page2', 'Title', '/?page='+el.id.replace('link-','')+'&coin='+getUrlParamByName('coin')+'&type='+getUrlParamByName('type')+'&query='+getUrlParamByName('query')+url());
+      var link = '/?';
+      if(el.id.replace('link-',''))
+        link += 'page='+el.id.replace('link-','');
+      if(getUrlParamByName('coin'))
+        link += '&coin='+getUrlParamByName('coin');
+      if(getUrlParamByName('type'))
+        link += '&type='+getUrlParamByName('type');
+      if(getUrlParamByName('query'))
+        link += '&query='+getUrlParamByName('query');
+      link += url();
+
+      window.history.pushState('page2', 'Title', link);
 
       menu_deactive();
 
