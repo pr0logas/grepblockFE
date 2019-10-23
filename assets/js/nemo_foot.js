@@ -105,9 +105,10 @@
 
           $('#'+PAGE_ITEM).html(response); 
 
-          $('html, body').animate({
-              scrollTop: $(url()).offset().top
-          }, 0);
+          if(url())
+            $('html, body').animate({
+                scrollTop: $(url()).offset().top
+            }, 0);
 
           $('body').trigger("update_page");
        });
