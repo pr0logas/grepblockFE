@@ -144,6 +144,9 @@ $('body').on( "update_page", function() {
 
 function FixJson(json) 
 {
+  if(!json)
+    return json;
+  
   json = json.replace(/NumberLong\("(.*)?"\)/g, "$1");
 
   json = JSON.parse(json);
