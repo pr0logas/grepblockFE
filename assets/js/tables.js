@@ -69,7 +69,7 @@ var homePageAssetList = {
                 else
                     stylePrice_change_percentage_24h = 'green';
 	    // At first reformat the number after decimal, later one add + sign if needed, otherwise first formatting ignores seconds one
-            var price_change_percentage_24h_formated1 = parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        var price_change_percentage_24h_formated1 = parseFloat(value['price_change_percentage_24h']).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 
 	    var reformated_price_change_percentage_24h = ''
 
@@ -85,7 +85,7 @@ var homePageAssetList = {
 
             json[key]['assetName'] = img + ' ' +coin_link;
             json[key]['assetType'] = iconAssetType + ' ' + '<font color="' + styleAssetType + '">' + value['assetType'] + '</font>';
-            json[key]['current_price'] = '$' + value['current_price'];
+            json[key]['current_price'] = '<a href="/?page=coin&coin='+ticker+'#assetPrice">'+'$' + value['current_price']+'</a>';
             json[key]['market_cap'] = '<a href="/?page=coin&coin='+ticker+'#assetMarketCap">'+market_cap_formated+'</a>';
             json[key]['total_volume'] = total_volume_formated;
             json[key]['block'] = blocks_formated;
