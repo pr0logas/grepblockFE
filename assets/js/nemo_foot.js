@@ -56,7 +56,7 @@
     function show_page(el) {
       if(!el) return
 
-      window.history.pushState('page2', 'Title', '/?page='+el.id.replace('link-','')+'&coin='+getUrlParamByName('coin')+'&type='+getUrlParamByName('type')+'&query='+getUrlParamByName('query')+'#'+url());
+      window.history.pushState('page2', 'Title', '/?page='+el.id.replace('link-','')+'&coin='+getUrlParamByName('coin')+'&type='+getUrlParamByName('type')+'&query='+getUrlParamByName('query')+url());
 
       menu_deactive();
 
