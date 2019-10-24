@@ -143,7 +143,7 @@ function homePageAssetListTableFormat() {
     var input = $('#homePageAssetList_filter input').clone(true, true);
     input.addClass('input-xxlarge');
 
-    var search_box = '<div class="row"><div class="span5">Searchinggg me: </div><div class="span7" id="homePageAssetList_input"></div></div>';
+    var search_box = '<div class="row"><div class="span5">Quick search: </div><div class="span7" id="homePageAssetList_input"></div></div>';
 
     $('#homePageAssetList_filter').html(search_box);
 
