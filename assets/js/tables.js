@@ -140,7 +140,14 @@ var homePageAssetList = {
 };
 
 function homePageAssetListTableFormat() {
-    $('#homePageAssetList_filter input').addClass('input-xxlarge'); 
+    var input = $('#homePageAssetList_filter input').clone(true, true);
+    input.addClass('input-xxlarge');
+
+    var search_box = '<div class="row"><div class="span5">Searchinggg me: </div><div class="span7" id="homePageAssetList_input"></div></div>';
+
+    $('#homePageAssetList_filter').html(search_box);
+
+    $('#homePageAssetList_input').append(input);
 }
 
 function homePageAssetListTableCreate(table) {
@@ -151,7 +158,6 @@ function homePageAssetListTableCreate(table) {
 
 function homePageAssetListTableReload(table) {
     table.ajax.reload(null, false);
-    homePageAssetListTableFormat();
 }
 
 var ctablePageAssetList = homePageAssetListTableCreate();
