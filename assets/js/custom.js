@@ -147,7 +147,7 @@ function FixJson(json)
   if(!json)
     return json;
   
-  json = json.replace(/NumberLong\("(.*)?"\)/g, "$1");
+  json = json.replace(/NumberLong\("(.*?)"\)/g, "$1");
 
   console.log(json);
 
