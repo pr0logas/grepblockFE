@@ -139,22 +139,37 @@ var homePageAssetList = {
     ]
 };
 
-var ctablePageAssetList = $('#homePageAssetList').DataTable(homePageAssetList);
+function homePageAssetListTableFormat() {
+    $('#homePageAssetList_filter input').addClass('input-xxlarge'); 
+}
+
+function homePageAssetListTableCreate(table) {
+    var table = $('#homePageAssetList').DataTable(homePageAssetList);
+    homePageAssetListTableFormat();
+    return table;
+}
+
+function homePageAssetListTableReload(table) {
+    table.ajax.reload(null, false);
+    homePageAssetListTableFormat();
+}
+
+var ctablePageAssetList = homePageAssetListTableCreate();
 
 $('body').on( "update_page", function() {
 
     if($('#homePageAssetList').hasClass('dataTable')) {
-
-        ctablePageAssetList.ajax.reload(null, false);
+        
+        homePageAssetListTableReload(ctablePageAssetList);
 
         return;
 
     } else {
 
-        var create_table = $('#homePageAssetList').DataTable(homePageAssetList);
+        var create_table = homePageAssetListTableCreate();
 
         setInterval(function() {
-            create_table.ajax.reload(null, false); // user paging is not reset on reload
+            homePageAssetListTableReload(create_table); // user paging is not reset on reload
         }, 29000);
 
         var type = getUrlParamByName('type');
