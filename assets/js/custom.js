@@ -149,6 +149,8 @@ function FixJson(json)
   
   json = json.replace(/NumberLong\("(.*)?"\)/g, "$1");
 
+  console.log(json);
+
   json = JSON.parse(json);
 
   return json;
