@@ -142,7 +142,7 @@ var homePageAssetList = {
 function homePageAssetListTableFormat() {
     var input = $('#homePageAssetList_filter input').clone(true, true);
     input.addClass('input-xxlarge search-query');
-    input.attr('placeholder', 'Type assetName or tikcer.' + '<span class="icon-search></span>');
+    input.attr('placeholder', 'Type assetName or tikcer.');
 
     var search_box = '<div class="row"><div class="span5"></div><div class="span7 input-prepend" id="homePageAssetList_input"><span class="add-on">Quick search:</span></div></div>';
 
