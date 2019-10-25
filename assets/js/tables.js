@@ -142,9 +142,9 @@ var homePageAssetList = {
 function homePageAssetListTableFormat() {
     var input = $('#homePageAssetList_filter input').clone(true, true);
     input.addClass('input-xxlarge search-query');
-    input.attr('placeholder', 'type assetName or tikcer...');
+    input.attr('placeholder', 'type assetName or tikcer.');
 
-    var search_box = '<div class="row"><div class="span5"></div><div class="span7 input-prepend" id="homePageAssetList_input"><span class="add-on"><span class="icon-search"</span> Quick search: </span></div></div>';
+    var search_box = '<div class="row"><div class="span5"></div><div class="span7 input-prepend" id="homePageAssetList_input"><span class="icon-search"</span><span class="add-on"> Quick search: </span></div></div>';
 
     $('#homePageAssetList_filter').html(search_box);
 
