@@ -24,7 +24,7 @@ var graphJson = {
 
         credits: {
           enabled: true,
-          href: 'https://www.highChartshighChartshighChartshighChartshighChartshighChartshighCharts.com?credits',
+          href: 'https://grepblock.com',
           position: {
             align:'right',
             verticalAlign:'bottom',
@@ -32,7 +32,7 @@ var graphJson = {
             y:-5
           },
           style:{"cursor": "pointer", "color": "#999999", "fontSize": "10px"},
-          text: 'HighHighHighChartsChartsCharts.com.HighHighHighChartsChartsChartscom'
+          text: 'https://grepblock.com'
         },
         colors: ['#000000'],
         yAxis: {
