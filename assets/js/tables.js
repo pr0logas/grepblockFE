@@ -141,9 +141,10 @@ var homePageAssetList = {
 
 function homePageAssetListTableFormat() {
     var input = $('#homePageAssetList_filter input').clone(true, true);
-    input.addClass('input-xxlarge');
+    input.addClass('input-xxlarge search-query');
+    input.attr('placeholder', 'Type something…');
 
-    var search_box = '<div class="row"><div class="span5">Quick search: </div><div class="span7" id="homePageAssetList_input"></div></div>';
+    var search_box = '<div class="row"><div class="span5"></div><div class="span7 input-prepend" id="homePageAssetList_input"><span class="add-on">Quick search: </span></div></div>';
 
     $('#homePageAssetList_filter').html(search_box);
 
