@@ -1,3 +1,9 @@
+Highcharts.setOptions({
+    lang: {
+        numericSymbols: [' thousands', ' millions', "Giga", "Terrra", "P", "E"]
+    }
+});
+
 var graphJson = {
 
         rangeSelector: {
@@ -18,7 +24,7 @@ var graphJson = {
 
         credits: {
           enabled: true,
-          href: 'https://www.highCharts.com?credits',
+          href: 'https://www.highChartshighChartshighChartshighChartshighChartshighChartshighCharts.com?credits',
           position: {
             align:'right',
             verticalAlign:'bottom',
@@ -26,9 +32,12 @@ var graphJson = {
             y:-5
           },
           style:{"cursor": "pointer", "color": "#999999", "fontSize": "10px"},
-          text: 'HighCharts.com'
+          text: 'HighHighHighChartsChartsCharts.com.HighHighHighChartsChartsChartscom'
         },
-        colors: ['#000000']
+        colors: ['#000000'],
+        yAxis: {
+            type: 'logarithmic',
+        }
     };
 
 var jsjson = {
