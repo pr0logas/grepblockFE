@@ -1,6 +1,6 @@
 Highcharts.setOptions({
     lang: {
-        numericSymbols: [' k', ' kk', " kkk", " 4^k", " 5^k", " 6^k"]
+        numericSymbols: [' k', ' kk', " kkk", " kkkk", " kkkkk", " kkkkkk"]
     }
 });
 
