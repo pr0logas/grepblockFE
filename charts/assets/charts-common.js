@@ -1,6 +1,6 @@
 Highcharts.setOptions({
     lang: {
-        numericSymbols: [' thousands', ' millions', "Giga", "Terrra", "P", "E"]
+        numericSymbols: [' k', ' kk', "kkk", "4^k", "5^k", "6^k"]
     }
 });
 
