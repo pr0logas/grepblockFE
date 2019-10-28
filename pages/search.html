@@ -72,6 +72,16 @@
       'difficulty': 'Difficulty',
     };
 
+    function result_object(key, value) 
+    {
+      var result = '';
+      $.each(value, function(k, v)
+      {
+         result += k + ': ' + (typeof(v)==='object' ? result_object(k, v) : v) + '<br>';
+      });
+      return result;
+    }
+
     function result_value(key, value) 
     {
       switch(key) {
@@ -82,7 +92,7 @@
           return value + ' sec';
           break;
         default:
-          return value;
+          return typeof(value)==='object' ? result_object(key, value) : value;
       } 
     }
 
@@ -128,7 +138,7 @@
 
     $.ajax(
     {
-      //url: "/parsedb.json",
+      //url: "/parsedbs.json",
       url: "/parsedb?query="+getUrlParamByName('query'),
       dataType: "text", 
       success: function(json)
@@ -151,7 +161,7 @@
 
         $.each(json['SearchData'], function(i, blockchain)
         {
-          var s = 1;
+          //var s = 1;
           var id = 'search-blockchain-'+i;
           var div = $("#copy-search-tab").clone();
           var count = Object.keys(blockchain).length;
@@ -166,10 +176,12 @@
           {
              description.append(result_line(key, value));
 
-            if (s === count) { // this will be executed at the end of the loop
+            /*if (s === count) { // this will be executed at the end of the loop
                 div.appendTo('#search-tab');
-            }s++;
+            }s++;*/
           });
+
+          div.appendTo('#search-tab');
         });
       },
       error: function(xhr, ajaxOptions, thrownError) {
