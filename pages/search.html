@@ -30,25 +30,6 @@
 
 <script type="text/javascript">
     var search_trans = {
-      'adeptio': '<img src="assets/coins-logo/Adeptio.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Adeptio (ADE)',
-      'bitcoin': '<img src="assets/coins-logo/Bitcoin.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Bitcoin (BTC)',
-      'litecoin': '<img src="assets/coins-logo/Litecoin.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Litecoin (LTC)',
-      'dash': '<img src="assets/coins-logo/Dash.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Dash (DASH)',
-      'zcoin': '<img src="assets/coins-logo/Zcoin.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Zcoin (XZC)',
-      'ravencoin': '<img src="assets/coins-logo/Ravencoin.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Ravencoin (RVN) ',
-      'polis': '<img src="assets/coins-logo/Polis.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Polis (POLIS) ',
-      'pivx': '<img src="assets/coins-logo/Pivx.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Pivx (PIVX) ',
-      'ontology': '<img src="assets/coins-logo/Ontology.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Ontology (ONT) ',
-      'snowgem': '<img src="assets/coins-logo/Snowgem.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Snowgem (XSG) ',
-      'syscoin': '<img src="assets/coins-logo/Syscoin.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Syscoin (SYS) ',
-      'bitcoin-cash': '<img src="assets/coins-logo/BitcoinCash.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' BitcoinCash (BCH) ',
-      'horizen': '<img src="assets/coins-logo/Horizen.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Horizen (ZEN) ',
-      'solaris': '<img src="assets/coins-logo/Solaris.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Solaris (XLR) ',
-      'zcash': '<img src="assets/coins-logo/Zcash.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Zcash (ZEC) ',
-      'decred': '<img src="assets/coins-logo/Decred.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' Decred (DCR) ',
-      'bitcoin-gold': '<img src="assets/coins-logo/BitcoinGold.png" alt="coin" style="width:32px;height:32px;">' + ' ' + ' BitcoinGold (BTG) ',
-
-      
       'block': 'Block',
       'moneysupply': 'Money Supply',
       'previousblockhash': 'Previous Block Hash',
@@ -70,6 +51,7 @@
       'tx': 'Transactions',
       'height': 'Block Height',
       'difficulty': 'Difficulty',
+      'wallet': 'Wallet',
     };
 
     function result_object(key, value) 
@@ -103,7 +85,7 @@
 
     function result_title(coin) 
     {
-      return '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' - ('+coin['assetTicker']+')';
+      return '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' ('+coin['assetTicker']+')';
     }
 
     function show_error(error) {
