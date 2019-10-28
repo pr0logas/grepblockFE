@@ -91,6 +91,11 @@
       return '<div class="row"><div class="span2"><b>' + search_translate(key) + '</b>: </div><div class="span9">' + result_value(key, value) + '</div></div>';
     }
 
+    function result_title(coin) 
+    {
+      return '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' - ('+coin['assetTicker']+')';
+    }
+
     function show_error(error) {
       if(!$("#search-waiting").hasClass("hidden"))
         $("#search-waiting").addClass("hidden");
@@ -153,7 +158,7 @@
 
           div.attr("id","");
           div.removeClass("hidden");
-          div.find('.accordion-toggle').attr("href", '#'+id).html(search_translate(blockchain['FoundDataIn']));
+          div.find('.accordion-toggle').attr("href", '#'+id).html(result_title(blockchain));
           div.find('.accordion-body').attr("id", id);
           var description = div.find('.accordion-inner p');
 
