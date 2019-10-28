@@ -151,7 +151,11 @@ function FixJson(json)
 
   console.log(json);
 
-  json = JSON.parse(json);
+  try {
+      json = JSON.parse(json);
+  } catch(e) {
+      json = {};
+  }
 
   return json;
 }
