@@ -63,6 +63,9 @@
 
     function result_value(key, value, values) 
     {
+      if(typeof(value)==='object')
+        return result_object(key, value, values);
+      
       switch(key) {
         case 'tx':
           return value_link(values['assetExplorerLinkTransactions'] + value, value);
@@ -77,7 +80,7 @@
           return value + ' sec';
           break;
         default:
-          return typeof(value)==='object' ? result_object(key, value, values) : value;
+          return value;
       } 
     }
 
