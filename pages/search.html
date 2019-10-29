@@ -59,21 +59,11 @@
       'wallet': 'Wallet',
     };
 
-    function result_object(key, value) 
-    {
-      var result = '';
-      $.each(value, function(k, v)
-      {
-         result += k + ': ' + (typeof(v)==='object' ? result_object(k, v) : v) + '<br>';
-      });
-      return result;
-    }
-
-    function result_value(key, value) 
+    function result_value(key, value, values) 
     {
       switch(key) {
         case 'hash':
-          return '<a href="buratinas" target="_blank">' + value + '</a>';
+          return '<a href="' + values['assetExplorerLinkBlockHashes'] + '" target="_blank">' + value + '</a>';
           break;
         case 'time':
           return value + ' sec';
@@ -85,12 +75,22 @@
 
     function result_line(key, value, values) 
     {
-      return '<div class="row"><div class="span2"><b>' + search_translate(key) + '</b>: </div><div class="span9">' + result_value(key, value) + '</div></div>';
+      return '<div class="row"><div class="span2"><b>' + search_translate(key) + '</b>: </div><div class="span9">' + result_value(key, value, values) + '</div></div>';
     }
 
     function result_title(coin) 
     {
       return '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' ('+coin['assetTicker']+')';
+    }
+
+    function result_object(key, value) 
+    {
+      var result = '';
+      $.each(value, function(k, v)
+      {
+         result += k + ': ' + (typeof(v)==='object' ? result_object(k, v) : v) + '<br>';
+      });
+      return result;
     }
 
     function show_error(error) {
