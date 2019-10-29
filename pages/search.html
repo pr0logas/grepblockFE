@@ -64,8 +64,11 @@
     function result_value(key, value, values) 
     {
       switch(key) {
+        case 'tx':
+          return value_link(values['assetExplorerLinkTransactions'] + value, value);
+          break;
         case 'block':
-          return value_link(values['assetExplorerLinkBlocks'] + values['block'], value);
+          return value_link(values['assetExplorerLinkBlocks'] + value, value);
           break;
         case 'hash':
           return '<a href="' + values['assetExplorerLinkBlockHashes'] + values['block'] + '" target="_blank">' + value + '</a>';
@@ -74,7 +77,7 @@
           return value + ' sec';
           break;
         default:
-          return typeof(value)==='object' ? result_object(key, value) : value;
+          return typeof(value)==='object' ? result_object(key, value, values) : value;
       } 
     }
 
@@ -93,12 +96,12 @@
       return '<a href="' + href + '" target="_blank">' + name + '</a>';
     }
 
-    function result_object(key, value) 
+    function result_object(key, value, values) 
     {
       var result = '';
       $.each(value, function(k, v)
       {
-         result += k + ': ' + (typeof(v)==='object' ? result_object(k, v) : v) + '<br>';
+         result += k + ': ' + (typeof(v)==='object' ? result_object(k, v) : result_value(key, v, values)) + '<br>';
       });
       return result;
     }
