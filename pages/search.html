@@ -32,6 +32,8 @@
     var hide_params = {
       'assetExplorerLinkTransactions': true,
       'assetExplorerLinkBlockHashes': true,
+      'assetExplorerLinkWallets': true,
+      'assetExplorerLinkBlocks': true,
     };
 
     var search_trans = {
@@ -62,8 +64,11 @@
     function result_value(key, value, values) 
     {
       switch(key) {
+        case 'block':
+          return '<a href="' + values['assetExplorerLinkBlocks'] + values['block'] '" target="_blank">' + value + '</a>';
+          break;
         case 'hash':
-          return '<a href="' + values['assetExplorerLinkBlockHashes'] + '" target="_blank">' + value + '</a>';
+          return '<a href="' + values['assetExplorerLinkBlockHashes'] + values['block'] '" target="_blank">' + value + '</a>';
           break;
         case 'time':
           return value + ' sec';
