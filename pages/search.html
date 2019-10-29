@@ -65,7 +65,7 @@
     {
       switch(key) {
         case 'block':
-          return '<a href="' + values['assetExplorerLinkBlocks'] + values['block'] '" target="_blank">' + value + '</a>';
+          return value_link(values['assetExplorerLinkBlocks'] + values['block'], value);
           break;
         case 'hash':
           return '<a href="' + values['assetExplorerLinkBlockHashes'] + values['block'] '" target="_blank">' + value + '</a>';
@@ -86,6 +86,11 @@
     function result_title(coin) 
     {
       return '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' ('+coin['assetTicker']+')';
+    }
+
+    function value_link(href, name) 
+    {
+      return '<a href="' + href '" target="_blank">' + name + '</a>';
     }
 
     function result_object(key, value) 
