@@ -248,6 +248,8 @@ function resizeChart() {
 }
 
 function stockChart(json_url, id, json) {
+    if($("#"+id).attr('started')==='true')
+        return;
     Highcharts.getJSON(json_url, function (data) {
 
         if(data.hasOwnProperty('values')) {
@@ -277,6 +279,7 @@ function stockChart(json_url, id, json) {
         // Create the chart
         Highcharts.stockChart(id, graphJson);
     });
+    $("#"+id).attr('started','true');
 }
 
 function refreshChart(id) {
