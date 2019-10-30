@@ -65,7 +65,7 @@
     {
       if(typeof(value)==='object')
         return result_object(key, value, values);
-      
+
       switch(key) {
         case 'tx':
           return value_link(values['assetExplorerLinkTransactions'] + value, value);
@@ -107,7 +107,7 @@
       var result = '';
       $.each(value, function(k, v)
       {
-         result += k + ': ' + (typeof(v)==='object' ? result_object(k, v, values) : result_value(key, v, values)) + '<br>';
+         result += k + ': ' + (typeof(v)==='object' ? result_object(key, v, values) : result_value(key, v, values)) + '<br>';
       });
       return result;
     }
