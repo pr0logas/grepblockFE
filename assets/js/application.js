@@ -14,12 +14,12 @@
     })
 
     // side bar
-    $('.bs-docs-sidenav').affix({
+    /*$('.bs-docs-sidenav').affix({
       offset: {
         top: function () { return $window.width() <= 980 ? 0 : 100 }
       , bottom: 800
       }
-    })
+    })*/
 
     // make code pretty
     window.prettyPrint && prettyPrint()
