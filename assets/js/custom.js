@@ -131,15 +131,31 @@ jQuery(document).ready(function($) {
 
 $('body').on( "update_page", function() {
 
-  var $window = $(window);
-
-  $('.bs-docs-sidenav').affix({
+  //var $window = $(window);
+//<ul class="nav nav-list bs-docs-sidenav affix-bottom" style="top: 4349px;">
+  /*$('.bs-docs-sidenav').affix({
     offset: {
       top: function () { return $window.width() <= 980 ? 0 : 100 }
     , bottom: 800
     }
-  });
+  });*/
 
+});
+
+$(document).scroll(function() 
+{
+  var top = $(this).scrollTop();
+  var bottom = $(document).height() - $(window).height() - $(window).scrollTop();
+
+  if(top>100)
+    $('.bs-docs-sidenav').addClass('affix');
+  else
+    $('.bs-docs-sidenav').removeClass('affix');
+
+  if(bottom<600)
+    $('.bs-docs-sidenav').addClass('affix-bottom').removeClass('affix');
+  else
+    $('.bs-docs-sidenav').removeClass('affix-bottom');
 });
 
 function FixJson(json) 
