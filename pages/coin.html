@@ -196,6 +196,26 @@
           </div>
         </section>
 
+        <!-- Active Wallets
+        ================================================== -->
+        <section id="assetActiveWallets" class="doc">
+          <div class="page-header">
+            <h3>Active Wallets (90d)</h3>
+          </div>
+
+          <div class="charts opaque-nav" style="padding-bottom: 0px">
+
+           <div id="charts" class="tab-pane active">
+              <div class="padding-top-1x">
+                <div id="highcharts-nodata" class="hidden text-center">No chart data found</div>
+              </div>
+              <div id="highcharts-graph-activewallets" style="height: 400px; min-width: 310px"></div>
+              <br>
+          </div>
+
+          </div>
+        </section>
+
         <!-- About Asset
         ================================================== -->
         <section id="aboutAsset" class="doc">
@@ -262,7 +282,8 @@
           <li><a href="#assetBlocks"><i class="icon-chevron-right"></i> Blocks</a></li>
           <li><a href="#assetTransactions"><i class="icon-chevron-right"></i> Transactions</a></li>
           <li><a href="#assetDifficulty"><i class="icon-chevron-right"></i> Difficulty</a></li>
-	 <li><a href="#assetBlockchainSize"><i class="icon-chevron-right"></i> Blockchain Size</a></li>
+	        <li><a href="#assetBlockchainSize"><i class="icon-chevron-right"></i> Blockchain Size</a></li>
+          <li><a href="#assetActiveWallets"><i class="icon-chevron-right"></i> Active Wallets</a></li>
 	        <li><a href="#aboutAsset"><i class="icon-chevron-right"></i> About</a></li>
           <!--<li><a href="#assetSupply"><i class="icon-chevron-right"></i> Supply</a></li>
           <li><a href="#assetNetworkPeers"><i class="icon-chevron-right"></i> Network Peers</a></li>-->
@@ -561,6 +582,8 @@ $(document).ready(function() {
 
     var blockchainsize_url = url_json+'/assetBlockchainSize.json';
 
+    var blockchainsize_url = url_json+'/assetActiveWallets.json';
+
     if (scroll_el_showing('#assetMarketCap')) {
       if(!$('#highcharts-graph-marketcap').data('highcharts-chart'))
         stockChart(marketcap_url, 'highcharts-graph-marketcap', {'name':'MarketCap (USD)','valueDecimals':0,'colors':['#00BFFF']});
@@ -580,6 +603,10 @@ $(document).ready(function() {
     if (scroll_el_showing('#assetTransactions')) {
       if(!$('#highcharts-graph-transactions').data('highcharts-chart'))
         stockChart(transactions_url, 'highcharts-graph-transactions', {'name':'Transactions','valueDecimals':0,'colors':['#a903b3']});
+    }
+    if (scroll_el_showing('#assetActiveWallets')) {
+      if(!$('#highcharts-graph-activewallets').data('highcharts-chart'))
+        stockChart(activewallets_url, 'highcharts-graph-activewallets', {'name':'ActiveWallets','valueDecimals':0,'colors':['#a903b3']});
     }
     if (scroll_el_showing('#assetDifficulty')) {
       if(!$('#highcharts-graph-difficulty').data('highcharts-chart'))
