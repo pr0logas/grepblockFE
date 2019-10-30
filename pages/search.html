@@ -65,8 +65,6 @@
     {
       if(typeof(value)==='object')
         return result_object(key, value, values);
-
-      console.log(values);
       
       switch(key) {
         case 'tx':
@@ -109,7 +107,7 @@
       var result = '';
       $.each(value, function(k, v)
       {
-         result += k + ': ' + (typeof(v)==='object' ? result_object(k, v) : result_value(key, v, values)) + '<br>';
+         result += k + ': ' + (typeof(v)==='object' ? result_object(k, v, values) : result_value(key, v, values)) + '<br>';
       });
       return result;
     }
