@@ -73,9 +73,18 @@
         case 'block':
           return value_link(values['assetExplorerLinkBlocks'] + value, value);
           break;
+        case 'height':
+          return value_link(values['assetExplorerLinkBlocks'] + value, value);
+          break;
         case 'wallet':
           return value_link(values['assetExplorerLinkWallets'] + value, value);
           break;
+        case 'previousblockhash':
+          return value_link(values['assetExplorerLinkBlocks'] + value, value);
+          break;  
+        case 'nextblockhash':
+          return value_link(values['assetExplorerLinkBlocks'] + value, value);
+          break;  
         case 'hash':
           return '<a href="' + values['assetExplorerLinkBlockHashes'] + values['block'] + '" target="_blank">' + value + '</a>';
           break;
