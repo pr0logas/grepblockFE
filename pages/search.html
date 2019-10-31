@@ -89,7 +89,8 @@
           return '<a href="' + values['assetExplorerLinkBlockHashes'] + values['block'] + '" target="_blank">' + value + '</a>';
           break;
         case 'time':
-          return value + ' sec';
+          var timeStamp = new Date(value*1000);
+          return timeStamp.toDateString();
           break;
         default:
           return value;
