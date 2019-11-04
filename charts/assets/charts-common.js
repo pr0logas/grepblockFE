@@ -35,7 +35,7 @@ var graphJson = {
           text: 'https://grepblock.com'
         },
         colors: ['#000000'],
-        yAxis: {
+        xAxis: {
             type: 'logarithmic',
         }
     };
