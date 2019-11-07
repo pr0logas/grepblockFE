@@ -159,8 +159,12 @@ function homePageAssetListTableCreate(table) {
 
 function homePageAssetListTableReload(table) {
     //table.ajax.reload(null, false); // user paging is not reset on reload
-    table.ajax.reload(function(data) {
-        console.log(data);
+    table.ajax.reload(function(data) 
+    {
+        $('#homePageAssetList tr').addClass('success');
+
+        setTimeout(function(){$('#homePageAssetList tr').removeClass('success');}, 1000);
+        
     }, true);
 }
 
