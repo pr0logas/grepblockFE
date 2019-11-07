@@ -158,7 +158,10 @@ function homePageAssetListTableCreate(table) {
 }
 
 function homePageAssetListTableReload(table) {
-    table.ajax.reload(null, false);
+    //table.ajax.reload(null, false); // user paging is not reset on reload
+    table.ajax.reload(function(data) {
+        console.log(data);
+    }, true);
 }
 
 var ctablePageAssetList = homePageAssetListTableCreate();
@@ -176,7 +179,7 @@ $('body').on( "update_page", function() {
         var create_table = homePageAssetListTableCreate();
 
         setInterval(function() {
-            homePageAssetListTableReload(create_table); // user paging is not reset on reload
+            homePageAssetListTableReload(create_table); 
         }, 29000);
 
         var type = getUrlParamByName('type');
