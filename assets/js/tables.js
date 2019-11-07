@@ -144,7 +144,7 @@ function homePageAssetListTableFormat() {
     input.addClass('input-xxlarge search-query');
     input.attr('placeholder', 'Type assetName or ticker.');
 
-    var search_box = '<div class="row"><div class="span5"></div><div class="span7 input-prepend" id="homePageAssetList_input"><span class="add-on">Quick search:</span></div></div>';
+    var search_box = '<div class="row"><div class="span7 input-prepend" id="homePageAssetList_input"><span class="add-on">Quick search:</span></div><div class="span5"></div></div>';
 
     $('#homePageAssetList_filter').html(search_box);
 
