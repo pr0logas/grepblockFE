@@ -1211,7 +1211,7 @@ a.commentlink {
 .social_small li {
 	display: inline;
 	list-style: none;
-	text-indent: -9999px;
+
 	margin-left: 10px;
 	float: left;
 	-webkit-transition: all 0.3s ease-in-out;
