@@ -127,6 +127,45 @@ jQuery(document).ready(function($) {
     });
   }
 
+  $.ajax(
+  {
+    url: "/apidata/homePageGlobalAssetStats.json",
+    dataType: "text", 
+    success: function(json)
+    {
+      json = FixJson(json);
+
+      if(!json) {
+        console.log('homePageGlobalAssetStats Not found');
+        return
+      }
+
+      $.each(json, function(i, stats)
+      {
+        var s = 1;
+        var id = '#homePageGlobalAssetStats';
+        var div = $(id);
+        var span = 2;
+        var count = Object.keys(stats).length;
+
+        $(id).html("");
+
+        $.each(stats, function(key, value)
+        {
+          if(key==='time')
+            return;
+
+          div.append('<div class="span'+span+'"><b>'+key + ':</b> ' + value+'</div>');
+
+          span = 3;
+        });
+      });
+    },
+    error: function(xhr, ajaxOptions, thrownError) {
+      console.log(thrownError);
+    }
+  });
+
 });
 
 $('body').on( "update_page", function() {
