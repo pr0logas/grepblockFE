@@ -63,7 +63,7 @@
 
     function result_value(key, value, values) 
     {
-      if(typeof(value)==='object')
+      if(typeof(value)==='object' && value!==null)
         return result_object(key, value, values);
 
       switch(key) {
@@ -93,7 +93,6 @@
           return timeStamp.toDateString();
           break;
         default:
-          console.log(value);
           return value;
       } 
     }
