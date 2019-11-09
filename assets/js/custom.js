@@ -155,6 +155,23 @@ jQuery(document).ready(function($) {
           if(key==='time')
             return;
 
+          if(key==='GlobalBlockChains')
+            var GlobalBlockChains = "Integrated blockchains"
+            return GlobalBlockChains;
+
+          if(key==='GlobalBlocks')
+            var GlobalBlocks = "Unique blocks"
+            return GlobalBlocks;
+
+          if(key==='GlobalUniqueWallets')
+            var GlobalUniqueWallets = "Unique wallets"
+            return GlobalUniqueWallets;
+
+          if(key==='GlobalBlockChainSize')
+            var GlobalBlockChainSize = "Global data size"
+            return GlobalBlockChainSize;
+
+
           div.append('<div class="span'+span+'"><b>'+key + ':</b> ' + value+'</div>');
 
           span = 3;
