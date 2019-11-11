@@ -18,7 +18,7 @@
 ,
  "blockSize" : "2" 
 ,
- "walletPrefix" : "P" 
+ "walletPrefix" : "P,D" 
 ,
  "explorer" : "https://explorer.pivx.org/" 
 ,

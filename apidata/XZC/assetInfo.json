@@ -42,7 +42,7 @@
 ,
  "chat" : "https://discordapp.com/invite/4FjnQ2q" 
 ,
- "about" : "Zcoin (XZC) is an open-source privacy-focused cryptocurrency token that launched in Sep 2016. To enable privacy, Zcoin uses zero-knowledge proofs via the Zerocoin protocol. Zerocoin is a cryptocurrency proposed by Johns Hopkins University professor Matthew D. Green and graduate students Ian Miers and Christina Garman as an extension to the Bitcoin protocol that would add cryptographic anonymity to Bitcoin transactions. With Zcoin’s Zerocoin feature, only the sender and receive would be able to ascertain the exchange of funds in a given transaction, as no transaction histories are linked to the actual coins. Zcoin operates a multi-node model where mining nodes verify blockchain transactions and Znodes store blockchain data." 
+ "about" : "Zcoin (XZC) is a privacy-focused cryptocurrency project. It was the first to implement ideas from the Zerocoin project whitepaper written by a group of academics in 2013. When working on his first cryptocurrency in 2014, founder Poramin Insom realized that the project he developed lacked sufficient safeguards for user and transaction privacy. Consequently, in 2016, he created Zcoin, a new cryptocurrency with security and privacy at its core. Since then, Zcoin introduced key protocols, including the MTP mining algorithm, network privacy protocol Dandelion++, and recently, the Sigma Protocol to replace Zerocoin as the privacy protocol in use. The Sigma Protocol lets a user burn existing coins to redeem them for coins with no previous transaction history later. By breaking links in the blockchain, the protocol provides strong end-user privacy." 
 ,
  "algorithm" : "MTP" 
 ,

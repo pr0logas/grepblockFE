@@ -20,9 +20,9 @@
 ,
  "walletPrefix" : "X" 
 ,
- "explorer" : "https://explorer.dash.org/chain/Dash" 
+ "explorer" : "https://chainz.cryptoid.info/dash/" 
 ,
- "explorer2" : "https://insight.dash.org/insight/" 
+ "explorer2" : "https://blockchair.com/dash/" 
 ,
  "explorer3" : "https://live.blockcypher.com/dash/" 
 ,
@@ -46,7 +46,7 @@
 ,
  "algorithm" : "X11" 
 ,
- "developerFee" : "yes" 
+ "developerFee" : "no" 
 ,
  "whitepaper" : "https://github.com/dashpay/dash/wiki/Whitepaper" 
 ,
