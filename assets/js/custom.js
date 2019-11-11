@@ -128,7 +128,7 @@ jQuery(document).ready(function($) {
   }
 
   var homePageGlobalAssetStats_trans = {
-    'GlobalBlockChains' : '<img src="assets/img/icons/blockchain.png" height="42" width="42">' + ' ' + 'Integrated blockchains',
+    'GlobalBlockChains' : '<img src="assets/img/icons/blockchain.png" height="42" width="42">' + ' ' + 'Chains',
     'GlobalBlocks' : '<img src="assets/img/icons/block.png" height="42" width="42">' + ' ' + 'Unique blocks',
     'GlobalUniqueWallets' : '<img src="assets/img/icons/wallet.png" height="42" width="42">' + ' ' + 'Unique wallets',
     'GlobalBlockChainSize' : '<img src="assets/img/icons/package.png" height="42" width="42">' + ' ' + 'Global data size',

@@ -6,19 +6,19 @@
 ,
  "assetTicker" : "ZEN" 
 ,
- "block" : 619232 
+ "block" : 619233 
 ,
  "current_price" : 4.83 
 ,
- "market_cap" : 37407626 
+ "market_cap" : 37390775 
 ,
- "total_volume" : 875359 
+ "total_volume" : 875773 
 ,
- "blockchainAge" : "95075568"
+ "blockchainAge" : "95075865"
 ,
- "price_change_percentage_24h" : 0.10813 
+ "price_change_percentage_24h" : 0.18296 
 ,
- "nTx" : "7"
+ "nTx" : "12"
  },
 {
 "assetName" : "Dash" 
@@ -27,19 +27,19 @@
 ,
  "assetTicker" : "DASH" 
 ,
- "block" : 1169341 
+ "block" : 1169343 
 ,
- "current_price" : 70.9 
+ "current_price" : 71.02 
 ,
  "market_cap" : 645516806 
 ,
- "total_volume" : 428722501 
+ "total_volume" : 423917100 
 ,
- "blockchainAge" : "183386133"
+ "blockchainAge" : "183386431"
 ,
- "price_change_percentage_24h" : -0.46437 
+ "price_change_percentage_24h" : -0.29682 
 ,
- "nTx" : "35"
+ "nTx" : "56"
  },
 {
 "assetName" : "Polis" 
@@ -48,7 +48,7 @@
 ,
  "assetTicker" : "POLIS" 
 ,
- "block" : 474639 
+ "block" : 474642 
 ,
  "current_price" : 1.09 
 ,
@@ -56,11 +56,11 @@
 ,
  "total_volume" : 139336 
 ,
- "blockchainAge" : "59626444"
+ "blockchainAge" : "59626743"
 ,
  "price_change_percentage_24h" : -5.50038 
 ,
- "nTx" : "3"
+ "nTx" : "4"
  },
 {
 "assetName" : "Adeptio" 
@@ -69,7 +69,7 @@
 ,
  "assetTicker" : "ADE" 
 ,
- "block" : 725759 
+ "block" : 725763 
 ,
  "current_price" : 0.00008701 
 ,
@@ -77,7 +77,7 @@
 ,
  "total_volume" : 0.03598905 
 ,
- "blockchainAge" : "45779714"
+ "blockchainAge" : "45780012"
 ,
  "price_change_percentage_24h" : -50.62326 
 ,
@@ -90,17 +90,17 @@
 ,
  "assetTicker" : "PIVX" 
 ,
- "block" : 2071557 
+ "block" : 2071563 
 ,
- "current_price" : 0.236958 
+ "current_price" : 0.237077 
 ,
- "market_cap" : 14632213 
+ "market_cap" : 14585237 
 ,
- "total_volume" : 1035480 
+ "total_volume" : 1035391 
 ,
- "blockchainAge" : "119362815"
+ "blockchainAge" : "119363113"
 ,
- "price_change_percentage_24h" : 1.72431 
+ "price_change_percentage_24h" : 1.46217 
 ,
  "nTx" : "2"
  },
@@ -113,15 +113,15 @@
 ,
  "block" : 603322 
 ,
- "current_price" : 8727.97 
+ "current_price" : 8727.41 
 ,
- "market_cap" : "157486959019" 
+ "market_cap" : "157457616630" 
 ,
- "total_volume" : "26887609671" 
+ "total_volume" : "25938936840" 
 ,
- "blockchainAge" : "342020159"
+ "blockchainAge" : "342020457"
 ,
- "price_change_percentage_24h" : -3.24802 
+ "price_change_percentage_24h" : -2.8212 
 ,
  "nTx" : "2944"
  },
@@ -132,19 +132,19 @@
 ,
  "assetTicker" : "XSG" 
 ,
- "block" : 983610 
+ "block" : 983614 
 ,
- "current_price" : 0.01940239 
+ "current_price" : 0.01924164 
 ,
- "market_cap" : 380131 
+ "market_cap" : 376984 
 ,
- "total_volume" : 34646 
+ "total_volume" : 34320 
 ,
- "blockchainAge" : "59455346"
+ "blockchainAge" : "59455644"
 ,
- "price_change_percentage_24h" : -3.96982 
+ "price_change_percentage_24h" : -4.76541 
 ,
- "nTx" : "2"
+ "nTx" : "3"
  },
 {
 "assetName" : "Zcoin" 
@@ -155,15 +155,15 @@
 ,
  "block" : 214079 
 ,
- "current_price" : 4.72 
+ "current_price" : 4.7 
 ,
- "market_cap" : 41385514 
+ "market_cap" : 41438734 
 ,
- "total_volume" : 11562848 
+ "total_volume" : 9482201 
 ,
- "blockchainAge" : "98469016"
+ "blockchainAge" : "98469315"
 ,
- "price_change_percentage_24h" : -3.76291 
+ "price_change_percentage_24h" : -4.47022 
 ,
  "nTx" : "4"
  },
@@ -176,15 +176,15 @@
 ,
  "block" : 236660 
 ,
- "current_price" : 0.02446503 
+ "current_price" : 0.02435565 
 ,
- "market_cap" : 13913459 
+ "market_cap" : 13935090 
 ,
- "total_volume" : 992222 
+ "total_volume" : 985411 
 ,
- "blockchainAge" : "13812226"
+ "blockchainAge" : "13812524"
 ,
- "price_change_percentage_24h" : -2.434 
+ "price_change_percentage_24h" : -2.46488 
 ,
  "nTx" : "1"
  },
@@ -195,19 +195,19 @@
 ,
  "assetTicker" : "LTC" 
 ,
- "block" : 1734664 
+ "block" : 1734665 
 ,
- "current_price" : 62.12 
+ "current_price" : 62.11 
 ,
- "market_cap" : "3947643682" 
+ "market_cap" : "3954498704" 
 ,
- "total_volume" : "3051221180" 
+ "total_volume" : "3002338489" 
 ,
- "blockchainAge" : "255434475"
+ "blockchainAge" : "255434773"
 ,
- "price_change_percentage_24h" : -3.93373 
+ "price_change_percentage_24h" : -3.91625 
 ,
- "nTx" : "26"
+ "nTx" : "17"
  },
 {
 "assetName" : "Ravencoin" 
@@ -216,17 +216,17 @@
 ,
  "assetTicker" : "RVN" 
 ,
- "block" : 966327 
+ "block" : 966332 
 ,
- "current_price" : 0.02814694 
+ "current_price" : 0.02808933 
 ,
- "market_cap" : 136182210 
+ "market_cap" : 135893533 
 ,
- "total_volume" : 10579153 
+ "total_volume" : 10252530 
 ,
- "blockchainAge" : "58474113"
+ "blockchainAge" : "58474412"
 ,
- "price_change_percentage_24h" : -3.62171 
+ "price_change_percentage_24h" : -3.67213 
 ,
  "nTx" : "2"
  },
@@ -237,19 +237,19 @@
 ,
  "assetTicker" : "DCR" 
 ,
- "block" : 396284 
+ "block" : 396288 
 ,
- "current_price" : 20.76 
+ "current_price" : 20.77 
 ,
- "market_cap" : 221346946 
+ "market_cap" : 221357288 
 ,
- "total_volume" : 23131189 
+ "total_volume" : 23148392 
 ,
- "blockchainAge" : "118535304"
+ "blockchainAge" : "118535602"
 ,
- "price_change_percentage_24h" : 0.04434 
+ "price_change_percentage_24h" : 0.50584 
 ,
- "nTx" : "12"
+ "nTx" : "4"
  },
 {
 "assetName" : "Solaris" 
@@ -258,15 +258,15 @@
 ,
  "assetTicker" : "XLR" 
 ,
- "block" : 13913 
+ "block" : 13915 
 ,
  "current_price" : 0.256845 
 ,
- "market_cap" : 454859 
+ "market_cap" : 454860 
 ,
  "total_volume" : 98.08 
 ,
- "blockchainAge" : "1134806"
+ "blockchainAge" : "1135103"
 ,
  "price_change_percentage_24h" : -0.00511 
 ,
