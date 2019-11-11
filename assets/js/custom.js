@@ -127,6 +127,25 @@ jQuery(document).ready(function($) {
     });
   }
 
+  var homePageGlobalAssetStats_trans = {
+    'GlobalBlockChains' : 'Integrated blockchains',
+    'GlobalBlocks' : 'Unique blocks',
+    'GlobalUniqueWallets' : 'Unique wallets',
+    'GlobalBlockChainSize' : 'Global data size',
+  }
+
+  function result_homePageGlobalAssetStats(key, value, values) 
+  {
+    return '<div class="span'+values+'"><b>'+ homePageGlobalAssetStats_translate(key) + ':</b> ' + value +'</div>';
+  }
+
+  function homePageGlobalAssetStats_translate(key, def) {
+    var name = key;
+    if(name in homePageGlobalAssetStats_trans)
+      name = homePageGlobalAssetStats_trans[name];
+    return name;
+  }
+
   $.ajax(
   {
     url: "/apidata/homePageGlobalAssetStats.json",
@@ -155,24 +174,7 @@ jQuery(document).ready(function($) {
           if(key==='time')
             return;
 
-          if(key==='GlobalBlockChains')
-            var GlobalBlockChains = "Integrated blockchains"
-            return GlobalBlockChains;
-
-          if(key==='GlobalBlocks')
-            var GlobalBlocks = "Unique blocks"
-            return GlobalBlocks;
-
-          if(key==='GlobalUniqueWallets')
-            var GlobalUniqueWallets = "Unique wallets"
-            return GlobalUniqueWallets;
-
-          if(key==='GlobalBlockChainSize')
-            var GlobalBlockChainSize = "Global data size"
-            return GlobalBlockChainSize;
-
-
-          div.append('<div class="span'+span+'"><b>'+key + ':</b> ' + value+'</div>');
+          div.append(result_homePageGlobalAssetStats(key, value, span));
 
           span = 3;
         });
