@@ -214,4 +214,52 @@
 ,
 "GlobalBlockChainSize" : 122242859008
 }
+,
+{
+"time" : 1573509605
+,
+"GlobalBlockChains" : 13
+,
+"GlobalBlocks" : 10211806
+,
+"GlobalUniqueWallets" : 12162433
+,
+"GlobalBlockChainSize" : 123560243200
+}
+,
+{
+"time" : 1573596005
+,
+"GlobalBlockChains" : 13
+,
+"GlobalBlocks" : 10222908
+,
+"GlobalUniqueWallets" : 13217095
+,
+"GlobalBlockChainSize" : 130136186880
+}
+,
+{
+"time" : 1573682405
+,
+"GlobalBlockChains" : 13
+,
+"GlobalBlocks" : 10234151
+,
+"GlobalUniqueWallets" : 14405324
+,
+"GlobalBlockChainSize" : 135977267200
+}
+,
+{
+"time" : 1573768803
+,
+"GlobalBlockChains" : 13
+,
+"GlobalBlocks" : 10245348
+,
+"GlobalUniqueWallets" : 15753975
+,
+"GlobalBlockChainSize" : 143653126144
+}
 ]

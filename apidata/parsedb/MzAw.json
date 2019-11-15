@@ -1,5 +1,5 @@
 {
- "ProcessingTook": "1393 ms among 13 blockchains",
+ "ProcessingTook": "1433 ms among 13 blockchains",
  "SearchData" :
  [
 {"assetTicker": "XLR","assetName": "Solaris","assetExplorerLinkWallets": "https://chainz.cryptoid.info/xlr/address.dws?","assetExplorerLinkTransactions": "https://chainz.cryptoid.info/xlr/tx.dws?","assetExplorerLinkBlockHashes": "https://chainz.cryptoid.info/xlr/block.dws?","assetExplorerLinkBlocks": "https://chainz.cryptoid.info/xlr/block.dws?","FoundDataIn": "solaris", "block" : 300, "nextblockhash" : "7a3482e22fcfe909a53436f370e0804a400a9949b7bd68114865c93dc46f86c3", "previousblockhash" : "8631490a8d13e15521e75b0819f753bef6ba74540088474e7f8d556d933821d0", "merkleroot" : "2fb09a2b19ffff8c02f52fc93c553f094ef551b498c5478fc81ca144a8b67bec", "versionHex" : "20000000", "version" : 536870912, "height" : 300, "time" : 1572375392, "mediantime" : 1572375392, "weight" : 175, "size" : 175, "confirmations" : 2972, "hash" : "dd4946c86e900920f4a7648f7d6c386f3f124370b9728729800e5bfa23d36d06", "tx" : [ "2fb09a2b19ffff8c02f52fc93c553f094ef551b498c5478fc81ca144a8b67bec" ], "bits" : "1e0eefff", "difficulty" : 0.261502553, "chainwork" : "0000000000000000000000000000000000000000000000000031d6897895f9d2", "nTx" : 1 }
