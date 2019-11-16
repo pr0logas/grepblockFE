@@ -156,7 +156,7 @@ jQuery(document).ready(function($) {
       case 'GlobalBlockChainSize':
         var chainsize_formated = (parseFloat(value) / 1073741824) // Divide to GB
         var chainsize_formated2 = parseFloat(chainsize_formated).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-        return chainsize_formated2 + '' + 'GB';
+        return chainsize_formated2 + ' ' + 'GB';
         break;
       default:
         return value;
