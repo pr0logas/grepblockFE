@@ -134,9 +134,36 @@ jQuery(document).ready(function($) {
     'GlobalBlockChainSize' : '<img src="assets/img/icons/package.png" height="42" width="42">' + ' ' + 'Global data size',
   }
 
+  function result_homePageGlobalAssetStats_value(key, value, values) 
+  {
+    if(typeof(value)==='object' && value!==null)
+      return value;
+
+    switch(key) {
+      case 'GlobalBlockChains':
+        return value + ' . ';
+        break;
+      case 'GlobalBlocks':
+        var blocks_formated = parseFloat(value).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        blocks_formated = blocks_formated.substring(0, blocks_formated.length-2);
+        return blocks_formated;
+        break;
+      case 'GlobalUniqueWallets':
+        var wallets_formated = parseFloat(value).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        wallets_formated = wallets_formated.substring(0, wallets_formated.length-2);
+        return wallets_formated;
+        break;
+      case 'GlobalBlockChainSize':
+        return value + ' _ ';
+        break;
+      default:
+        return value;
+    } 
+  }
+
   function result_homePageGlobalAssetStats(key, value, values) 
   {
-    return '<div class="span'+values+'"><b>'+ homePageGlobalAssetStats_translate(key) + ':</b> ' + value +'</div>';
+    return '<div class="span'+values+'"><b>'+ homePageGlobalAssetStats_translate(key) + ':</b> ' + result_homePageGlobalAssetStats_value(key, value, values) +'</div>';
   }
 
   function homePageGlobalAssetStats_translate(key, def) {
