@@ -159,7 +159,7 @@ jQuery(document).ready(function($) {
         var chainsize_formated2 = parseFloat(chainsize_formated).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
         console.log(chainsize_formated2)
         //chainsize_formated2 = chainsize_formated2.substring(0, wallets_formated.length-2);
-        return chainsize_formated;
+        return chainsize_formated2;
         break;
       default:
         return value;
