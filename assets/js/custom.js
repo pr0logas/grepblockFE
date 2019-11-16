@@ -141,7 +141,7 @@ jQuery(document).ready(function($) {
 
     switch(key) {
       case 'GlobalBlockChains':
-        return value + ' . ';
+        return value;
         break;
       case 'GlobalBlocks':
         var blocks_formated = parseFloat(value).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
