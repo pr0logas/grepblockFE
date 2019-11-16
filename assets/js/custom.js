@@ -154,7 +154,11 @@ jQuery(document).ready(function($) {
         return wallets_formated;
         break;
       case 'GlobalBlockChainSize':
-        return value + ' _ ';
+        var chainsize_formated = (parseFloat(value) / 1073741824)
+        console.log(chainsize_formated)
+        var chainsize_formated2 = parseFloat(chainsize_formated).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        chainsize_formated2 = chainsize_formated2.substring(0, wallets_formated.length-2);
+        return chainsize_formated2;
         break;
       default:
         return value;
@@ -249,8 +253,6 @@ function FixJson(json)
     return json;
   
   json = json.replace(/NumberLong\("(.*?)"\)/g, "$1");
-
-  console.log(json);
 
   try {
       json = JSON.parse(json);
