@@ -86,7 +86,7 @@
           return value_link(values['assetExplorerLinkBlocks'] + value, value);
           break;  
         case 'hash':
-          return '<a href="' + values['assetExplorerLinkBlockHashes'] + values['block'] + '" target="_blank">' + value + '</a>';
+          return '<a href="' + values['assetExplorerLinkBlockHashes'] + value + '" target="_blank">' + value + '</a>';
           break;
         case 'time':
           var timeStamp = new Date(value*1000);
