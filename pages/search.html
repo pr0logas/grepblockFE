@@ -86,7 +86,7 @@
           return value_link(values['assetExplorerLinkBlocks'] + value, value);
           break;  
         case 'hash':
-          return '<a href="' + values['assetExplorerLinkBlockHashes'] + value + '" target="_blank">' + value + '</a>';
+          return value_link(values['assetExplorerLinkBlockHashes'] + value, value);
           break;
         case 'time':
           var timeStamp = new Date(value*1000);
@@ -109,7 +109,7 @@
 
     function value_link(href, name) 
     {
-      return '<a href="' + href + '" target="_blank">' + name + '</a>';
+      return '<a href="' + href + '?utm_source=Grepblock.com" target="_blank">' + name + '</a>';
     }
 
     function result_object(key, value, values) 
@@ -141,9 +141,11 @@
         $("#search-result").removeClass("hidden");
     }
 
-    function show_param(key) 
+    function show_param(key,value) 
     {
       if(key in hide_params)
+        return false;
+      if(value===null || value==='null')
         return false;
       return true;
     }
@@ -161,8 +163,8 @@
 
     $.ajax(
     {
-      //url: "/parsedbs.json",
-      url: "/parsedb?query="+getUrlParamByName('query'),
+      url: "/parsedb.json",
+      //url: "/parsedb?query="+getUrlParamByName('query'),
       dataType: "text", 
       success: function(json)
       {
@@ -196,7 +198,7 @@
 
           $.each(blockchain, function(key, value)
           {
-            if(show_param(key))
+            if(show_param(key,value))
               description.append(result_line(key, value, blockchain));
           });
 
