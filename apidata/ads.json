@@ -1,5 +1,21 @@
-{
-	"0" : "https://birake.com",
-	"1" : "https://secondlink.com",
-	"2" : "https://thirdlink.com"
-}
+[
+	{
+		"url": "https://birake.com",
+		"path": "/assets/ads/birake.png",
+	},
+	{
+		"url": "https://bare.network",
+		"path": "https://bare.network/images/BARE%20LOGO.png",
+	},
+	{
+		"url": "https://secondlink.com",
+		"path": "/assets/ads/secondlink.gif",
+		"title": "Second link"
+	},
+	{
+		"url": "https://thirdlink.com",
+		"path": "/assets/ads/thirdlink.jpg",
+		"title": "Third link",
+		"hide": true
+	}
+]
