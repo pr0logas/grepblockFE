@@ -10,6 +10,14 @@
 <div id="search-result" class="hidden">
   <center><div id="search-ProcessingTook"><h3><span class="name">ProcessingTook: </span><span class="value"></span></h3></div></center>
 
+  <div class="row">
+    <div class="span7 input-prepend" id="homePageAssetList_input">
+      <span class="add-on">Quick search:</span>
+      <input id="searchFilterInput" type="search" class="input-xxlarge search-query" placeholder="Type assetName or ticker.">
+    </div>
+    <div class="span5"></div>
+  </div>
+
   <div class="accordion botspacer40" id="search-tab">
 
     <div id="copy-search-tab" class="accordion-group hidden">
@@ -210,5 +218,12 @@
       }
     });
 
-
+    $(document).ready(function(){
+      $("#searchFilterInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#search-tab .accordion-group").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+      });
+    });
 </script>
