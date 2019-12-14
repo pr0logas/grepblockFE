@@ -1,21 +1,27 @@
 [
 	{
-		"url": "https://birake.com",
-		"path": "/assets/ads/birake.png",
+		"url": "https://ihostmn.com?utm_source=Grepblock.com",
+		"path": "/assets/ads/ihostmnv2.gif",
+		"title": "Ihostmn",
+		"hide": false
 	},
 	{
-		"url": "https://bare.network",
-		"path": "https://bare.network/images/BARE%20LOGO.png",
+		"url": "https://lawesomecoin.com?utm_source=Grepblock.com",
+		"path": "https://bare.network/images/law_coin.gif",
+		"title": "Lawcoin",
+		"hide": false
 	},
 	{
-		"url": "https://secondlink.com",
-		"path": "/assets/ads/secondlink.gif",
-		"title": "Second link"
+		"url": "https://www.peertoro.eu?utm_source=Grepblock.com",
+		"path": "/assets/ads/peertoro.gif",
+		"title": "Peertoro",
+		"hide": false
+
 	},
 	{
-		"url": "https://thirdlink.com",
-		"path": "/assets/ads/thirdlink.jpg",
-		"title": "Third link",
-		"hide": true
+		"url": "https://sinovate.io?utm_source=Grepblock.com",
+		"path": "/assets/ads/sinovate.gif",
+		"title": "Sinovate",
+		"hide": false
 	}
 ]
