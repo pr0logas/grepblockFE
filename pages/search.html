@@ -10,6 +10,14 @@
 <div id="search-result" class="hidden">
   <center><div id="search-ProcessingTook"><h3><span class="name">ProcessingTook: </span><span class="value"></span></h3></div></center>
 
+  <div class="row">
+    <div class="span7 input-prepend" id="homePageAssetList_input">
+      <span class="add-on">Quick search:</span>
+      <input id="searchFilterInput" type="search" class="input-xxlarge search-query" placeholder="Type assetName or ticker.">
+    </div>
+    <div class="span5"></div>
+  </div>
+
   <div class="accordion botspacer40" id="search-tab">
 
     <div id="copy-search-tab" class="accordion-group hidden">
@@ -86,7 +94,7 @@
           return value_link(values['assetExplorerLinkBlocks'] + value, value);
           break;  
         case 'hash':
-          return '<a href="' + values['assetExplorerLinkBlockHashes'] + value + '" target="_blank">' + value + '</a>';
+          return value_link(values['assetExplorerLinkBlockHashes'] + value, value);
           break;
         case 'time':
           var timeStamp = new Date(value*1000);
@@ -109,7 +117,7 @@
 
     function value_link(href, name) 
     {
-      return '<a href="' + href + '" target="_blank">' + name + '</a>';
+      return '<a href="' + href + '?utm_source=Grepblock.com" target="_blank">' + name + '</a>';
     }
 
     function result_object(key, value, values) 
@@ -141,9 +149,11 @@
         $("#search-result").removeClass("hidden");
     }
 
-    function show_param(key) 
+    function show_param(key,value) 
     {
       if(key in hide_params)
+        return false;
+      if(value===null || value==='null')
         return false;
       return true;
     }
@@ -161,7 +171,7 @@
 
     $.ajax(
     {
-      //url: "/parsedbs.json",
+      //url: "/parsedb.json",
       url: "/parsedb?query="+getUrlParamByName('query'),
       dataType: "text", 
       success: function(json)
@@ -196,7 +206,7 @@
 
           $.each(blockchain, function(key, value)
           {
-            if(show_param(key))
+            if(show_param(key,value))
               description.append(result_line(key, value, blockchain));
           });
 
@@ -206,5 +216,14 @@
       error: function(xhr, ajaxOptions, thrownError) {
         show_error(thrownError);
       }
+    });
+
+    $(document).ready(function(){
+      $("#searchFilterInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#search-tab .accordion-group").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+      });
     });
 </script>

@@ -1,5 +1,27 @@
-{
-	"0" : "https://birake.com",
-	"1" : "https://secondlink.com",
-	"2" : "https://thirdlink.com"
-}
+[
+	{
+		"url": "https://ihostmn.com?utm_source=Grepblock.com",
+		"path": "/assets/ads/ihostmnv2.gif",
+		"title": "Ihostmn",
+		"hide": false
+	},
+	{
+		"url": "https://lawesomecoin.com?utm_source=Grepblock.com",
+		"path": "https://bare.network/images/law_coin.gif",
+		"title": "Lawcoin",
+		"hide": false
+	},
+	{
+		"url": "https://www.peertoro.eu?utm_source=Grepblock.com",
+		"path": "/assets/ads/peertoro.gif",
+		"title": "Peertoro",
+		"hide": false
+
+	},
+	{
+		"url": "https://sinovate.io?utm_source=Grepblock.com",
+		"path": "/assets/ads/sinovate.gif",
+		"title": "Sinovate",
+		"hide": false
+	}
+]
