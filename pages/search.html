@@ -8,15 +8,15 @@
 </div>
 
 <div id="search-result" class="hidden">
-  <center><div id="search-ProcessingTook"><h3><span class="name">ProcessingTook: </span><span class="value"></span></h3></div></center>
+  <center><div id="search-ProcessingTook"><h3><span class="name">ProcessingTook: </span><span class="value"></span></h3></div>
 
   <div class="row">
-    <center><div class="span7 input-prepend" id="homePageAssetList_input">
+    <div class="span7 input-prepend" id="homePageAssetList_input">
       <span class="add-on">Rapid search:</span>
       <input id="searchFilterInput" type="search" class="input-medium search-query" placeholder="Type assetName or ticker.">
     </div>
-    <div class="span5"></div></center>
-  </div>
+    <div class="span5"></div>
+  </div></center>
 
   <div class="accordion botspacer40" id="search-tab">
 
@@ -118,7 +118,7 @@
 
     function result_title(coin) 
     {
-      return '<center><span> Value ' + searchVal + ' ' + 'was found in this blockchain. Click here to expand the details.</p>' + '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' ('+coin['assetTicker']+')</center>';
+      return '<center><span> Value ' + searchVal + ' ' + 'was found in <img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' ('+coin['assetTicker']+') blockchain. Click here to expand the details.</p></center>';
     }
 
     function result_object(key, value, values) 
