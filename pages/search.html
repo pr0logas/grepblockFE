@@ -104,7 +104,6 @@
           return value;
       } 
     }
-    var searchVal = '';
     function result_line(key, value, values) 
     {
       return '<div class="row"><div class="span2"><b>' + search_translate(key) + '</b>: </div><div class="span9">' + result_value(key, value, values) + '</div></div>';
@@ -113,12 +112,11 @@
     function value_link(href, searchValue) 
     {
       return '<a href="' + href + '" target="_blank">' + searchValue + '</a>';
-      searchVal = searchValue;
     }
 
     function result_title(coin) 
     {
-      return '<center><img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;">' + '<span> Value ' + searchVal + ' ' + 'was found in '+coin['assetName']+' ('+coin['assetTicker']+') blockchain. Click here to expand the details.</p></center>';
+      return '<center><img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:48px;height:48px;">' + '<span> Value was found in '+coin['assetName']+' ('+coin['assetTicker']+') blockchain. Click here to expand the details.</p></center>';
     }
 
     function result_object(key, value, values) 
