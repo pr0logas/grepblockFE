@@ -1,74 +1,436 @@
-<!--
+<!DOCTYPE html>
+<html lang="en">
 
-      <div class="row">
-        <div class="span12">
-          <h3>Example pricing boxes with well</h3>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Rich Blockchain Monitoring Platform | GrepBlock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cryptocurrency statistics, block data, charts, and multi-chain global search. We are using innovative way to rank blockchain activity and observing changes.">
 
-          <div class="row">
-            <div class="span3">
-              <div class="well well-primary">
-                <h2>Primary</h2>
-                <p><span class="label">BUDGET</span></p>
-                <ul class="check-white">
-                  <li>20 users</li>
-                  <li>Unlimited access with no limits</li>
-                  <li>5TB of space</li>
-                  <li>E-mail support</li>
-                </ul>
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Rich Blockchain Monitoring Platform | GrepBlock">
+  <meta itemprop="description" content="Cryptocurrency statistics, block data, charts, and multi-chain global search. We are using innovative way to rank blockchain activity and observing changes.">
+  <meta itemprop="image" content="https://grepblock.com/assets/img/logo.png">
 
-                <h3>$20.99 / month</h3>
-                <p><a class="btn btn-large" href="#"><i class="icon-ok icon"></i> Select plan</a></p>
-              </div>
-            </div>
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="https://grepblock.com/assets/img/logo.png">
+  <meta name="twitter:site" content="@grepblock">
+  <meta name="twitter:title" content="Rich Blockchain Monitoring Platform | GrepBlock">
+  <meta name="twitter:description" content="Cryptocurrency statistics, block data, charts, and multi-chain global search. We are using innovative way to rank blockchain activity and observing changes.">
+  <meta name="twitter:creator" content="@grepblock">
+  <meta name="twitter:image:src" content="https://grepblock.com/assets/img/logo.png">
 
-            <div class="span3">
-              <div class="well well-warning">
-                <h2>Warning</h2>
-                <p><span class="label">BUDGET</span></p>
-                <ul class="check-white">
-                  <li>20 users</li>
-                  <li>Unlimited access with no limits</li>
-                  <li>5TB of space</li>
-                  <li>E-mail support</li>
-                </ul>
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Rich Blockchain Monitoring Platform | GrepBlock" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://grepblock.com" />
+  <meta property="og:image" content="https://grepblock.com/assets/img/logo.png" />
+  <meta property="og:site_name" content="GrepBlock">
+  <meta property="og:description" content="Cryptocurrency statistics, block data, charts, and multi-chain global search. We are using innovative way to rank blockchain activity and observing changes." />
+  <meta name="keywords" content="coins, platforms, dapps, tokens, masternodes, cryptocurrency, comparison, roi stats, masternode monitoring, block, blocks, transactions, txid, chainage, assetType, difficulty, volume, marketcap,
+  Bitcoin(BTC), Litecoin(LTC), PIVX(PIVX), Adeptio(ADE), Ontology(ONT), Snowgem(XSG), Zcoin(XZC), Polis(POLIS), DASH(DASH), Syscoin(SYS), Ravencoin(RVN), BitcoinCash(BCH) Horizen(ZEN), Solaris(XLR), Zcash(ZEC), Decred(DCR), BitcoinGold(BTG), Digibyte(DGB), Reddcoin (RDD), Monacoin (MONA), Vidulum (VDL), Bitcore (BTX), Ethereum (ETH)"/>
 
-                <h3>$30.99 / month</h3>
-                <p><a class="btn btn-large" href="#"><i class="icon-ok icon"></i> Select plan</a></p>
-              </div>
-            </div>
+  <!-- styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/docs.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="assets/css/camera.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Open+Sans:400,300,300italic,400italic" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/color/success.css" rel="stylesheet">
 
-            <div class="span3">
-              <div class="well well-info">
-                <h2>Info</h2>
-                <p><span class="label">BUDGET</span></p>
-                <ul class="check-white">
-                  <li>20 users</li>
-                  <li>Unlimited access with no limits</li>
-                  <li>5TB of space</li>
-                  <li>E-mail support</li>
-                </ul>
+  <!-- fav and touch icons -->
+  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TM6FH6S9T6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-                <h3>$40.99 / month</h3>
-                <p><a class="btn btn-large" href="#"><i class="icon-ok icon"></i> Select plan</a></p>
-              </div>
-            </div>
+  gtag('config', 'G-TM6FH6S9T6');
+</script>
+<script src="assets/js/nemo_head.js" author="nemo"></script>
 
-            <div class="span3">
-              <div class="well well-success">
-                <h2>Success</h2>
-                <p><span class="label">POPULAR</span></p>
-                <ul class="check-white">
-                  <li>20 users</li>
-                  <li>Unlimited access with no limits</li>
-                  <li>5TB of space</li>
-                  <li>E-mail support</li>
-                </ul>
+  <script author="nemo">
+    var menu = [
+      {
+        li_class: 'dropdown primary active',
+        id: 'link-',
+        icon: getIcon('globe', {class: "icon icon-globe icon-white"}),
+        href: '/',
+        //onclick: 'show_page(this);',
+        title: 'All Assets',
+        class: 'active'
+      },
+      /*
+      {
+        li_class: 'dropdown warning',
+        id: 'link-coins',
+        icon: getIcon('star', {class: "icon icon-star icon-white"}),
+        href: '?type=coin',
+        //onclick: 'show_page(this);',
+        title: 'Coins',
+      },
+      {
+        li_class: 'dropdown primary',
+        id: 'link-platforms',
+        icon: getIcon('asterisk', {class: "icon icon-asterisk icon-white"}),
+        href: '?type=platform',
+        //onclick: 'show_page(this);',
+        title: 'Platforms',
+      },
+      {
+        li_class: 'dropdown danger',
+        id: 'link-tokens',
+        icon: getIcon('bookmark', {class: "icon icon-bookmark icon-white"}),
+        href: '?type=token',
+        //onclick: 'show_page(this);',
+        title: 'Tokens/Dapps',
+      },
+      {
+        li_class: 'dropdown info',
+        id: 'link-masternodes',
+        icon: getIcon('hdd', {class: "icon icon-hdd icon-white"}),
+        href: '#',
+        onclick: 'show_page(this);',
+        title: 'Masternodes',
+      },
+      */
+      {
+        li_class: 'dropdown success',
+        id: 'link-api',
+        icon: getIcon('retweet', {class: "icon icon-retweet icon-white"}),
+        href: '?page=api',
+        onclick: 'show_page(this);',
+        title: 'API',
+      },
+      {
+        li_class: 'inverse',
+        id: 'link-submit-form',
+        icon: getIcon('hand-right', {class: "icon icon-hand-right icon-white"}),
+        href: 'https://docs.google.com/forms/d/17Z0GrMiJzBPyyfL6m0ZlPOh-sOduJKYVZ2Lh018c4rA',
+        target: '_blank',
+        title: 'Submit Form',
+      },
+    ]
+    var pages = [
+      {
+        id: 'link-coin',
+        href: '#coin',
+        title: '',
+      },
+      {
+        id: 'link-search',
+        href: '#search',
+        title: '',
+      }
+    ]
+  </script>
 
-                <h3>$50.99 / month</h3>
-                <p><a class="btn btn-large" href="#"><i class="icon-ok icon"></i> Select plan</a></p>
-              </div>
+</head>
+
+<body>
+
+  <header>
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <!-- logo -->
+          <a class="brand logo" href="index.html">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
+          <!-- end logo -->
+
+          <!-- top menu -->
+          <div>
+            <nav>
+              <ul id="menu" class="nav topnav"></ul>
+            </nav>
+          </div>
+          <!-- end menu -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="subintro">
+    <div class="jumbotron subhead" id="overview">
+      <div class="container">
+        <div class="row">
+          <div class="span6">
+            <h3><i class="m-icon-big-swapright m-icon-white"></i> <span id="page-title"></span></h3>
+          </div>
+          <div class="span6">
+            <div class="input-append">
+              <form action="/" class="form-search">
+                <input type="text" name="query" placeholder="You may enter a block number, hash, tx hash or wallet addr to search among all blockchains." class="input-xxlarge search-query">
+                <input type="hidden" name="page" value="search">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
--->
+    </div>
+  </section>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="span12">
+          <div class="row tagline center" id="homePageGlobalAssetStats">
+          </div>
+      </div>
+    </div>
+
+    <div id="pages"></div>
+  </div>
+
+  <section id="bottom">
+    <div class="container">
+
+      <!-- divider -->
+      <div class="row">
+        <div class="span12">
+          <div class="divider"></div>
+        </div>
+      </div>
+      <!-- end divider -->
+
+    </div>
+  </section>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="span12">
+        <div class="tagline">
+          <div class="row">
+
+            <div class="span6">
+              <div class="tagline_text">
+                <h2>Professional<span class="text-success"> API </span>for your business</h2>
+                <div class="tag_list">
+                  <ul>
+                    <li><span><i class="icon-fire"></i> Competitive price</span></li>
+                    <li><span><i class="icon-gift"></i> Get rich data not only basics</span></li>
+                    <li><span><i class="icon-plane"></i> Try for free now</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="span6">
+              <div class="btn-toolbar cta">
+                <a class="btn btn-large btn-primary" href="#"><i class="m-icon-big-swapright m-icon-white"></i> Our pricing</a>
+                <a class="btn btn-large btn-success" href="#"><i class="m-icon-big-swapdown m-icon-white"></i> Try it now</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="span12">
+        <h3 class="heading-success"><span class="btn btn-large btn-inverse"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Our sponsors and partners</h3>
+
+        <div id="latest-work" class="carousel btleft">
+          <div class="carousel-wrapper">
+
+            <ul class="client">
+
+              <li>
+                <div class="tooltip-demo thumbnail">
+                  <a href="https://www.mongodb.com?utm_source=Grepblock.com" data-rel="tooltip" data-placement="top" title="MongoDB"><img src="assets/img/clients/mongodb.png" height="220" width="300" alt="" /></a>
+                </div>
+              </li>
+
+              <li>
+                <div class="tooltip-demo thumbnail">
+                  <a href="https://www.coingecko.com?utm_source=Grepblock.com" data-rel="tooltip" data-placement="top" title="CoinGecko"><img src="assets/img/clients/coingecko.png" height="180" width="225" alt="" /></a>
+                </div>
+              </li>
+
+              <li>
+                <div class="tooltip-demo thumbnail">
+                  <a href="https://envato.com?utm_source=Grepblock.com" data-rel="tooltip" data-placement="top" title="Envato"><img src="assets/img/clients/cl-1.png" height="220" width="245" alt="" /></a>
+                </div>
+              </li>
+
+              <li>
+                <div class="tooltip-demo thumbnail">
+                  <a href="https://aws.com?utm_source=Grepblock.com" data-rel="tooltip" data-placement="top" title="AWS"><center><img src="assets/img/clients/aws.png" height="110" width="69" alt="" /></center></a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer
+ ================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="span4">
+          <div class="widget">
+            <h4>About us</h4>
+            <address>
+              <strong>Rich blockchain monitoring platform.</strong><br>
+              Cryptocurrency statistics, block data, charts, and multi-chain global search. We are using innovative way to rank blockchain activity and observe changes.
+              <br>
+              
+              <br>
+              <strong>Let's talk:</strong><br>
+              <a href="mailto:info@grepblock.com">info@grepblock.com</a><br>
+              <!--<a href="mailto:advertising@grepblock.com">ads@grepblock.com</a>-->
+            </address>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="widget">
+            <h4>Browse pages</h4>
+            <ul class="nav nav-list regular">
+              <li class="nav-header">Useful links</li>
+              <li><a href="pages/faq.html">FAQ</a></li>
+              <li><a href="pages/privacy.html">Privacy</a></li>
+              <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+              <li class="nav-header">Donate:</li>
+              <li><a>BTC: 3Ae53MSMJbLJU9AUynXq4MVsiRELpp9BKU</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="widget">
+            <h4>Get updates & announcements</h4>
+            <ul class="social_small">
+              <p>
+              Follow us on social networks for latest news and announcements. 
+              <br>
+            </p>
+            <!--
+            <form class="form-horizontal" action="#" method="post">
+              <fieldset>
+                <p>
+                  Sign up for email updates and we'll inform you about new listings, updates etc.
+                </p>
+
+                <div class="input-prepend input-append">
+                  <input class="span2" id="appendedPrependedInput" type="text" placeholder="Email">
+                  <button class="btn btn-inverse" type="submit">Subscribe!</button>
+                </div>
+              </fieldset>
+            </form>
+          -->
+            <ul class="social_small">
+              <li>
+                <a href="https://bitcointalk.org/index.php?topic=5190364.0;all" title="Grepblock-bitcointalk" target="_blank">
+                  <img src="assets/ico/social/grepblock-bitcointalk.png" height="24" width="24" alt="GrepBlock-bitcointalk">
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/grepblock" title="Grepblock-twitter" target="_blank">
+                  <img src="assets/ico/social/grepblock-twitter.png" height="24" width="24" alt="GrepBlock-twitter">
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.gg/mUB3UQd" title="Grepblock-discord" target="_blank">
+                  <img src="assets/ico/social/grepblock-discord.png" height="24" width="24" alt="GrepBlock-discord">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="verybottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="span6">
+            <p>&copy; GrepBlock.com - All rights reserved // 2020 &#174;</p>
+          </div>
+          <div class="span6">
+            <div class="pull-right">
+              <div class="credits">
+                Powered by bash|python|mongodb|html|css|js
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <div style="display: none;" author="nemo">
+
+    <div id="menu-li">
+        <li class="{li_class}">
+          <a id="{id}" class="nav-link {class}" href="{href}" onclick="{onclick}" target="{target}">
+            {icon}
+            {title}
+          </a>
+        </li>
+    </div>
+
+    <div id="pages-li">
+        <a id="{id}" href="{href}">{title}</a>
+    </div>
+
+    <div id="hide"></div>
+
+  </div>
+
+  <script src="assets/js/jquery-1.8.2.min.js"></script>
+  <script src="assets/js/nemo_foot.js" author="nemo"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/jquery.elastislide.js"></script>
+  <script src="assets/js/jquery.flexslider.js"></script>
+  <script src="assets/js/jquery.prettyPhoto.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/1.0.1/js/dataTables.responsive.js"></script>
+  <script src="assets/js/tables.js"></script>
+  <script src="assets/js/application.js"></script>
+  <script src="assets/js/hover/jquery-hover-effect.js"></script>
+  <script src="assets/js/hover/setting.js"></script>
+  <script src="assets/js/camera/camera.min.js"></script>
+  <script src="assets/js/camera/setting.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="assets/js/custom.js"></script>
+
+    <script src="/charts/assets/highstock.js"></script>
+    <script src="/charts/assets/data.js"></script>
+    <script src="/charts/assets/export-data.js"></script>
+
+    <script type="text/javascript" src="/charts/assets/charts-common.js"></script>
+    <script type="text/javascript" src="/charts/assets/exporting.js"></script>
+</body>
+
+</html>
