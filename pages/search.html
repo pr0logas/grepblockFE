@@ -104,20 +104,21 @@
           return value;
       } 
     }
-
+    var searchVal = '';
     function result_line(key, value, values) 
     {
       return '<div class="row"><div class="span2"><b>' + search_translate(key) + '</b>: </div><div class="span9">' + result_value(key, value, values) + '</div></div>';
     }
 
-    function result_title(coin) 
-    {
-      return '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' ('+coin['assetTicker']+')' + ' ' + '<span> // Value was found in this blockchain. Click here to expand the details. </span>';
-    }
-
     function value_link(href, searchValue) 
     {
       return '<a href="' + href + '" target="_blank">' + searchValue + '</a>';
+      searchVal = searchValue;
+    }
+
+    function result_title(coin) 
+    {
+      return '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' ('+coin['assetTicker']+')' + ' ' + '<span> || Value ' + searchVal + ' ' + 'was found in this blockchain. Click here to expand the details. </span>';
     }
 
     function result_object(key, value, values) 
