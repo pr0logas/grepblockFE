@@ -112,7 +112,7 @@
 
     function result_title(coin) 
     {
-      return '<span>Value was found in the following blockchain: </span>' + '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' ('+coin['assetTicker']+')';
+      return '<img src="assets/coins-logo/'+coin['assetName']+'.png" alt="coin" style="width:32px;height:32px;"> '+coin['assetName']+' ('+coin['assetTicker']+')' + '<span>Value was found in this blockchain: </span>';
     }
 
     function value_link(href, searchValue) 
