@@ -28,7 +28,7 @@
   <meta property="og:site_name" content="GrepBlock">
   <meta property="og:description" content="Cryptocurrency statistics, block data, charts, and multi-chain global search. We are using innovative way to rank blockchain activity and observing changes." />
   <meta name="keywords" content="coins, platforms, dapps, tokens, masternodes, cryptocurrency, comparison, roi stats, masternode monitoring, block, blocks, transactions, txid, chainage, assetType, difficulty, volume, marketcap,
-  Bitcoin(BTC), Litecoin(LTC), PIVX(PIVX), Adeptio(ADE), Ontology(ONT), Snowgem(XSG), Zcoin(XZC), Polis(POLIS), DASH(DASH), Syscoin(SYS), Ravencoin(RVN), BitcoinCash(BCH) Horizen(ZEN), Solaris(XLR), Zcash(ZEC), Decred(DCR), BitcoinGold(BTG), Digibyte(DGB), Reddcoin (RDD), Monacoin (MONA), Vidulum (VDL), Bitcore (BTX)"/>
+  Bitcoin(BTC), Litecoin(LTC), PIVX(PIVX), Adeptio(ADE), Ontology(ONT), Snowgem(XSG), Zcoin(XZC), Polis(POLIS), DASH(DASH), Syscoin(SYS), Ravencoin(RVN), BitcoinCash(BCH) Horizen(ZEN), Solaris(XLR), Zcash(ZEC), Decred(DCR), BitcoinGold(BTG), Digibyte(DGB), Reddcoin (RDD), Monacoin (MONA), Vidulum (VDL), Bitcore (BTX), Ethereum (ETH)"/>
 
   <!-- styles -->
   <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -58,7 +58,7 @@
   <script author="nemo">
     var menu = [
       {
-        li_class: 'dropdown success active',
+        li_class: 'dropdown primary active',
         id: 'link-',
         icon: getIcon('globe', {class: "icon icon-globe icon-white"}),
         href: '/',
@@ -66,6 +66,7 @@
         title: 'All Assets',
         class: 'active'
       },
+      /*
       {
         li_class: 'dropdown warning',
         id: 'link-coins',
@@ -98,8 +99,9 @@
         onclick: 'show_page(this);',
         title: 'Masternodes',
       },
+      */
       {
-        li_class: 'dropdown success',
+        li_class: 'dropdown info',
         id: 'link-api',
         icon: getIcon('retweet', {class: "icon icon-retweet icon-white"}),
         href: '#',
@@ -196,7 +198,6 @@
     </div>
   </section>
 
- <!--
 
   <div class="container">
     <div class="row">
@@ -212,7 +213,7 @@
                   <ul>
                     <li><span><i class="icon-fire"></i> Competitive price</span></li>
                     <li><span><i class="icon-gift"></i> Get rich data not only basics</span></li>
-                    <li><span><i class="icon-plane"></i> Get free API key now</span></li>
+                    <li><span><i class="icon-plane"></i> Try for free now</span></li>
                   </ul>
                 </div>
               </div>
@@ -220,8 +221,8 @@
 
             <div class="span6">
               <div class="btn-toolbar cta">
-                <a class="btn btn-large btn-danger" href="#"><i class="m-icon-big-swapright m-icon-white"></i> Our pricing</a>
-                <a class="btn btn-large btn-success" href="#"><i class="m-icon-big-swapdown m-icon-white"></i> Try it now</a>
+                <a class="btn btn-large btn-warning" href="#"><i class="m-icon-big-swapright m-icon-white"></i> Our pricing</a>
+                <a class="btn btn-large btn-primary" href="#"><i class="m-icon-big-swapdown m-icon-white"></i> Try it now</a>
               </div>
             </div>
 
@@ -232,7 +233,6 @@
     </div>
   </div>
 
-  -->
 
   <div class="container">
 
@@ -307,7 +307,7 @@
     					<br>
     					<strong>Let's talk:</strong><br>
     					<a href="mailto:info@grepblock.com">info@grepblock.com</a><br>
-              <a href="mailto:advertising@grepblock.com">ads@grepblock.com</a>
+              <!--<a href="mailto:advertising@grepblock.com">ads@grepblock.com</a>-->
 					  </address>
           </div>
         </div>
@@ -327,6 +327,12 @@
         <div class="span4">
           <div class="widget">
             <h4>Get updates & announcements</h4>
+            <ul class="social_small">
+              <p>
+              Follow us on social networks for latest news and announcements. 
+              <br>
+            </p>
+            <!--
             <form class="form-horizontal" action="#" method="post">
               <fieldset>
                 <p>
@@ -339,6 +345,7 @@
                 </div>
               </fieldset>
             </form>
+          -->
             <ul class="social_small">
               <li>
                 <a href="https://bitcointalk.org/index.php?topic=5190364.0;all" title="Grepblock-bitcointalk" target="_blank">
