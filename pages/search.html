@@ -163,7 +163,7 @@
     $.ajax(
     {
       //url: "/parsedb.json",
-      url: "/parsedb?query="+getUrlParamByName('query'),
+      url: "/apiv1/free/globalsearch?assetname=all&anyvalue="+getUrlParamByName('query'),
       dataType: "text", 
       success: function(json)
       {
